@@ -6,6 +6,8 @@ kanban-plugin: board
 
 ## 
 
+- [ ] [[Personal project Kanban]]
+- [ ] [[📊Dashboard]]
 
 
 ## 
