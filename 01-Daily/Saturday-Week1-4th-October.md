@@ -2,7 +2,7 @@
 
 ## 🧠Morning brain dump 
 *Get everything out of my head - don't filter! no judgement*
-
+There's so much shit to do, there is the assignment for Mecheng 747
 ## 🎯Top 3 Outcomes Today
 1.
 2.
@@ -26,7 +26,7 @@
 ---
 ## 🌙 EOD Review
 
-### ✅What got donez
+### ✅What got done
 
 ### ⏹️What didn't 
 
@@ -35,6 +35,7 @@
 
 ## 🔗Links
 **Projects touched:**
-**People touched:**
+**People touched :))))):**
 **Tags:**
+
 

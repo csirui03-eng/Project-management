@@ -17,3 +17,4 @@
 ---
 ## Current Operations
 ![[Personal Operations Kanban]]
+

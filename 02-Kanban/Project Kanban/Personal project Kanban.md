@@ -20,11 +20,11 @@ kanban-plugin: board
 - [ ] Finishing personal website
 - [ ] Creating GEVs & payload calculator for website
 - [ ] Creating generalized customer database analysis tool for website
-- [ ] Finishing the storage stand for the Bambu A1 mini
 
 
 ## Blocked
 
+- [ ] [[03-Projects & Operations/A1 mini storage stand|Finishing the storage stand for the Bambu A1 mini]]
 
 
 ## Ready to start
