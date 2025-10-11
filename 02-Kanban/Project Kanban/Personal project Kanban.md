@@ -19,7 +19,7 @@ kanban-plugin: board
 - [ ] LP - Teaching local LLM to write basic, repetitive code
 - [ ] LP - Finishing personal website
 - [ ] LP - Creating GEVs & payload calculator for website
-- [ ] LP - Creating generalized customer database analysis tool for website
+- [ ] [[LP - Customer data analyzer website]]
 - [ ] SP - Get Comsol
 - [ ] SP - Get Ansys
 - [ ] SP - Get Solidworks
