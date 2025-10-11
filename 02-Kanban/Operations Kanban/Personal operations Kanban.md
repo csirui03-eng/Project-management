@@ -15,11 +15,7 @@ kanban-plugin: board
 - [ ] [[A1 mini monthly maintenance]]
 
 
-## This week
-
-
-
-## Today
+## 📅 Due (This week + today)
 
 - [ ] Clear dishrack
 
@@ -37,6 +33,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false]}
 ```
 %%
