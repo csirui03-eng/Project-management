@@ -64,8 +64,6 @@ npm install
 
 ```
 
-  
-
 **What is Vite?**
 
 - Vite is a modern build tool that bundles your React code
@@ -74,11 +72,7 @@ npm install
 
 - Creates the basic folder structure: `src/`, `public/`, `index.html`
 
-  
-
 #### Step 2: Install Dependencies
-
-  
 
 ```bash
 
@@ -112,7 +106,6 @@ npm install recharts        # Charts (if needed)
 
 ```
 
-  
 
 **What Each Library Does:**
 
@@ -129,8 +122,6 @@ npm install recharts        # Charts (if needed)
 - **xlsx**: Read Excel files (.xlsx)
 
 - **recharts**: Create charts and graphs
-
-  
 
 #### Step 3: Configure Tailwind CSS
 
