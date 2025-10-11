@@ -26,19 +26,19 @@ kanban-plugin: board
 - [x] Part - 04
 - [x] Part - 05
 - [x] Part - 06
-- [x] 
+- [ ] [x]
 - [x] Part - 08
 - [x] Part - 09
 - [x] Part - 10
 - [x] Part -11
-- [x] Part - 12
+- [x] [[Part - 12]]
 
 
 ***
 
 ## Archive
 
-- [x] 
+- [ ] [x]
 
 %% kanban:settings
 ```

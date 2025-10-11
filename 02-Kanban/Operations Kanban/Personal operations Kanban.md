@@ -10,11 +10,26 @@ kanban-plugin: board
 - [ ] [[📊Dashboard]]
 
 
-## 
+## Scheduled
+
+- [ ] [[A1 mini monthly maintenance]]
+
+
+## This week
 
 
 
-## 
+## Today
+
+- [ ] Clear dishrack
+
+
+## Ongoing (3 max)
+
+- [ ] Wash and fold clothes
+
+
+## Done
 
 
 
@@ -22,6 +37,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false]}
 ```
 %%
