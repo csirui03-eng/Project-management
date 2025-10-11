@@ -4,18 +4,18 @@ kanban-plugin: board
 
 ---
 
-## Quicklinks
-
-- [ ] [[Personal project Kanban]]
-- [ ] [[📊Dashboard]]
-
-
-## 
+## Ready to start
 
 
 
-## 
+## In progress
 
+
+
+## Complete
+
+**Complete**
+- [x] Oil-axis ✅ 2025-10-05
 
 
 
