@@ -36,14 +36,16 @@ kanban-plugin: board
 
 ## On-going
 
-- [ ] SP - Get void train
-- [ ] SP - Get oblivion
 - [ ] SP - Get matlab
+- [ ] [[MP - A1 mini covers]]
 
 
 ## Completed
 
-- [ ] [[03-Projects & Operations/A1 mini storage stand|Finishing the storage stand for the Bambu A1 mini]]
+**Complete**
+- [x] SP - Get void train ✅ 2025-10-12
+- [x] SP - Get oblivion ✅ 2025-10-12
+- [x] [[03-Projects & Operations/A1 mini storage stand|Finishing the storage stand for the Bambu A1 mini]] ✅ 2025-10-12
 
 
 

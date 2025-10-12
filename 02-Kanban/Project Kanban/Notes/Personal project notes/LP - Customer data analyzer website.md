@@ -19,7 +19,6 @@
 8. [Learning Roadmap](#learning-roadmap)
 
 9. [Next Steps](#next-steps)
-]
 ---
 ## Introduction
 

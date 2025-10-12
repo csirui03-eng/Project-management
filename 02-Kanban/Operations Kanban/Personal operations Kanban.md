@@ -17,16 +17,17 @@ kanban-plugin: board
 
 ## 📅 Due (This week + today)
 
-- [ ] Clear dishrack
 
 
 ## Ongoing (3 max)
 
-- [ ] Wash and fold clothes
 
 
-## Done
+## Done (5 repeats max)
 
+**Complete**
+- [x] Wash and fold clothes ✅ 2025-10-12
+- [x] Clear dishrack ✅ 2025-10-12
 
 
 
