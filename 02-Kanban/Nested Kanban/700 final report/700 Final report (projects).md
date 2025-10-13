@@ -7,11 +7,9 @@ kanban-plugin: board
 ## Ready to start
 
 - [ ] Editing - Title page
-- [ ] Writing - Abstract
 - [ ] Editing - Abstract
 - [ ] Writing - Glossary of terms
 - [ ] Editing - Glossary of terms
-- [ ] Writing - Introduction
 - [ ] Editing - Introduction
 - [ ] Writing - Literature review
 - [ ] Editing - Literature review
@@ -39,6 +37,8 @@ kanban-plugin: board
 
 **Complete**
 - [x] Writing - Title page ✅ 2025-10-13
+- [x] Writing - Abstract ✅ 2025-10-13
+- [x] Writing - Introduction ✅ 2025-10-13
 
 
 
