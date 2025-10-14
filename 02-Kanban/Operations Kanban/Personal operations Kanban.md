@@ -6,12 +6,13 @@ kanban-plugin: board
 
 ## Quicklinks
 
-- [ ] [[Academic project Kanban]]
+- [ ] [[Personal project Kanban]]
 - [ ] [[📊Dashboard]]
 
 
 ## Scheduled
 
+- [ ] [[A1 mini monthly maintenance]]
 
 
 ## 📅 Due (This week + today)
@@ -25,8 +26,12 @@ kanban-plugin: board
 ## Done (5 repeats max)
 
 **Complete**
+- [x] Wash and fold clothes ✅ 2025-10-12
+- [x] Clear dishrack ✅ 2025-10-12
 
+***
 
+## Archive
 
 
 %% kanban:settings

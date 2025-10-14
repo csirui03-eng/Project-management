@@ -1,7 +1,7 @@
 ## Quick links
 ### Personal projects
 - [[Personal project Kanban]]
-- [[Personal operations Kanban]]
+- [[Academic Operations Kanban]]
 
 ## Today's focus (Max WIP: 3)
 
@@ -16,5 +16,5 @@
 
 ---
 ## Current Operations
-![[Personal Operations Kanban]]
+![[Academic Operations Kanban]]
 

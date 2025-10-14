@@ -7,7 +7,7 @@ kanban-plugin: board
 ## Quick links
 
 - [ ] [[📊Dashboard]]
-- [ ] [[Personal operations Kanban]]
+- [ ] [[Academic Operations Kanban]]
 
 
 ## Back-log
