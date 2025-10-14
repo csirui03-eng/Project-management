@@ -11,7 +11,6 @@ kanban-plugin: board
 - [ ] Writing - Glossary of terms
 - [ ] Editing - Glossary of terms
 - [ ] Editing - Introduction
-- [ ] Writing - Literature review
 - [ ] Editing - Literature review
 - [ ] Writing - Middle section
 - [ ] Editing - Middle section
@@ -39,6 +38,7 @@ kanban-plugin: board
 - [x] Writing - Title page ✅ 2025-10-13
 - [x] Writing - Abstract ✅ 2025-10-13
 - [x] Writing - Introduction ✅ 2025-10-13
+- [x] Writing - Literature review ✅ 2025-10-14
 
 
 
