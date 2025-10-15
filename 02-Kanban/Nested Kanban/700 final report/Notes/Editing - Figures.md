@@ -1,0 +1,8 @@
+- [x] Figure 1 ✅ 2025-10-15 (ok I think)
+- [x] Figure 2 ✅ 2025-10-15 (expanded)
+- [ ] Figure 3 (expanded but perhaps this can go to appendix?) Check with Vlad
+- [x] Figure 4 (expanded) ✅ 2025-10-15
+- [ ] Figure 5 needs labels!
+- [ ] Figure 12 (most problematic)
+- [ ] Figure 13 (most problematic)
+- [ ] Figure 14 (most problematic)

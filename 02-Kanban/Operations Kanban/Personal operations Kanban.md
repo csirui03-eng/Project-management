@@ -28,10 +28,17 @@ kanban-plugin: board
 **Complete**
 - [x] Wash and fold clothes ✅ 2025-10-12
 - [x] Clear dishrack ✅ 2025-10-12
+- [x] Fold sheets ✅ 2025-10-15
 
-***
 
 ## Archive
+
+
+
+## Archive
+
+
+
 
 
 %% kanban:settings

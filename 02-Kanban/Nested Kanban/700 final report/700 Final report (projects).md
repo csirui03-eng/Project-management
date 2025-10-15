@@ -9,9 +9,10 @@ kanban-plugin: board
 - [ ] Editing - Abstract
 - [ ] Editing - Introduction
 - [ ] Editing - Literature review
-- [ ] Editing - Middle section
+- [ ] [[Editing - Middle section]]
 - [ ] Editing - Discussion
 - [ ] Editing - Conclusions
+- [ ] [[Editing - Figures]]
 
 
 ## Blocked

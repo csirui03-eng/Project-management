@@ -1,0 +1,2 @@
+- [ ] Cut down talks about verification methodology in verification
+- [ ] Mention how impedance and theta was collected in discussion/results
