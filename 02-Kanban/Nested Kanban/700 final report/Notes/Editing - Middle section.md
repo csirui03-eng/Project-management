@@ -1,2 +1,18 @@
 - [ ] Cut down talks about verification methodology in verification
 - [ ] Mention how impedance and theta was collected in discussion/results
+- [ ] Key point! - Need strong justification for predicting power with 1vrms 24khz impedance and current lag
+- [ ] Materials and methods 
+	- [ ] Simulation methodology 
+		- [ ] Verification model
+		- [x] Simulation of 50mm design ✅ 2025-10-16
+		- [ ] Physics and meshing
+		- [ ] (Can add but check with Vlad) additional simulation work
+	- [ ] Experimental methods
+		- [ ] Prototype fabrication (assign codes to descriptions of each transducer)
+		- [ ] Acoustic testing set-up
+		- [ ] Data processing
+		- [ ] (Must add) More details and figures on assembly
+- [ ] Results
+	- [ ] Simulation predictions
+	- [ ] Experimental measurements
+

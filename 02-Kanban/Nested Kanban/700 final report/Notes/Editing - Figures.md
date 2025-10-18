@@ -1,8 +1,13 @@
-- [x] Figure 1 ✅ 2025-10-15 (ok I think)
+- [x] Figure 1 go in appendix ✅ 2025-10-16
 - [x] Figure 2 ✅ 2025-10-15 (expanded)
-- [ ] Figure 3 (expanded but perhaps this can go to appendix?) Check with Vlad
+- [x] Figure 3 go in appendix ✅ 2025-10-16
 - [x] Figure 4 (expanded) ✅ 2025-10-15
-- [ ] Figure 5 needs labels!
-- [ ] Figure 12 (most problematic)
-- [ ] Figure 13 (most problematic)
-- [ ] Figure 14 (most problematic)
+- [x] SPL comparison figure needs labels ✅ 2025-10-17
+- [x] Transducer assemble figure enlarged ✅ 2025-10-17
+- [x] Added experimetal figure 1 ✅ 2025-10-17
+- [x] Added experimental figure 2 ✅ 2025-10-17
+- [x] Added experimental figure 3 ✅ 2025-10-17
+- [x] Processed SPL graph in matlab ✅ 2025-10-17
+- [x] Changed all existing SPL maps ✅ 2025-10-17
+- [ ] Figure 12 (peak graph) (most problematic) Condense into table
+- [ ] Figure 13 (peak graph) Condense into table

@@ -9,10 +9,8 @@ kanban-plugin: board
 - [ ] Editing - Abstract
 - [ ] Editing - Introduction
 - [ ] Editing - Literature review
-- [ ] [[Editing - Middle section]]
-- [ ] Editing - Discussion
+- [ ] [[Editing - Discussion]]
 - [ ] Editing - Conclusions
-- [ ] [[Editing - Figures]]
 
 
 ## Blocked
@@ -21,6 +19,9 @@ kanban-plugin: board
 
 ## Inprogress
 
+- [ ] [[Editing - Middle section]]
+- [ ] [[Editing - Figures]]
+- [ ] Extra - take photo of the jigs
 
 
 ## Complete

@@ -21,14 +21,21 @@ kanban-plugin: board
 
 ## Ongoing (3 max)
 
+- [ ] Clean phone
+- [ ] Wash bedsheets and liners
 
 
 ## Done (5 repeats max)
 
 **Complete**
-- [x] Wash and fold clothes ✅ 2025-10-12
+- [x] Clear bins and change liners ✅ 2025-10-16
+- [x] Wash and fold clothes ✅ 2025-10-16
 - [x] Clear dishrack ✅ 2025-10-12
+- [x] Clear dishrack ✅ 2025-10-16
+- [x] Clear dishrack ✅ 2025-10-17
 - [x] Fold sheets ✅ 2025-10-15
+- [x] Fold sheets ✅ 2025-10-16
+- [x] Fold sheets ✅ 2025-10-17
 
 
 ## Archive
