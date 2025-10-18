@@ -15,13 +15,13 @@ kanban-plugin: board
 
 ## Blocked
 
+- [ ] [[Editing - Figures]]
+- [ ] Extra - take photo of the jigs
 
 
 ## Inprogress
 
 - [ ] [[Editing - Middle section]]
-- [ ] [[Editing - Figures]]
-- [ ] Extra - take photo of the jigs
 
 
 ## Complete

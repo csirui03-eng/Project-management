@@ -15,7 +15,6 @@ kanban-plugin: board
 - [ ] Large project - Creating Payload calculator for website
 - [ ] LP - Arduino based RPM->G-force system
 - [ ] LP - Pytorch based spegetti print detector
-- [ ] LP - Teaching local LLM to digest large technical document
 - [ ] LP - Teaching local LLM to write basic, repetitive code
 - [ ] LP - Finishing personal website
 - [ ] LP - Creating GEVs & payload calculator for website
@@ -28,15 +27,16 @@ kanban-plugin: board
 
 ## Blocked
 
+- [ ] SP - Get matlab
 
 
 ## Ready to start
 
+- [ ] [[LP - Random Augmented Generation Systems]]
 
 
 ## On-going
 
-- [ ] SP - Get matlab
 
 
 ## Completed

@@ -9,8 +9,8 @@ tags:
   - Data-organization
 ---
 # 🌐Data Structure Organization Site
-**Project Status:** 🟢Active - developing site functionality
-**Phase:** In progress -> investigating additional functionalities 
+**Project Status:** 🟡Paused - rounding out site functionality to beginning deployment
+**Phase:** In progress -> creating pie representation for predicted machines and... preparing deployment
 **Overall progress:** 75% complete
 
 [[Atlas Copco Data Organization (projects)|-> View Project Board]]
