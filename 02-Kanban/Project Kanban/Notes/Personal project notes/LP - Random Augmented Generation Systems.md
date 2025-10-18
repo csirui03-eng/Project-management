@@ -12,13 +12,20 @@
 TABLE WITHOUT ID
 	"Day" + Day as "Day",
 	choice(Status = "Complete", "✅", "◻️") as "Status"
-From "02-Kanban\Nested Kanban\Notes - RAG"
-Where Weekend = 1
+FROM "02-Kanban\Nested Kanban\Notes - RAG"
+WHERE Weekend = 1
+SORT Day = ASC
+```
+
+```dataview
+TABLE WITHOUT ID
+	"Day " + Day as "Day",
+	choice(Status = "Complete", "✅", "◻️") as "Status"
+FROM "02-Kanban/Nested Kanban/Notes - RAG"
+WHERE Weekend = 1
 SORT Day ASC
 ```
 
-
----
 ## Learning Checklist
 - [ ] What is RAG?
 	- [ ] The problems it solve
