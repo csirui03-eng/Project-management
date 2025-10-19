@@ -8,6 +8,7 @@ kanban-plugin: board
 
 - [ ] [[📊Dashboard]]
 - [ ] [[Academic Operations Kanban]]
+- [ ] Final research compendium
 
 
 ## Back-log
