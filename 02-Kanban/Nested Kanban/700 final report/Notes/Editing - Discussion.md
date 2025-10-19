@@ -1,6 +1,7 @@
-- [ ] Discussion
-	- [ ] Simulation validation and model fidelity
-	- [ ] Acoustic performance for deterrence applications
-	- [ ] Must add a section on power requirement
-	- [ ] Cost effectiveness and practical advantages
-	- [ ] Limitations and future work
+- [x] Discussion ✅ 2025-10-19
+	- [x] Simulation validation and model fidelity ✅ 2025-10-19
+	- [x] Acoustic performance for deterrence applications ✅ 2025-10-19
+	- [x] Must add a section on power requirement ✅ 2025-10-19
+	- [x] Cost effectiveness and practical advantages ✅ 2025-10-19
+		- [x] Add cost of parts here ✅ 2025-10-19
+	- [x] Limitations and future work ✅ 2025-10-19

@@ -24,12 +24,12 @@ kanban-plugin: board
 
 ## On-going
 
-- [ ] [[700 Final Report]]
 
 
 ## Completed
 
 **Complete**
+- [x] [[700 Final Report]] ✅ 2025-10-19
 
 
 

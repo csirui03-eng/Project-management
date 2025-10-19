@@ -9,5 +9,5 @@
 - [x] Added experimental figure 3 ✅ 2025-10-17
 - [x] Processed SPL graph in matlab ✅ 2025-10-17
 - [x] Changed all existing SPL maps ✅ 2025-10-17
-- [ ] Figure 12 (peak graph) (most problematic) Condense into table
-- [ ] Figure 13 (peak graph) Condense into table
+- [x] Figure 12 (peak graph) (most problematic) Condense into table ✅ 2025-10-19
+- [x] Figure 13 (peak graph) Condense into table ✅ 2025-10-19

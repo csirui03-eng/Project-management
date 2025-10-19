@@ -3,5 +3,6 @@
   "obsidian-kanban",
   "obsidian-tasks-plugin",
   "obsidian-emoji-toolbar",
-  "dataview"
+  "dataview",
+  "obsidian-git"
 ]

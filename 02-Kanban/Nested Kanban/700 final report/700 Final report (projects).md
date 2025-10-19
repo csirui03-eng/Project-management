@@ -6,22 +6,15 @@ kanban-plugin: board
 
 ## Ready to start
 
-- [ ] Editing - Abstract
-- [ ] Editing - Introduction
-- [ ] Editing - Literature review
-- [ ] [[Editing - Discussion]]
-- [ ] Editing - Conclusions
 
 
 ## Blocked
 
-- [ ] [[Editing - Figures]]
 - [ ] Extra - take photo of the jigs
 
 
 ## Inprogress
 
-- [ ] [[Editing - Middle section]]
 
 
 ## Complete
@@ -41,6 +34,13 @@ kanban-plugin: board
 - [x] Editing - Acknowledgements ✅ 2025-10-15
 - [x] Writing - List of references ✅ 2025-10-15
 - [x] Editing - List of references ✅ 2025-10-15
+- [x] [[Editing - Figures]] ✅ 2025-10-19
+- [x] [[Editing - Discussion]] ✅ 2025-10-19
+- [x] [[Editing - Middle section]] ✅ 2025-10-19
+- [x] Editing - Conclusions ✅ 2025-10-19
+- [x] Editing - Literature review ✅ 2025-10-19
+- [x] Editing - Introduction ✅ 2025-10-19
+- [x] Editing - Abstract ✅ 2025-10-19
 
 
 
