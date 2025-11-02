@@ -8,3 +8,5 @@
 - [ ] Aerospace 740 exam 📅 2025-11-13
 	- [ ] Uh, also here, yes
 - [ ] AC website 📅  2025-11-31
+	- [ ] Add a download feature to be able to save the data locally
+	- [ ] 
