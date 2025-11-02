@@ -9,4 +9,6 @@
 	- [ ] Uh, also here, yes
 - [ ] AC website 📅  2025-11-31
 	- [ ] Add a download feature to be able to save the data locally
-	- [ ] 
+	- [ ] List out a dynamic formula that changes with segment
+	- [ ] Bug fixes
+	- [ ] Focus on segments most relevant to Atlas Copco's OFA team
