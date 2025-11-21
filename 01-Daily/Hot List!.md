@@ -7,3 +7,6 @@
 		- [ ] Solution? 
 			- [ ] Custom design
 			- [ ] Retry with bambu lab model
+- [ ] Research abstract
+	- [ ] Read and understand systems introduced by Andrew's document
+	- [ ] 
