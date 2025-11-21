@@ -9,4 +9,7 @@
 			- [ ] Retry with bambu lab model
 - [ ] Research abstract
 	- [ ] Read and understand systems introduced by Andrew's document
-	- [ ] 
+		- [ ] Locally resonant structures
+		- [ ] Acoustic meta surfaces
+		- [ ] Photonic Crystals
+		- [ ] Phase Gradient Materials
