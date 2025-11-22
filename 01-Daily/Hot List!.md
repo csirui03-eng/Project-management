@@ -15,4 +15,8 @@
 		- [ ] Phase Gradient Materials
 - [ ] Continuation of acoustic deterrence project
 	- [ ] Learn the protection electrical circuit for LCR meter
-	- [ ] Learn the 
+		- [ ] Conceptual explanation
+		- [ ] Simulink simulation
+	- [ ] Learn the basics of the amplifier circuit
+		- [ ] Conceptual explanation
+		- [ ] Simulink simulation
