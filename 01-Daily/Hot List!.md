@@ -13,3 +13,6 @@
 		- [ ] Acoustic meta surfaces
 		- [ ] Photonic Crystals
 		- [ ] Phase Gradient Materials
+- [ ] Continuation of acoustic deterrence project
+	- [ ] Learn the protection electrical circuit for LCR meter
+	- [ ] Learn the 
