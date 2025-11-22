@@ -1,12 +1,12 @@
 🔥🔥🔥🔥🔥🔥
 
-- [ ] Arduino nano case
-	- [ ] Issues
-		- [ ] Mis alignment of bottom side pins
-		- [ ] Optimization for use with pins
-		- [ ] Solution? 
+- [x] Arduino nano case ✅ 2025-11-23
+	- [x] Issues ✅ 2025-11-23
+		- [x] Mis alignment of bottom side pins ✅ 2025-11-23
+		- [x] Optimization for use with pins ✅ 2025-11-23
+		- [x] Solution? ✅ 2025-11-23
 			- [ ] Custom design
-			- [ ] Retry with bambu lab model
+			- [x] Retry with bambu lab model ✅ 2025-11-23
 - [ ] Research abstract
 	- [ ] Read and understand systems introduced by Andrew's document
 		- [ ] Locally resonant structures
