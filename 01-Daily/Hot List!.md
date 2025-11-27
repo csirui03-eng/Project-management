@@ -18,6 +18,7 @@
 		- [ ] Acoustic meta surfaces
 		- [ ] Photonic Crystals
 		- [ ] Phase Gradient Materials
+	- [ ] Mechanics by Lifshitz
 - [x] Continuation of acoustic deterrence project ✅ 2025-11-27
 	- [ ] Learn the protection electrical circuit for LCR meter
 		- [x] Conceptual explanation ✅ 2025-11-27
