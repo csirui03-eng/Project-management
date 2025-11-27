@@ -7,16 +7,21 @@
 		- [x] Solution? ✅ 2025-11-23
 			- [ ] Custom design
 			- [x] Retry with bambu lab model ✅ 2025-11-23
-- [ ] Research abstract
-	- [ ] Read and understand systems introduced by Andrew's document
+- [x] Research abstract ✅ 2025-11-27
+	- [x] Read and understand systems introduced by Andrew's document ✅ 2025-11-27
+		- [x] Locally resonant structures ✅ 2025-11-27
+		- [x] Acoustic meta surfaces ✅ 2025-11-27
+		- [x] Photonic Crystals ✅ 2025-11-27
+		- [x] Phase Gradient Materials ✅ 2025-11-27
+	- [ ] Advance understanding in systems introduced by Andrew's document
 		- [ ] Locally resonant structures
 		- [ ] Acoustic meta surfaces
 		- [ ] Photonic Crystals
 		- [ ] Phase Gradient Materials
-- [ ] Continuation of acoustic deterrence project
+- [x] Continuation of acoustic deterrence project ✅ 2025-11-27
 	- [ ] Learn the protection electrical circuit for LCR meter
-		- [ ] Conceptual explanation
+		- [x] Conceptual explanation ✅ 2025-11-27
 		- [ ] Simulink simulation
-	- [ ] Learn the basics of the amplifier circuit
-		- [ ] Conceptual explanation
-		- [ ] Simulink simulation
+	- [x] Learn the basics of the amplifier circuit ✅ 2025-11-27
+		- [x] Conceptual explanation ✅ 2025-11-27
+		- [x] Simulink simulation ✅ 2025-11-27
