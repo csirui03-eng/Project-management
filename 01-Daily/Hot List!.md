@@ -19,8 +19,15 @@
 		- [ ] Photonic Crystals
 		- [ ] Phase Gradient Materials
 	- [ ] Mechanics by Lifshitz
-	- [ ] Advance understanding of the door market
-		- [ ] 
+	- [ ] Advance understanding of the residential door market
+		- [ ] NZ building code structural requirements
+			- [ ] Clause B1 (structure)
+			- [ ] Clause B2 (durability)
+		- [ ] Fire Resistance Ratings (FRR)
+			- [ ] Fire testing is expensive
+			- [ ] If we want to charge alot, ppl will be like, well, is it fireproof?
+			- [ ] Also, less mass damping = less fire proofing and we don't want this to be a hazard
+			- [ ] 
 - [x] Continuation of acoustic deterrence project ✅ 2025-11-27
 	- [ ] Learn the protection electrical circuit for LCR meter
 		- [x] Conceptual explanation ✅ 2025-11-27
