@@ -27,7 +27,12 @@
 			- [ ] Fire testing is expensive
 			- [ ] If we want to charge alot, ppl will be like, well, is it fireproof?
 			- [ ] Also, less mass damping = less fire proofing and we don't want this to be a hazard
-			- [ ] 
+		- [ ] Operation loads
+			- [ ] Hinge point loads
+			- [ ] Slamming impacts
+			- [ ] Security requirements
+		- [ ] Stiffness vs acoustics trade-off
+			- [ ] Metamaterials will again certainly reduce stiffness but we can't really use carbon fibre in doors haha...
 - [x] Continuation of acoustic deterrence project ✅ 2025-11-27
 	- [ ] Learn the protection electrical circuit for LCR meter
 		- [x] Conceptual explanation ✅ 2025-11-27
