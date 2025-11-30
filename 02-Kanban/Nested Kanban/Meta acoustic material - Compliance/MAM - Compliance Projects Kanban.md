@@ -6,7 +6,6 @@ kanban-plugin: board
 
 ## To do
 
-- [ ] Investigate building code
 - [ ] Investigate fire code
 - [ ] Consider stiffness vs acoustic trade off
 - [ ] Consider operation loads
@@ -14,6 +13,7 @@ kanban-plugin: board
 
 ## In progress
 
+- [ ] [[Investigate building code]]
 
 
 ## Complete
