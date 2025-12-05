@@ -8,11 +8,11 @@ kanban-plugin: board
 
 - [ ] [[📊Dashboard]]
 - [ ] [[Academic Operations Kanban]]
-- [ ] [[Final research compendium]]
 
 
 ## Back-log
 
+- [ ] SORI - Understanding structure
 
 
 ## Blocked
@@ -30,10 +30,14 @@ kanban-plugin: board
 ## Completed
 
 **Complete**
+
+
+***
+
+## Archive
+
 - [x] [[700 Final Report]] ✅ 2025-10-19
-
-
-
+- [x] [[Final research compendium]] ✅ 2025-12-05
 
 %% kanban:settings
 ```
