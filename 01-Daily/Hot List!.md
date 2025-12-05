@@ -36,7 +36,7 @@
 - [x] Continuation of acoustic deterrence project ✅ 2025-11-27
 	- [ ] Learn the protection electrical circuit for LCR meter
 		- [x] Conceptual explanation ✅ 2025-11-27
-		- [x] Simulink simulation ✅ 2025-12-05
+		- [ ] Simulink simulation
 	- [x] Learn the basics of the amplifier circuit ✅ 2025-11-27
 		- [x] Conceptual explanation ✅ 2025-11-27
 		- [x] Simulink simulation ✅ 2025-11-27
