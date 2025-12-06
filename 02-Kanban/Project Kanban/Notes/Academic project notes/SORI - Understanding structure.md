@@ -21,6 +21,10 @@ For Lin's document, his three paragraph serves these purposes:
 2. Response (***55*** words)
 3. Impact (***89*** words)
 
+---
+### Methodology 
+
+Just to show that you understand the typical research process, is flexible through the actual 3 year research process.
 
 
 
