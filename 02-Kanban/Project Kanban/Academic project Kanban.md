@@ -12,7 +12,7 @@ kanban-plugin: board
 
 ## Back-log
 
-- [ ] SORI - Understanding structure
+- [ ] [[SORI - Understanding structure]]
 
 
 ## Blocked
