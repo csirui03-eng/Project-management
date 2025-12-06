@@ -9,10 +9,16 @@ The bulk of the work. Umm, yea, vlad said 10 sources? So I guess I gotta skim 10
 - [ ] Check Vladislav's paper
 - [ ] Scavenge for more like the rat I am
 
-The good example umm, has 891 word, very extensive, but I guess if its like 10 sources its basically, 80 word per source?
+The good example umm, has 891 word, very extensive, but I guess if its like 10 sources its basically, 80 word per source? 
 
 ---
 ### Significance and contribution
 
+Basically justifying why the research is important
+
+For Lin's document, his three paragraph serves these purposes: 
+1. Problem/Gap in existing research
+2. Response
+3. Impact
 
 
