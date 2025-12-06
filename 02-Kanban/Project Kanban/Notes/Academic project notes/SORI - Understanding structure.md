@@ -9,7 +9,7 @@ The bulk of the work. Umm, yea, vlad said 10 sources? So I guess I gotta skim 10
 - [ ] Check Vladislav's paper
 - [ ] Scavenge for more like the rat I am
 
-The good example umm, has 891 word, very extensive, but I guess if its like 10 sources its basically, 80 word per source? 
+The good example umm, has <>891<> word, very extensive, but I guess if its like 10 sources its basically, 80 word per source? 
 
 ---
 ### Significance and contribution
