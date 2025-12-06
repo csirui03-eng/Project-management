@@ -13,6 +13,7 @@ kanban-plugin: board
 ## Back-log
 
 - [ ] [[SORI - Understanding structure]]
+- [ ] [[SORI - Background including literature review]]
 
 
 ## Blocked
