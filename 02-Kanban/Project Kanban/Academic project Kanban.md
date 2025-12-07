@@ -14,6 +14,7 @@ kanban-plugin: board
 
 - [ ] [[SORI - Understanding structure]]
 - [ ] [[SORI - Background including literature review]]
+- [ ] [[SORI - Stream 1 Phononic crystals (coincidence issue)]]
 
 
 ## Blocked
