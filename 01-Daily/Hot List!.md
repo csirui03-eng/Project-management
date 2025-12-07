@@ -40,3 +40,7 @@
 	- [x] Learn the basics of the amplifier circuit ✅ 2025-11-27
 		- [x] Conceptual explanation ✅ 2025-11-27
 		- [x] Simulink simulation ✅ 2025-11-27
+
+--- 
+## Trivial but fun
+- [ ] Should I worry about bending of cables in USB-C cable ports? 
