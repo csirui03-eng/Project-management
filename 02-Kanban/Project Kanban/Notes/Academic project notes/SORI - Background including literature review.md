@@ -40,3 +40,8 @@
 - Add "review" to any of the above
 - Gets you papers that already synthesize the field
 - Great source of citations to chase
+
+### Approach
+Basically, noise fucks up your health.... 
+
+
