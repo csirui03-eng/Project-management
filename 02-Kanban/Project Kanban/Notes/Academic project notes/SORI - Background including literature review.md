@@ -1,5 +1,5 @@
 ## Funnel Approach
-- [ ] Broad Context
+- [x] Broad Context ✅ 2025-12-07
 - [ ] Foundational concepts
 - [ ] Specific research streams
 	- [ ] **Low-frequency transmission** → LRS
