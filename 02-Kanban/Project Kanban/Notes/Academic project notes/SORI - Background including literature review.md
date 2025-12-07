@@ -43,5 +43,12 @@
 
 ### Approach
 Basically, noise fucks up your health.... 
+A few pathways
+- Direct hearing damage
+- Stress hormones
+- Sleep disruption
+- Cognitive interference
+- Psychological
+- Behavioral changes
 
 
