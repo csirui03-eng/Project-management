@@ -46,3 +46,4 @@
 - [x] Should I worry about bending of cables in USB-C cable ports? ✅ 2025-12-07
 	- [x] No but order some break away adapters! ✅ 2025-12-07
 - [ ] Change obsidian's bloody auto correct language! 
+- [ ] Figure out why my Claude installation has missing icons
