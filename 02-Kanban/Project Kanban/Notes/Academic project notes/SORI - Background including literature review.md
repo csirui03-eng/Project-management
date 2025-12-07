@@ -58,6 +58,6 @@ A few pathways
 - Cognitive interference
 	- Same mechanism as sleep disruption, unwanted auditory signals messes with concentration. More or a behavior thing at a certain level, 
 - Psychological - just a link to another key health criteria listed by the WHO
-- Behavioral changes - People change their behavior as a way for coping with all the above issues. 
+- Behavioral changes - People change their behavior as a way for coping with all the above issues. Quite a weak link
 
 
