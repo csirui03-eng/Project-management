@@ -51,9 +51,10 @@ A few pathways
 		- Damage accumulates but ears can recover on its own
 			- Too complex to map out for introduction
 - Stress hormones
-	- Noise generally triggers physiological stress responses in humans and can do so at levels common in urban residential neighbor hoods, well below what people would consider loud.
+	- Noise generally triggers physiological stress responses in humans and can do so at levels common in urban residential neighbor hoods, well below what people would consider loud. (65 dB(A))
 	- This aspect is what makes it a public health problem that is worth addressing through better building acoustics
 - Sleep disruption
+	- Random unwanted noises at 30 dB(A) can just fuck up your sleep through I guess direct mental stimulation
 - Cognitive interference
 - Psychological
 - Behavioral changes
