@@ -45,5 +45,6 @@
 ## Trivial but fun
 - [x] Should I worry about bending of cables in USB-C cable ports? ✅ 2025-12-07
 	- [x] No but order some break away adapters! ✅ 2025-12-07
+		- From my understanding of the way the pins spring to accommodate movement and general plastic and elastic behavior of materials, I can confidently say that the damage was minimal or non existent from my dumbass flexing it up and down... 
 - [ ] Change obsidian's bloody auto correct language! 
 - [ ] Figure out why my Claude installation has missing icons
