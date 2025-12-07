@@ -43,4 +43,5 @@
 
 --- 
 ## Trivial but fun
-- [ ] Should I worry about bending of cables in USB-C cable ports? 
+- [ ] Should I worry about bending of cables in USB-C cable ports?
+	- [ ] No but order some break away adapters! 
