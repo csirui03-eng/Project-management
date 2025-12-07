@@ -45,7 +45,13 @@
 Basically, noise fucks up your health.... 
 A few pathways
 - Direct hearing damage
+	- 85+dB(A) for more then 8 hours will cause permanent damage 
+	- Permanent damage is bad
+	- Kinda like fatigue loads at above fatigue limit? 
+		- Damage accumulates but ears can recover on its own
+			- Too complex to map out for introduction
 - Stress hormones
+	- 
 - Sleep disruption
 - Cognitive interference
 - Psychological
