@@ -1,7 +1,7 @@
 ## Funnel Approach
 - [x] Broad Context ✅ 2025-12-07
-- [ ] Foundational concepts
-- [ ] Specific research streams
+- [x] Foundational concepts ✅ 2025-12-07
+- [x] Specific research streams ✅ 2025-12-07
 	- [ ] **Low-frequency transmission** → LRS
 	- [ ] **Coincidence frequency** → phononic crystals
 	- [ ] **Perimeter gaps** → metasurfaces
