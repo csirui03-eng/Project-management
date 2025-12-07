@@ -2,10 +2,10 @@
 - [x] Broad Context ✅ 2025-12-07
 - [x] Foundational concepts ✅ 2025-12-07
 - [x] Specific research streams ✅ 2025-12-07
-	- [ ] **Low-frequency transmission** → LRS
-	- [ ] **Coincidence frequency** → phononic crystals
-	- [ ] **Perimeter gaps** → metasurfaces
-	- [ ] **Design methodology** → ML/NN for optimization of complex hybrid systems
+	- [ ] **Low-frequency transmission** → LRS (Leave for last, hardest)
+	- [ ] **Coincidence frequency** → phononic crystals (Do first, easiest)
+	- [ ] **Perimeter gaps** → metasurfaces (Do second, complex but not so complex?)
+	- [ ] **Design methodology** → ML/NN for optimization of complex hybrid systems (supplementary)
 
 ---
 ## Broad context
