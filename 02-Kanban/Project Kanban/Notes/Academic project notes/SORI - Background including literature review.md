@@ -51,7 +51,8 @@ A few pathways
 		- Damage accumulates but ears can recover on its own
 			- Too complex to map out for introduction
 - Stress hormones
-	- 
+	- Noise generally triggers physiological stress responses in humans and can do so at levels common in urban residential neighbor hoods, well below what people would consider loud.
+	- This aspect is what makes it a public health problem wor
 - Sleep disruption
 - Cognitive interference
 - Psychological
