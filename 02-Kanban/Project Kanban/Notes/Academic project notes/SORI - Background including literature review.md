@@ -56,7 +56,7 @@ A few pathways
 - Sleep disruption
 	- Random unwanted noises at 30 dB(A) can just fuck up your sleep through I guess direct mental stimulation
 - Cognitive interference
-	- 
+	- Same mechanism as sleep disruption, unwanted auditory signals messes with concentration. More or a behavior thing at a certain level, 
 - Psychological
 - Behavioral changes
 
