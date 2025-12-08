@@ -4,7 +4,7 @@
 
 What they are doing: 
 - Aiming to block at eigenfrequencies all vibration transmission completely regardless of k value or polarization
-- 
+- for 
 
 ---
 **Hussein et al. (2014):** Hussein, M. I., Leamy, M. J., & Ruzzene, M. (2014). Dynamics of phononic materials and structures: Historical origins, recent progress, and future outlook. _Applied Mechanics Reviews, 66_(4), 040802. [https://doi.org/10.1115/1.4026911](https://doi.org/10.1115/1.4026911)
