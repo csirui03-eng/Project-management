@@ -1,7 +1,8 @@
 
 ---
 Liu, Z., Zhang, X., Mao, Y., Zhu, Y. Y., Yang, Z., Chan, C. T., & Sheng, P. (2000). Locally resonant sonic materials. _Science, 289_(5485), 1734–1736. [https://doi.org/10.1126/science.289.5485.1734](https://doi.org/10.1126/science.289.5485.1734)
-
+- First ever LRS demonstration
+- 
 ---
 Hu, G., Austin, A. C. M., Sorokin, V., & Tang, L. (2021). Metamaterial beam with graded local resonators for broadband vibration suppression. _Mechanical Systems and Signal Processing, 146_, Article 106982. [https://doi.org/10.1016/j.ymssp.2020.106982](https://doi.org/10.1016/j.ymssp.2020.106982)
 
