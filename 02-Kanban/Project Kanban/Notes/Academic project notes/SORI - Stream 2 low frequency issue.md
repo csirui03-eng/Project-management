@@ -7,6 +7,8 @@ Liu, Z., Zhang, X., Mao, Y., Zhu, Y. Y., Yang, Z., Chan, C. T., & Sheng, P. (200
 	- Has the issue of the sharp anti-resonance after the resonance
 ---
 Hu, G., Austin, A. C. M., Sorokin, V., & Tang, L. (2021). Metamaterial beam with graded local resonators for broadband vibration suppression. _Mechanical Systems and Signal Processing, 146_, Article 106982. [https://doi.org/10.1016/j.ymssp.2020.106982](https://doi.org/10.1016/j.ymssp.2020.106982)
+- Applying the concept of LRS to beams using piezoelectric elements? 
+- Showing that graded resonators can expand the LRS resonance bandwith compared to traditional resonators!
 
 ---
 Hall, A. J., Dodd, G., & Calius, E. P. (2020). Multiplying resonances for attenuation in mechanical metamaterials: Part 1 – Concepts, initial validation and single layer structures. _Applied Acoustics, 170_, Article 107513. [https://doi.org/10.1016/j.apacoust.2020.107513](https://doi.org/10.1016/j.apacoust.2020.107513)
