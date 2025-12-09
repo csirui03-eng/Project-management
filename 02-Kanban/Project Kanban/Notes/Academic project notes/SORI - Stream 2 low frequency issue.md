@@ -13,7 +13,7 @@ Hu, G., Austin, A. C. M., Sorokin, V., & Tang, L. (2021). Metamaterial beam with
 ---
 Hall, A. J., Dodd, G., & Calius, E. P. (2020). Multiplying resonances for attenuation in mechanical metamaterials: Part 1 – Concepts, initial validation and single layer structures. _Applied Acoustics, 170_, Article 107513. [https://doi.org/10.1016/j.apacoust.2020.107513](https://doi.org/10.1016/j.apacoust.2020.107513)
 - Mr. Andrew starting with experiments with what Liu made, progressing to discreet single resonance local mechanical resonators and to multi resonance systems
-- Multi
+- Multi resonance models works well! reduces peaks and reduces troughs which is very impressive. 
 - Key work here is ways to reduce the anti resonance behavior...
 
 ---
