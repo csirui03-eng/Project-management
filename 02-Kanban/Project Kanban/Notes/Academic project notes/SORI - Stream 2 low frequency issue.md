@@ -27,6 +27,10 @@ Yang, Z., Mei, J., Yang, M., Chan, N. H., & Sheng, P. (2008). Membrane-type acou
 ---
 Kaina, N., Fink, M., & Lerosey, G. (2013). Composite media mixing Bragg and local resonances for highly attenuating and broad bandgaps. _Scientific Reports, 3_, Article 3240. [https://doi.org/10.1038/srep03240](https://doi.org/10.1038/srep03240)
 - This is great, comes up with many analytical methods for prediction the effect of damping on LRM resonance and experimentally validates them... 
+- Does some general analytical prediction'
+- Does some numerical methods computation
+	- Concludes that tho their inhouse code is the best, other simpler methods work well if damping is just included! 
+- very cool paper
 
 ---
 Van Belle, L., Claeys, C., Deckers, E., & Desmet, W. (2019). The impact of damping on the sound transmission loss of locally resonant metamaterial plates. _Journal of Sound and Vibration, 461_, Article 114909. [https://doi.org/10.1016/j.jsv.2019.114909](https://doi.org/10.1016/j.jsv.2019.114909)
