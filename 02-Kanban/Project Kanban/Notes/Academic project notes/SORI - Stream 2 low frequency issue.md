@@ -12,11 +12,13 @@ Hu, G., Austin, A. C. M., Sorokin, V., & Tang, L. (2021). Metamaterial beam with
 
 ---
 Hall, A. J., Dodd, G., & Calius, E. P. (2020). Multiplying resonances for attenuation in mechanical metamaterials: Part 1 – Concepts, initial validation and single layer structures. _Applied Acoustics, 170_, Article 107513. [https://doi.org/10.1016/j.apacoust.2020.107513](https://doi.org/10.1016/j.apacoust.2020.107513)
-- Mr. Andrew starting with experiments with what Liu made, progressing to discreet single resonance local mechanical resonators and to multi resonance systems in part 2
+- Mr. Andrew starting with experiments with what Liu made, progressing to discreet single resonance local mechanical resonators and to multi resonance systems
+- Multi
 - Key work here is ways to reduce the anti resonance behavior...
 
 ---
 Hall, A. J., Dodd, G., & Calius, E. P. (2021). Multiplying resonances for attenuation in mechanical metamaterials: Part 2 – Multi-layer structures. _Applied Acoustics, 179_, Article 108041. [https://doi.org/10.1016/j.apacoust.2021.108041](https://doi.org/10.1016/j.apacoust.2021.108041)
+- Experiments with multiple multi resonance multi layer systems with some configurations towards the end showing great promise in achieving near identical performance to total mass law models while retaining the TL peaks and curbing the TL troughs. 
 
 ---
 Yang, Z., Mei, J., Yang, M., Chan, N. H., & Sheng, P. (2008). Membrane-type acoustic metamaterial with negative dynamic mass. _Physical Review Letters, 101_(20), Article 204301. [https://doi.org/10.1103/PhysRevLett.101.204301](https://doi.org/10.1103/PhysRevLett.101.204301)
