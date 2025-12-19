@@ -21,7 +21,7 @@ kanban-plugin: board
 - [ ] SP - Get Ansys
 - [ ] SP - Get Solidworks
 - [ ] SP - Get Simulia
-- [ ] LP
+- [ ] LP - Ransome ware and identity theft protection
 
 
 ## Blocked
