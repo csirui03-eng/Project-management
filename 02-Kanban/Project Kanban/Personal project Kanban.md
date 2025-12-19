@@ -12,17 +12,16 @@ kanban-plugin: board
 
 ## Back-log
 
-- [ ] Large project - Creating Payload calculator for website
 - [ ] LP - Arduino based RPM->G-force system
 - [ ] LP - Pytorch based spegetti print detector
 - [ ] LP - Teaching local LLM to write basic, repetitive code
 - [ ] LP - Finishing personal website
 - [ ] LP - Creating GEVs & payload calculator for website
-- [ ] [[LP - Customer data analyzer website]]
 - [ ] SP - Get Comsol
 - [ ] SP - Get Ansys
 - [ ] SP - Get Solidworks
 - [ ] SP - Get Simulia
+- [ ] LP
 
 
 ## Blocked
