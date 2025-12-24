@@ -22,11 +22,12 @@ kanban-plugin: board
 - [ ] SP - Get Solidworks
 - [ ] SP - Get Simulia
 - [ ] LP - Ransome ware and identity theft protection
+- [ ] SP - Get matlab
+- [ ] [[SP - File sorter]]
 
 
 ## Blocked
 
-- [ ] SP - Get matlab
 
 
 ## Ready to start
