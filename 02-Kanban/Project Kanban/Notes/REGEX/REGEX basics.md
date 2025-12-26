@@ -29,3 +29,5 @@ import re #Library that reads REGEX for python
 	- `*` = zero or more of the previous thing
 	- `?` = zero or one (optional)
 	- `[]` = character set (any one of these)
+	- `{n}` = 
+	- `{n.m}` = 
