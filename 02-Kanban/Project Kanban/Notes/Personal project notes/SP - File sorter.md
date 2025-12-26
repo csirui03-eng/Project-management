@@ -8,5 +8,6 @@ Phase: Probing for potential
 
 Completed the following code chunk achieving:
 - Intuitive folder selection
-- 
+- Identification of folders vs files in the selected directory
+
 
