@@ -25,9 +25,9 @@ import re #Library that reads REGEX for python
 	- `.` = any single character
 	- `\d` = any digit (0-9)
 	- `\w` = any "word characters" (this strictly included: letters, digits and underscores)
-	- `+` = one or more of the previous thing
-	- `*` = zero or more of the previous thing
-	- `?` = zero or one (optional)
+	- `+` = matches the preceding element one or more times
+	- `*` = matches the preceding element zero or more times
+	- `?` = matches the preceding element zero or one time
 	- `[]` = character set (any one of these)
-	- `{n}` = 
-	- `{n.m}` = 
+	- `{n}` = matches the preceding element exactly n times
+	- `{n.m}` = matches the preceding element between n and m times
