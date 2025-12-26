@@ -15,4 +15,13 @@ import re #Library that reads REGEX for python
 
 ### Application: 
 **REGEX has 2 parts:**
-- Literal characters
+- Literal characters which means well.... itself haha
+	- a matches a
+	- cat matches cat
+	- etc
+- Special characters which have a function
+	- ^ = the start of string
+	- $ = the end of string
+	- . = any single character
+	- \d = any digit (0-9)
+	- \w = any "word characters" (this strictly included: letters, digits and underscores)
