@@ -31,3 +31,20 @@ import re #Library that reads REGEX for python
 	- `[]` = character set (any one of these)
 	- `{n}` = matches the preceding element exactly n times
 	- `{n.m}` = matches the preceding element between n and m times
+
+### Exercises:
+**Level 1: Reading patterns (what does this match?)**
+1. `^\d+$`
+2. `^[A-Z]\d$`
+3. `^\w+@\w+$`
+4. `^[aeiou]+$`
+
+**Level 2: Writing patterns (write a regex for...)**
+5. A string that is exactly 3 uppercase letters (like "ABC")
+6. A number between 1 and 4 digits (like "7" or "1234")
+7. A string starting with "NZ" followed by any digits (like "NZ12345")
+8. A word containing only lowercase letters and underscores (like "folder_name")
+
+**Level 3: Your actual use case**
+9. Your simple folder pattern: `A-1-folder_name` (category letter, dash, number, dash, name)
+10. Your priority folder pattern: `[R]-A-1-folder_name` (bracket letter bracket, dash, category, dash, number, dash, name)
