@@ -25,3 +25,5 @@ import re #Library that reads REGEX for python
 	- . = any single character
 	- \d = any digit (0-9)
 	- \w = any "word characters" (this strictly included: letters, digits and underscores)
+	- + = one or more of the previous thing
+	- * = zero or more of the previous thing
