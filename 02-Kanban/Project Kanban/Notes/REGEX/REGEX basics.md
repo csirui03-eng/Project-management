@@ -13,3 +13,6 @@ For my purpose in python it is a mini-language for explaining text patterns.
 import re #Library that reads REGEX for python
 ```
 
+### Application: 
+**REGEX has 2 parts:**
+- Literal characters
