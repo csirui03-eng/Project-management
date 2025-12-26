@@ -16,11 +16,7 @@ import os
 from tkinter import filedialog
 
 """
-importing libraries, both are built in. os is for interacting with the operating system
-
-tkinter is python's tk (originally writte in C for Tcl whatever the fuck that is) interface
-
-that lets puthon use this toolkit originally developed for C through a translation layer
+importing libraries, both are built in. os is for interacting with the operating system tkinter is python's tk (originally writte in C for Tcl whatever the fuck that is) interface that lets puthon use this toolkit originally developed for C through a translation layer
 """
 
 #ask for directory to sort through a nice UI :)
@@ -28,9 +24,7 @@ that lets puthon use this toolkit originally developed for C through a translati
 path = filedialog.askdirectory()
 print(path)
 
-#Inspecting every item in the folder, restoring its full path, checking if that path leads to a folder
-
-#and if leads to a folder the folder name is listed.
+#Inspecting every item in the folder, restoring its full path, checking if that path leads to a folder and if leads to a folder the folder name is listed.
 
 for item in os.listdir(path):
     f_path = os.path.join(path,item) #is this really needed?
