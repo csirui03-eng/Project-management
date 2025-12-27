@@ -64,5 +64,5 @@ import re #Library that reads REGEX for python
 4. `^[a-z_]+$`
 
 **Level 3 answers:**
-1.  `^[A-Z]-\d-[a-z_]+$`
-2. `^$`
+1.  `^[A-Z]-\d+-[a-z_]+$`
+2. `^[A-Z]-\d+-[a-z_]+$`
