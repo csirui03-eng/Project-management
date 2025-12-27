@@ -20,8 +20,8 @@ import re #Library that reads REGEX for python
 	- `cat` matches cat
 	- etc
 - Special characters which have a function
-	- `^` = the start of string
-	- `$` = the end of string
+	- `^` = the start of string (optional)
+	- `$` = the end of string (optional)
 	- `.` = any single character
 	- `\d` = any digit (0-9)
 	- `\w` = any "word characters" (this strictly included: letters, digits and underscores)
