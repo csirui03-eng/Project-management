@@ -65,4 +65,4 @@ import re #Library that reads REGEX for python
 
 **Level 3 answers:**
 1.  `^[A-Z]-\d+-[a-z_]+$`
-2. `^\[[A-Z]\]-[A-Z]-\d+-[a-z_]+$`
+2. `^\[?[A-Z]\]?-[A-Z]-\d+-[a-z_]+$`
