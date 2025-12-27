@@ -31,6 +31,7 @@ import re #Library that reads REGEX for python
 	- `[]` = character set (any one of these)
 	- `{n}` = matches the preceding element exactly n times
 	- `{n.m}` = matches the preceding element between n and m times
+	- `()` = groups elements together as a single unit
 
 ### Exercises:
 **Level 1: Reading patterns (what does this match?)**
@@ -65,4 +66,4 @@ import re #Library that reads REGEX for python
 
 **Level 3 answers:**
 1.  `^[A-Z]-\d+-[a-z_]+$`
-2. `^\[?[A-Z]\]?-[A-Z]-\d+-[a-z_]+$`
+2. `^(\[\[A-Z]\])?-[A-Z]-\d+-[a-z_]+$`
