@@ -54,4 +54,8 @@ import re #Library that reads REGEX for python
 **Level 1 answers:**
 1. The string contains one or more digits
 2. The string is a combination of a single capitalized letter and a digit
-3. The string starts with one or more word characters
+3. The string starts with one or more word characters followed by the literal character @ before another set of one or more word characters
+4. The string contains one or more vowels
+
+**Level 2 answers:**
+1. The string contains one or more 
