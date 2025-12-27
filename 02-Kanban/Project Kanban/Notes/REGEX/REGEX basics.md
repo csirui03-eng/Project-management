@@ -48,3 +48,5 @@ import re #Library that reads REGEX for python
 **Level 3: Your actual use case**
 9. Your simple folder pattern: `A-1-folder_name` (category letter, dash, number, dash, name)
 10. Your priority folder pattern: `[R]-A-1-folder_name` (bracket letter bracket, dash, category, dash, number, dash, name)
+
+[Regex Checker](https://regex101.com) 
