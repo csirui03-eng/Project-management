@@ -54,7 +54,7 @@ import re #Library that reads REGEX for python
 **Level 1 answers:**
 1. The string contains only one or more digits
 2. The string is only a combination of a single capitalized letter and a digit
-3. The string starts with only one or more word characters followed by the literal character @ before another set of one or more word characters
+3. The string contains only one or more wrd charactersord characters followed by the literal character @ before another set of one or more wo
 4. The string contains only one or more vowels
 
 **Level 2 answers:**
@@ -62,3 +62,6 @@ import re #Library that reads REGEX for python
 2. `^\d{1,4}$`
 3. `^NZ\d+$`
 4. `^[a-z_]+$`
+
+**Level 3 answers:**
+1.  
