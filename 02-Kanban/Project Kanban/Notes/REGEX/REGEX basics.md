@@ -58,4 +58,7 @@ import re #Library that reads REGEX for python
 4. The string contains one or more vowels
 
 **Level 2 answers:**
-1. The string contains one or more 
+1. `^[A-Z]{3}$`
+2. `^\d{1,4}$`
+3. `^NZ\d+$`
+4. `^[a-z_]+$`
