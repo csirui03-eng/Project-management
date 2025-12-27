@@ -50,3 +50,8 @@ import re #Library that reads REGEX for python
 10. Your priority folder pattern: `[R]-A-1-folder_name` (bracket letter bracket, dash, category, dash, number, dash, name)
 
 [Regex Checker](https://regex101.com) 
+
+**Level 1 answers:**
+1. The string contains one or more digits
+2. The string is a combination of a single capitalized letter and a digit
+3. The string starts with one or more word characters
