@@ -10,11 +10,12 @@ kanban-plugin: board
 
 ## 🥅Ready
 
-- [ ] [[Data organization]]
+- [ ] [[NZAS SCL Facility research]]
 
 
 ## 🔥In progress
 
+- [ ] [[Data organization]]
 
 
 ## 🔎Review
