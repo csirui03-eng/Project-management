@@ -24,6 +24,7 @@ kanban-plugin: board
 - [ ] LP - Ransome ware and identity theft protection
 - [ ] SP - Get matlab
 - [ ] [[SP - File sorter]]
+- [ ] [[Inspect quickjack]]
 
 
 ## Blocked
