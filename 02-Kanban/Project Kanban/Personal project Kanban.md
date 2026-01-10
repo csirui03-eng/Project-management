@@ -25,6 +25,7 @@ kanban-plugin: board
 - [ ] SP - Get matlab
 - [ ] [[SP - File sorter]]
 - [ ] [[Inspect quickjack]]
+- [ ] [[Lafesta oil and filter]]
 
 
 ## Blocked
