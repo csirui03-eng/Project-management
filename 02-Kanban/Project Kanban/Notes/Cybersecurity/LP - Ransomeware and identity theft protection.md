@@ -8,6 +8,4 @@ Good general blanket protection against most threats. Its advantage is real time
 
 ---
 ## Ransomware
-Perhaps the scariest for most people, modern ransomware, if successful in infecting a machine can have devasting effects.
-
-Most threat actors fucks 
+Perhaps the scariest for most people, modern ransomware, if successful in infecting a machine can have devasting effects. Modern ransomware can bypass traditional defensive techniques like system restore points by deleting  
