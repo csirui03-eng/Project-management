@@ -8,4 +8,4 @@ Good general blanket protection against most threats. Its advantage is real time
 
 ---
 ## Ransomware
-Ransomware is a malicious program that blocks a user's access to one or more (typically all) programs and files on their system until a fee is paid for decryption.
+Ransomware is malware that encrypts user data or denies system access, demand payment for restoration of services.
