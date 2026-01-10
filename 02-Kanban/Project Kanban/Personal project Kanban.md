@@ -21,7 +21,7 @@ kanban-plugin: board
 - [ ] SP - Get Ansys
 - [ ] SP - Get Solidworks
 - [ ] SP - Get Simulia
-- [ ] LP - Ransome ware and identity theft protection
+- [ ] LP - Ransomeware and identity theft protection
 - [ ] SP - Get matlab
 - [ ] [[SP - File sorter]]
 - [ ] [[Inspect quickjack]]
