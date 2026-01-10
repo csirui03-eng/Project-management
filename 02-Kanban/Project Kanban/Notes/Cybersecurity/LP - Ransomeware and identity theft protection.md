@@ -3,3 +3,5 @@
 - [ ] Setup Malwarebytes on main laptop
 - [ ] Setup Malwarebytes on mother's laptop
 ---
+## Malwarebytes
+Good general blanket protection against most threats. Its advantage is real time active protection. 
