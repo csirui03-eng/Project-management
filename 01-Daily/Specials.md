@@ -1,4 +1,0 @@
-- War thunder 19/12/2025
-	- 45 min
-		- 376k SL
-		- ?? RP
