@@ -135,6 +135,14 @@ $$\tau = \frac{4n}{\left[\dfrac{\omega m - s/\omega}{\rho_2 c_2}\right]^2 + \lef
 
 Every term is a dimensionless impedance measured against the receiving fluid's rho c. The step 8 regimes are one term of this denominator dominating.
 
+### Closing: TL, the log measure
+
+$$TL = 10\log_{10}(1/\tau)\ \text{dB}$$
+
+The definition is fully general, any medium either side: tau is defined for whatever fluids are present, the air to water case uses exactly this. Between rooms the same quantity goes by sound reduction index R.
+
+What IS air specific are the regime limit formulas of step 8: they set n = 1, same fluid both sides, and their constants absorb air's rho0 c, the mass law's 42 dB buries 20 log10 of rho0 c over pi. Different fluid, different constant, same definition.
+
 
 
 
