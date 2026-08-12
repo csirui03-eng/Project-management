@@ -7,15 +7,29 @@ $$p_i = \tilde A_1 e^{j(\omega t - k_1 x)}, \qquad p_r = \tilde B_1 e^{j(\omega 
 
 Basic plane wave in air expressions, incident and reflected on the source side, transmitted on the far side. Nothing to unpack, the content is only in the unknown amplitudes.
 
+### Step 2: velocity matching
 
+Setup is the pressure to particle velocity conversion, $u = p/\rho c$ along each wave's travel direction:
 
-### Step 2: velocity matching at the faces
+$$u_i = \frac{\tilde A_1}{\rho_1 c_1} e^{j(\omega t - k_1 x)}, \qquad u_r = -\frac{\tilde B_1}{\rho_1 c_1} e^{j(\omega t + k_1 x)}$$
 
-$$\tilde A_1 - \tilde B_1 = j\omega\rho_1 c_1 \tilde\xi, \qquad \tilde C_2 = j\omega\rho_2 c_2 \tilde\xi$$
+The minus sign because the reflected wave travels opposite to the reference frame.
 
-The fluid cannot detach from or interpenetrate the wall, so the particle velocity of the fluid at each face must equal the wall's own velocity $j\omega\tilde\xi$.
+Write out the leaf's harmonic motion and take the time derivative to get leaf velocity too:
 
-The goal of this move is elimination of degrees of freedom: every wave amplitude becomes slaved to the single leaf displacement $\tilde\xi$. After this step the whole problem has one unknown left, and the remaining work is a single equation of motion for $\tilde\xi$.
+$$\xi = \tilde\xi\, e^{j\omega t} \quad\Rightarrow\quad \dot\xi = j\omega\tilde\xi\, e^{j\omega t}$$
+
+We match at $x = 0$, the leaf's plane, so the space exponentials drop to 1 and only the time component has an effect. Every term then shares $e^{j\omega t}$, which cancels.
+
+With everything written as velocity, just make them equal and simplify:
+
+$$\tilde A_1 - \tilde B_1 = j\omega\rho_1 c_1\tilde\xi$$
+
+Same procedure at the right face, except one term on that side, easy:
+
+$$\tilde C_2 = j\omega\rho_2 c_2\tilde\xi$$
+
+Result: every unknown amplitude hangs off leaf motion. Transmitted is purely leaf motion, reflected is leaf motion plus the known incident, $\tilde B_1 = \tilde A_1 - j\omega\rho_1 c_1\tilde\xi$. One degree of freedom left.
 
 ### Step 3: split the left field into blocked and radiated parts
 
