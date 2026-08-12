@@ -65,7 +65,7 @@ $$m\ddot\xi + r\dot\xi + s\xi = p(0^-) - p(0^+)$$
 - $r\dot\xi$: damping force of the suspension.
 - $s\xi$: restoring force of the suspension. Both live in the mount anchoring the leaf, not in the leaf itself, which is rigid and carries only mass.
 
-Substituting the fields from steps 2 and 3 turns the pressure difference into the blocked drive plus the two radiated loads:
+Apply the time harmonic assumption and do some substitution from the velocity matched results from above:
 
 $$(-\omega^2 m + j\omega r + s)\tilde\xi = 2\tilde A_1 - j\omega\rho_1 c_1\tilde\xi - j\omega\rho_2 c_2\tilde\xi$$
 
