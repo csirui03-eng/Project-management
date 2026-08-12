@@ -1,5 +1,6 @@
 - The setup: an unbounded rigid leaf, mass m per unit area, on a distributed suspension (stiffness s, damping r). The suspension stands represent approximation of real panel edge support.![[Pasted image 20260812200942.jpg]]
-- The key derivation move: split the source-side pressure into a blocked field (wall held rigid, pressure doubled) plus a radiated field from the wall's own motion. The wall becomes a single DOF oscillator driven by 2A1 and loaded by rho c on each face. Same trick your scratch TL conversion already uses.
+- Derivation:
+	- 
 - Governing relation: (z_p + z_f) v = 2A1, with z_p = j(omega m minus s/omega) + r and z_f the two radiation resistances.
 - TL = 10 log10(1/tau), and between rooms the same quantity is called sound reduction index R.
 - Three regimes. Below resonance: stiffness controlled, TL falls 6 dB per octave as f rises, mass and damping irrelevant. At resonance: a dip, total transmission (0 dB) if radiation damping dominates, else a floor 20 log10(eta) dB below the mass law line. Above resonance: the normal incidence mass law, TL = 20 log10(mf) minus 42 dB, rising 6 dB per octave and 6 dB per doubling of mass.
