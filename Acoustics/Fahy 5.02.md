@@ -71,6 +71,40 @@ $$(-\omega^2 m + j\omega r + s)\tilde\xi = 2\tilde A_1 - j\omega\rho_1 c_1\tilde
 
 Both radiated loads are proportional to leaf velocity, which is what step 5 folds into the left hand side as radiation damping.
 
+### Steps 5 and 6: fold the fluid loading, name the impedances
+
+Reminder before the algebra: $j$ is the imaginary unit, the engineer's spelling of $i$. Multiplying by $j$ is a 90 degree phase advance, dividing by $j$ is a 90 degree retard, and $1/j = -j$.
+
+From step 4, move the radiated loads left, where they read as added damping:
+
+$$\left[-\omega^2 m + j\omega(r + \rho_1 c_1 + \rho_2 c_2) + s\right]\tilde\xi = 2\tilde A_1$$
+
+The leaf now has two loss channels: heat in the mount ($r$) and sound radiated away by both fluids (radiation damping). Transmission looks like damping from the leaf's seat.
+
+We are not interested in the leaf's displacement amplitude, we want its velocity: impedance is force over velocity, power is force times velocity, and the fluid's own property is the real constant $\rho c$ only in velocity terms. Swap variable:
+
+$$\tilde v = j\omega\tilde\xi \quad\Longrightarrow\quad \tilde\xi = \frac{\tilde v}{j\omega}$$
+
+Substitute and divide the bracket through by $j\omega$, using $1/j = -j$:
+
+$$\frac{-\omega^2 m}{j\omega} = j\omega m, \qquad \frac{s}{j\omega} = -\,\frac{js}{\omega}$$
+
+$$\left[\,j\left(\omega m - \frac{s}{\omega}\right) + (r + \rho_1 c_1 + \rho_2 c_2)\right]\tilde v = 2\tilde A_1$$
+
+The damping terms were already velocity based, so they sit as bare constants. The inertia force ends up 90 degrees ahead of velocity, the spring force 90 degrees behind. Resonance is the imaginary part crossing zero.
+
+Name the two halves by ownership:
+
+$$\tilde z_p = j\left(\omega m - \frac{s}{\omega}\right) + r, \qquad \tilde z_f = \rho_1 c_1 + \rho_2 c_2$$
+
+$\tilde z_p$ is the partition impedance in vacuo, what the leaf and mount present with no fluid anywhere. $\tilde z_f$ is the fluid loading impedance, what the fluids add purely by being there to radiate into, $\rho c$ each at normal incidence. They add because both loads ride the same velocity.
+
+Governing relation, book Eq (5.12):
+
+$$(\tilde z_p + \tilde z_f)\,\tilde v = 2\tilde A_1$$
+
+One sentence, whole problem: a fluid loaded SDOF oscillator forced by the blocked pressure.
+
 
 
 
