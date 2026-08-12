@@ -29,6 +29,21 @@ The radiated field is everything the wall's motion adds, proportional to velocit
 
 The goal of this move is separating known drive from motion dependent self loading, setting up a standard forced oscillator: known right hand side, all $\tilde\xi$ dependence on the left.
 
+### Step 4: equation of motion of the leaf
+
+This step models the motion of the leaf, and it is the assembly point where all three field pieces converge into one equation.
+
+$$m\ddot\xi + r\dot\xi + s\xi = p(0^-) - p(0^+)$$
+
+Newton per unit area on the leaf, forced by the net pressure across its two faces. Substituting the fields from steps 2 and 3:
+
+$$(-\omega^2 m + j\omega r + s)\tilde\xi = 2\tilde A_1 - j\omega\rho_1 c_1\tilde\xi - j\omega\rho_2 c_2\tilde\xi$$
+
+The blocked field delivers the known drive $2\tilde A_1$. The left radiated field loads the leaf with $j\omega\rho_1 c_1\tilde\xi$. The right side enters the mechanics here for the first time, as the load $j\omega\rho_2 c_2\tilde\xi$ from the transmitted (radiated) wave.
+
+Both radiated loads are proportional to leaf velocity, which sets up the next step: folding them into the left hand side as radiation damping.
+
+
 
 
 - Governing relation: (z_p + z_f) v = 2A1, with z_p = j(omega m minus s/omega) + r and z_f the two radiation resistances.
