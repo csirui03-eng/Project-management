@@ -57,17 +57,19 @@ The blocked part contains no $\tilde\xi$ and delivers the known forcing. The rad
 
 ### Step 4: equation of motion of the leaf
 
-This step models the motion of the leaf, and it is the assembly point where all three field pieces converge into one equation.
+The leaf is modelled as a SDOF oscillator. System forces on the left hand side, external forcing, the pressure on left and right faces, on the right hand side.
 
 $$m\ddot\xi + r\dot\xi + s\xi = p(0^-) - p(0^+)$$
 
-Newton per unit area on the leaf, forced by the net pressure across its two faces. Substituting the fields from steps 2 and 3:
+- $m\ddot\xi$: inertia of the leaf, per unit area.
+- $r\dot\xi$: damping force of the suspension.
+- $s\xi$: restoring force of the suspension. Both live in the mount anchoring the leaf, not in the leaf itself, which is rigid and carries only mass.
+
+Substituting the fields from steps 2 and 3 turns the pressure difference into the blocked drive plus the two radiated loads:
 
 $$(-\omega^2 m + j\omega r + s)\tilde\xi = 2\tilde A_1 - j\omega\rho_1 c_1\tilde\xi - j\omega\rho_2 c_2\tilde\xi$$
 
-The blocked field delivers the known drive $2\tilde A_1$. The left radiated field loads the leaf with $j\omega\rho_1 c_1\tilde\xi$. The right side enters the mechanics here for the first time, as the load $j\omega\rho_2 c_2\tilde\xi$ from the transmitted (radiated) wave.
-
-Both radiated loads are proportional to leaf velocity, which sets up the next step: folding them into the left hand side as radiation damping.
+Both radiated loads are proportional to leaf velocity, which is what step 5 folds into the left hand side as radiation damping.
 
 
 
