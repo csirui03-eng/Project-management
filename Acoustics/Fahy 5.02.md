@@ -33,17 +33,27 @@ Result: every unknown amplitude hangs off leaf motion. Transmitted is purely lea
 
 ### Step 3: split the left field into blocked and radiated parts
 
-The matching merged two jobs into one amplitude: substituting step 2 gives $\tilde B_1 = \tilde A_1 - j\omega\rho_1 c_1\tilde\xi$, so the reflected wave now carries both the passive bounce off an immobile wall (the $\tilde A_1$ part) and the wave the moving wall itself radiates (the $j\omega\rho_1 c_1\tilde\xi$ part).
+With velocity matching complete, step 3 is where we spend the matched terms, that is the point of having them.
 
-Regrouping the left field by job instead of by travel direction:
+Start with the total left side pressure, the two step 1 waves:
 
-$$p^-(x,t) = \underbrace{2\tilde A_1 \cos k_1 x \, e^{j\omega t}}_{\text{blocked field}} + \underbrace{-\,j\omega\rho_1 c_1\tilde\xi\, e^{j(\omega t + k_1 x)}}_{\text{radiated field}}$$
+$$p^- = p_i + p_r = \tilde A_1 e^{j(\omega t - k_1 x)} + \tilde B_1 e^{j(\omega t + k_1 x)}$$
 
-The blocked field is the standing wave against a rigid wall, contains no $\tilde\xi$, and delivers a known forcing pressure $2\tilde A_1$ at the face (pressure doubling at a rigid reflector).
+Substitute the panel constraint from step 2, $\tilde B_1 = \tilde A_1 - j\omega\rho_1 c_1\tilde\xi$, and the realisation lands: a big component of $\tilde B_1$ is actually just $\tilde A_1$.
 
-The radiated field is everything the wall's motion adds, proportional to velocity, so it will fold into the equation of motion as radiation damping rather than as forcing.
+A perfectly rigid structure reflects all incident sound, so $\tilde B_1$ is another $\tilde A_1$ plus a radiated component. The rigid wall is a reference fiction, not an assumption: the radiated component is the exact correction restoring the real moving wall, an identity, not an approximation.
 
-The goal of this move is separating known drive from motion dependent self loading, setting up a standard forced oscillator: known right hand side, all $\tilde\xi$ dependence on the left.
+The radiated component is a left going wave, not the transmission. The wall radiates separately from both faces, same $\tilde\xi$, opposite signs.
+
+Left going wave model: the leaf shifting right still disturbs the left air, so a wave propagates from that disturbance, and it can only go left because that is where the fluid is. Direction of leaf motion sets the sign, not the destination. The receding face creates the wave by a pull rather than a push, a rarefaction, pressure momentarily below ambient, which is why the amplitude carries a negative sign. Negative amplitude is a half cycle phase flip, nothing deeper.
+
+The left radiated wave travels in the same direction as the rigid bounce and partially cancels it. Energy conservation routes the reflection deficit into transmission plus mount heat.
+
+Regrouping by job gives the named split:
+
+$$p^-(x,t) = \underbrace{2\tilde A_1 \cos k_1 x \, e^{j\omega t}}_{\text{blocked: rigid wall standing wave, known drive } 2\tilde A_1 \text{ at the face}} + \underbrace{-\,j\omega\rho_1 c_1\tilde\xi\, e^{j(\omega t + k_1 x)}}_{\text{radiated: all the wall physics, velocity proportional}}$$
+
+The blocked part contains no $\tilde\xi$ and delivers the known forcing. The radiated part is velocity proportional and will fold into the equation of motion as radiation damping in step 5.
 
 ### Step 4: equation of motion of the leaf
 
