@@ -7,6 +7,8 @@ $$p_i = \tilde A_1 e^{j(\omega t - k_1 x)}, \qquad p_r = \tilde B_1 e^{j(\omega 
 
 Basic plane wave in air expressions, incident and reflected on the source side, transmitted on the far side. Nothing to unpack, the content is only in the unknown amplitudes.
 
+
+
 ### Step 2: velocity matching at the faces
 
 $$\tilde A_1 - \tilde B_1 = j\omega\rho_1 c_1 \tilde\xi, \qquad \tilde C_2 = j\omega\rho_2 c_2 \tilde\xi$$
