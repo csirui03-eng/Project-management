@@ -1,0 +1,8 @@
+- The setup: an unbounded rigid leaf, mass m per unit area, on a distributed suspension (stiffness s, damping r), fluid half-spaces either side. The suspension stands in for a real panel's edge supports.
+- The key derivation move: split the source-side pressure into a blocked field (wall held rigid, pressure doubled) plus a radiated field from the wall's own motion. The wall becomes a single DOF oscillator driven by 2A1 and loaded by rho c on each face. Same trick your scratch TL conversion already uses.
+- Governing relation: (z_p + z_f) v = 2A1, with z_p = j(omega m minus s/omega) + r and z_f the two radiation resistances.
+- TL = 10 log10(1/tau), and between rooms the same quantity is called sound reduction index R.
+- Three regimes. Below resonance: stiffness controlled, TL falls 6 dB per octave as f rises, mass and damping irrelevant. At resonance: a dip, total transmission (0 dB) if radiation damping dominates, else a floor 20 log10(eta) dB below the mass law line. Above resonance: the normal incidence mass law, TL = 20 log10(mf) minus 42 dB, rising 6 dB per octave and 6 dB per doubling of mass.
+- Impedance mismatch limit: with strongly different fluids the wall's construction stops mattering, air to water gives about 29.5 dB whatever you build.
+- Reciprocity: tau is the same from either side.
+- LPM tie: this is the one-mass one-spring ancestor. The book's eta here is your eta_c, no cavity yet, so no k_a, no MSM, no LR. 5.06-07 adds the second mass and the air spring.
