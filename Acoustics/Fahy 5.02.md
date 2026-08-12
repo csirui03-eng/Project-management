@@ -105,6 +105,36 @@ $$(\tilde z_p + \tilde z_f)\,\tilde v = 2\tilde A_1$$
 
 One sentence, whole problem: a fluid loaded SDOF oscillator forced by the blocked pressure.
 
+### Step 7: solve for tau
+
+tau is transmitted power over incident power. Per unit area both faces share the same area, so it is an intensity ratio. Intensity in the general pressure form:
+
+$$I = \frac{|\tilde p|^2}{2\rho c}$$
+
+Set up the fraction, each amplitude over its own fluid:
+
+$$\tau = \frac{I_t}{I_i} = \frac{|\tilde C_2|^2 / 2\rho_2 c_2}{|\tilde A_1|^2 / 2\rho_1 c_1}$$
+
+Substitute the step 6 results, transmitted amplitude from leaf velocity and velocity from the governing relation:
+
+$$\tilde C_2 = \rho_2 c_2\,\tilde v, \qquad \tilde v = \frac{2\tilde A_1}{\tilde z_p + \tilde z_f}$$
+
+The incident amplitude cancels, tau is a wall property, not a drive property:
+
+$$\tau = \frac{4\rho_1 c_1\,\rho_2 c_2}{|\tilde z_p + \tilde z_f|^2}$$
+
+Still fully general: any partition at normal incidence, whatever impedance it presents. Later sections reuse this form with a different z.
+
+One simplifying step: normalise by rho2 c2 (divide top and bottom by its square, one copy cancels the numerator's rho2 c2, the other turns rho1 c1 into the fluid ratio), and name that ratio:
+
+$$n = \frac{\rho_1 c_1}{\rho_2 c_2}, \qquad \tau = \frac{4n}{\left|\dfrac{\tilde z_p + \tilde z_f}{\rho_2 c_2}\right|^2}$$
+
+Now sub in the impedances we already know for this limp panel case, spell r as omega0 m eta, magnitude squared as real part squared plus imaginary part squared. Book Eq (5.14):
+
+$$\tau = \frac{4n}{\left[\dfrac{\omega m - s/\omega}{\rho_2 c_2}\right]^2 + \left[\dfrac{\omega_0 m\,\eta}{\rho_2 c_2} + n + 1\right]^2}$$
+
+Every term is a dimensionless impedance measured against the receiving fluid's rho c. The step 8 regimes are one term of this denominator dominating.
+
 
 
 
