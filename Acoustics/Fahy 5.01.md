@@ -1,0 +1,5 @@
+- Sound insulation is the overall goal: stopping airborne sound getting from one side to the other.
+- Two pathways serve it: absorption, where interposed material dissipates the sound energy as heat, and reflection, where a large acoustic impedance change in the path turns the energy back.
+- Most real constructions combine the two pathways.
+- Partitions come in two broad categories, full and partial (barrier, screen), each with its own name.
+- This chapter, and our thread, stays on full partitions.
