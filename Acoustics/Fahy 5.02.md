@@ -1,4 +1,4 @@
-- The setup: an unbounded rigid leaf, mass m per unit area, on a distributed suspension (stiffness s, damping r), fluid half-spaces either side. The suspension stands in for a real panel's edge supports.
+- The setup: an unbounded rigid leaf, mass m per unit area, on a distributed suspension (stiffness s, damping r). The suspension stands represent approximation of real panel edge support.![[Pasted image 20260812200942.jpg]]
 - The key derivation move: split the source-side pressure into a blocked field (wall held rigid, pressure doubled) plus a radiated field from the wall's own motion. The wall becomes a single DOF oscillator driven by 2A1 and loaded by rho c on each face. Same trick your scratch TL conversion already uses.
 - Governing relation: (z_p + z_f) v = 2A1, with z_p = j(omega m minus s/omega) + r and z_f the two radiation resistances.
 - TL = 10 log10(1/tau), and between rooms the same quantity is called sound reduction index R.
