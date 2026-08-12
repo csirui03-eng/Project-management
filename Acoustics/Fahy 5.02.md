@@ -15,6 +15,21 @@ The fluid cannot detach from or interpenetrate the wall, so the particle velocit
 
 The goal of this move is elimination of degrees of freedom: every wave amplitude becomes slaved to the single leaf displacement $\tilde\xi$. After this step the whole problem has one unknown left, and the remaining work is a single equation of motion for $\tilde\xi$.
 
+### Step 3: split the left field into blocked and radiated parts
+
+The matching merged two jobs into one amplitude: substituting step 2 gives $\tilde B_1 = \tilde A_1 - j\omega\rho_1 c_1\tilde\xi$, so the reflected wave now carries both the passive bounce off an immobile wall (the $\tilde A_1$ part) and the wave the moving wall itself radiates (the $j\omega\rho_1 c_1\tilde\xi$ part).
+
+Regrouping the left field by job instead of by travel direction:
+
+$$p^-(x,t) = \underbrace{2\tilde A_1 \cos k_1 x \, e^{j\omega t}}_{\text{blocked field}} + \underbrace{-\,j\omega\rho_1 c_1\tilde\xi\, e^{j(\omega t + k_1 x)}}_{\text{radiated field}}$$
+
+The blocked field is the standing wave against a rigid wall, contains no $\tilde\xi$, and delivers a known forcing pressure $2\tilde A_1$ at the face (pressure doubling at a rigid reflector).
+
+The radiated field is everything the wall's motion adds, proportional to velocity, so it will fold into the equation of motion as radiation damping rather than as forcing.
+
+The goal of this move is separating known drive from motion dependent self loading, setting up a standard forced oscillator: known right hand side, all $\tilde\xi$ dependence on the left.
+
+
 
 - Governing relation: (z_p + z_f) v = 2A1, with z_p = j(omega m minus s/omega) + r and z_f the two radiation resistances.
 - TL = 10 log10(1/tau), and between rooms the same quantity is called sound reduction index R.
