@@ -133,11 +133,23 @@ First we substitute in the impedance symbolic expressions we have already derive
 
 $$\tau = \frac{4n}{\left[\dfrac{\omega m - s/\omega}{\rho_2 c_2}\right]^2 + \left[\dfrac{r}{\rho_2 c_2} + n + 1\right]^2}$$
 
-Then we do some additional substitution, two definitions and no new physics:
+The current form is correct but unfriendly for direct analysis: the system's behaviour over frequency is in there but hidden. We define the panel's first resonant frequency and loss factor and move the equation onto them.
 
-$$\omega_0 = \sqrt{\frac{s}{m}}, \qquad \eta = \frac{r}{\omega_0 m} \quad\Rightarrow\quad r = \omega_0 m\,\eta$$
+$$\omega_0 = \sqrt{\frac{s}{m}}$$
 
-The point: s and r are constitutive inputs, what the mount is made of. omega0 and eta are resonance descriptors, where the dip sits and how lossy it is there. The whole regime analysis coming next is organised around the resonance, so we move into resonance native coordinates before starting it. eta is also the dimensionless loss number materials tables actually quote, which is what licenses the book's blanket claim that eta is normally much less than unity. The swap prices damping where it matters, at resonance, r measured against the mass reactance omega0 m. Book Eq (5.14):
+Loss factor from the energy definition, dissipated per radian over peak stored, the 2 pi being the radian conversion (the oscillator's native tick, which keeps 2 pi out of all downstream algebra):
+
+$$\eta = \frac{E_d}{2\pi E_s}$$
+
+Stored is the familiar spring potential energy, dissipated is the damper's per cycle work, walked in full in [[Dissipation]]:
+
+$$E_s = \tfrac{1}{2}\,s X^2, \qquad E_d = \pi\,r\,\omega X^2$$
+
+Assemble, freeze at resonance, and swap s through the helper:
+
+$$\eta = \frac{r\,\omega}{s} \;\xrightarrow{\;\omega = \omega_0\;}\; \frac{r}{\omega_0 m} \quad\Rightarrow\quad r = \omega_0 m\,\eta$$
+
+Substitute r into tau. omega0's own definition is never subbed in, it stands beside as the map from panel properties to the resonance. Book Eq (5.14):
 
 $$\tau = \frac{4n}{\left[\dfrac{\omega m - s/\omega}{\rho_2 c_2}\right]^2 + \left[\dfrac{\omega_0 m\,\eta}{\rho_2 c_2} + n + 1\right]^2}$$
 
