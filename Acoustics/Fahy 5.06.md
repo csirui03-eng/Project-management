@@ -27,3 +27,19 @@ $$p^{(3)}(x,t) = \tilde p_t\, e^{j(\omega t - kx)} \qquad x \ge d$$
 Five amplitudes, $\tilde p_i$ the known drive, the other four unknown. 
 
 # Step 1: Velocity matching
+
+**Conversion to particle velocity.** Pressure is what the waves carry, velocity is what matching needs: the leaf faces impose their velocity on the fluid touching them. Per travelling wave:
+
+$$u = \frac{p}{\rho_0 c}$$
+
+along the wave's own travel direction, so backward waves take a minus sign in the $+x$ frame. The three fields converted:
+
+$$u^{(1)}(x,t) = \frac{1}{\rho_0 c}\left[\tilde p_i\, e^{j(\omega t - kx)} - \tilde p_r\, e^{j(\omega t + kx)}\right]$$
+
+$$u^{(2)}(x,t) = \frac{1}{\rho_0 c}\left[\tilde A\, e^{j(\omega t - kx)} - \tilde B\, e^{j(\omega t + kx)}\right]$$
+
+$$u^{(3)}(x,t) = \frac{\tilde p_t}{\rho_0 c}\, e^{j(\omega t - kx)}$$
+
+The leaves' own velocities, time derivative of the harmonic displacements:
+
+$$\dot\xi_1 = j\omega\tilde\xi_1\, e^{j\omega t}, \qquad \dot\xi_2 = j\omega\tilde\xi_2\, e^{j\omega t}$$
