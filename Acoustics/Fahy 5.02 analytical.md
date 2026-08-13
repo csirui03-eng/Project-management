@@ -97,7 +97,8 @@ Name the two halves by ownership:
 
 $$\tilde z_p = j\left(\omega m - \frac{s}{\omega}\right) + r, \qquad \tilde z_f = \rho_1 c_1 + \rho_2 c_2$$
 
-$\tilde z_p$ is the partition impedance in vacuo, what the leaf and mount present with no fluid anywhere. $\tilde z_f$ is the fluid loading impedance, what the fluids add purely by being there to radiate into, $\rho c$ each at normal incidence. They add because both loads ride the same velocity.
+$\tilde z_p$ is the partition impedance in vacuo, what the leaf and mount present with no fluid anywhere. $\tilde z_f$ is the fluid loading impedance, what the fluids add purely by being there to radiate into, $\rho c$ each at normal incidence. They add due to our earlier velocity matching. 
+
 
 Governing relation, book Eq (5.12):
 
