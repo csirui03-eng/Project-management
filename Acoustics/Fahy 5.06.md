@@ -58,6 +58,13 @@ $$\tilde A - \tilde B = j\omega\rho_0 c\,\tilde\xi_1 \qquad \text{leaf 1 back, }
 $$\tilde A\, e^{-jkd} - \tilde B\, e^{jkd} = j\omega\rho_0 c\,\tilde\xi_2 \qquad \text{leaf 2 front, } x = d$$
 
 $$\tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2 \qquad \text{leaf 2 back, } x = d$$
+
+**Doing some algebra:**
+
+The two cavity matches read backwards are simultaneous equations for $\tilde A$ and $\tilde B$, leaf motions as data. Solve, substitute back, and the cavity field is pinned:
+
+$$p^{(2)}(x) = \frac{\omega\rho_0 c}{\sin kd}\left[\tilde\xi_1 \cos k(d - x) - \tilde\xi_2 \cos kx\right]$$
+
 # Step 2: Panel EOMs
 
 Forces in each leaf are the restoring and damping forces of its mount, modelled as the spring and damper, plus the leaf's inertial force. The sum of those equals the pressure difference across the leaf.
