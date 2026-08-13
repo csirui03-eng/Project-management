@@ -59,3 +59,11 @@ $$\tilde A\, e^{-jkd} - \tilde B\, e^{jkd} = j\omega\rho_0 c\,\tilde\xi_2 \qquad
 
 $$\tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2 \qquad \text{leaf 2 back, } x = d$$
 # Step 2: Panel EOMs
+
+Forces in each leaf are the restoring and damping forces of its mount, modelled as the spring and damper, plus the leaf's inertial force. The sum of those equals the pressure difference across the leaf.
+
+**EOMs:**
+
+$$m_1\ddot\xi_1 + r_1\dot\xi_1 + s_1\xi_1 = P_1 - P_2$$
+
+$$m_2\ddot\xi_2 + r_2\dot\xi_2 + s_2\xi_2 = P_3 - P_t$$
