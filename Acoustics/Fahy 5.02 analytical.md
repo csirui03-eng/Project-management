@@ -106,9 +106,14 @@ $$(\tilde z_p + \tilde z_f)\,\tilde v = 2\tilde A_1$$
 
 One sentence, whole problem: a fluid loaded SDOF oscillator forced by the blocked pressure.
 
-### Step 7: solve for tau
+Note on the two impedances:
 
-tau is transmitted power over incident power. Per unit area both faces share the same area, so it is an intensity ratio. Intensity in the general pressure form:
+- $\tilde z_p$ carries both parts: reactance $\omega m - s/\omega$ (mass and spring store energy and return it) and resistance $r$ (the damper dissipates it).
+- $\tilde z_f$ is wholly resistive: the radiated wave travels off into an unbounded half space and does not return.
+
+### Step 7: solve for $\tau$
+
+$\tau$ is transmitted power over incident power. Per unit area both faces share the same area, so it is an intensity ratio. Intensity in the general pressure form:
 
 $$I = \frac{|\tilde p|^2}{2\rho c}$$
 
@@ -120,17 +125,17 @@ Substitute the step 6 results, transmitted amplitude from leaf velocity and velo
 
 $$\tilde C_2 = \rho_2 c_2\,\tilde v, \qquad \tilde v = \frac{2\tilde A_1}{\tilde z_p + \tilde z_f}$$
 
-The incident amplitude cancels, tau is a wall property, not a drive property:
+The incident amplitude cancels, $\tau$ is a wall property, not a drive property:
 
 $$\tau = \frac{4\rho_1 c_1\,\rho_2 c_2}{|\tilde z_p + \tilde z_f|^2}$$
 
 Still fully general: any partition at normal incidence, whatever impedance it presents. Later sections reuse this form with a different z.
 
-One simplifying step: normalise by rho2 c2 (divide top and bottom by its square, one copy cancels the numerator's rho2 c2, the other turns rho1 c1 into the fluid ratio), and name that ratio:
+One simplifying step: normalise by $\rho_2 c_2$ (divide top and bottom by its square, one copy cancels the numerator's $\rho_2 c_2$, the other turns $\rho_1 c_1$ into the fluid ratio), and name that ratio:
 
 $$n = \frac{\rho_1 c_1}{\rho_2 c_2}, \qquad \tau = \frac{4n}{\left|\dfrac{\tilde z_p + \tilde z_f}{\rho_2 c_2}\right|^2}$$
 
-First we substitute in the impedance symbolic expressions we have already derived from above for this limp leaf system, magnitude squared as real part squared plus imaginary part squared. Parameters still the raw m, s, r:
+First we substitute in the impedance symbolic expressions we have already derived from above for this limp leaf system, magnitude squared as real part squared plus imaginary part squared. Parameters still the raw $m$, $s$, $r$:
 
 $$\tau = \frac{4n}{\left[\dfrac{\omega m - s/\omega}{\rho_2 c_2}\right]^2 + \left[\dfrac{r}{\rho_2 c_2} + n + 1\right]^2}$$
 
@@ -138,7 +143,7 @@ The current form is correct but unfriendly for direct analysis: the system's beh
 
 $$\omega_0 = \sqrt{\frac{s}{m}}$$
 
-Loss factor from the energy definition, dissipated per radian over peak stored, the 2 pi being the radian conversion (the oscillator's native tick, which keeps 2 pi out of all downstream algebra):
+Loss factor from the energy definition, dissipated per radian over peak stored, the $2\pi$ being the radian conversion (the oscillator's native tick, which keeps $2\pi$ out of all downstream algebra):
 
 $$\eta = \frac{E_d}{2\pi E_s}$$
 
@@ -146,23 +151,23 @@ Stored is the familiar spring potential energy, dissipated is the damper's per c
 
 $$E_s = \tfrac{1}{2}\,s X^2, \qquad E_d = \pi\,r\,\omega X^2$$
 
-Assemble, freeze at resonance, and swap s through the helper:
+Assemble, freeze at resonance, and swap $s$ through the helper:
 
 $$\eta = \frac{r\,\omega}{s} \;\xrightarrow{\;\omega = \omega_0\;}\; \frac{r}{\omega_0 m} \quad\Rightarrow\quad r = \omega_0 m\,\eta$$
 
-Substitute r into tau. omega0's own definition is never subbed in, it stands beside as the map from panel properties to the resonance. Book Eq (5.14):
+Substitute $r$ into $\tau$. The definition of $\omega_0$ is never subbed in, it stands beside as the map from panel properties to the resonance. Book Eq (5.14):
 
 $$\tau = \frac{4n}{\left[\dfrac{\omega m - s/\omega}{\rho_2 c_2}\right]^2 + \left[\dfrac{\omega_0 m\,\eta}{\rho_2 c_2} + n + 1\right]^2}$$
 
-Every term is a dimensionless impedance measured against the receiving fluid's rho c. The step 8 regimes are one term of this denominator dominating.
+Every term is a dimensionless impedance measured against the receiving fluid's $\rho c$. The step 8 regimes are one term of this denominator dominating.
 
 ### Closing: TL, the log measure
 
 $$TL = 10\log_{10}(1/\tau)\ \text{dB}$$
 
-The definition is fully general, any medium either side: tau is defined for whatever fluids are present, the air to water case uses exactly this. Between rooms the same quantity goes by sound reduction index R.
+The definition is fully general, any medium either side: $\tau$ is defined for whatever fluids are present, the air to water case uses exactly this. Between rooms the same quantity goes by sound reduction index $R$.
 
-What IS air specific are the regime limit formulas of step 8: they set n = 1, same fluid both sides, and their constants absorb air's rho0 c, the mass law's 42 dB buries 20 log10 of rho0 c over pi. Different fluid, different constant, same definition.
+What IS air specific are the regime limit formulas of step 8: they set $n = 1$, same fluid both sides, and their constants absorb air's $\rho_0 c$, the mass law's 42 dB buries $20\log_{10}(\rho_0 c/\pi)$. Different fluid, different constant, same definition.
 
 
 - Three regimes. Below resonance: stiffness controlled, TL falls 6 dB per octave as f rises, mass and damping irrelevant. At resonance: a dip, total transmission (0 dB) if radiation damping dominates, else a floor 20 log10(eta) dB below the mass law line. Above resonance: the normal incidence mass law, TL = 20 log10(mf) minus 42 dB, rising 6 dB per octave and 6 dB per doubling of mass.
