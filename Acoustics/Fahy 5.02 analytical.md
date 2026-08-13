@@ -129,7 +129,15 @@ One simplifying step: normalise by rho2 c2 (divide top and bottom by its square,
 
 $$n = \frac{\rho_1 c_1}{\rho_2 c_2}, \qquad \tau = \frac{4n}{\left|\dfrac{\tilde z_p + \tilde z_f}{\rho_2 c_2}\right|^2}$$
 
-Now sub in the impedances we already know for this limp panel case, spell r as omega0 m eta, magnitude squared as real part squared plus imaginary part squared. Book Eq (5.14):
+First we substitute in the impedance symbolic expressions we have already derived from above for this limp leaf system, magnitude squared as real part squared plus imaginary part squared. Parameters still the raw m, s, r:
+
+$$\tau = \frac{4n}{\left[\dfrac{\omega m - s/\omega}{\rho_2 c_2}\right]^2 + \left[\dfrac{r}{\rho_2 c_2} + n + 1\right]^2}$$
+
+Then we do some additional substitution, two definitions and no new physics:
+
+$$\omega_0 = \sqrt{\frac{s}{m}}, \qquad \eta = \frac{r}{\omega_0 m} \quad\Rightarrow\quad r = \omega_0 m\,\eta$$
+
+The point: s and r are constitutive inputs, what the mount is made of. omega0 and eta are resonance descriptors, where the dip sits and how lossy it is there. The whole regime analysis coming next is organised around the resonance, so we move into resonance native coordinates before starting it. eta is also the dimensionless loss number materials tables actually quote, which is what licenses the book's blanket claim that eta is normally much less than unity. The swap prices damping where it matters, at resonance, r measured against the mass reactance omega0 m. Book Eq (5.14):
 
 $$\tau = \frac{4n}{\left[\dfrac{\omega m - s/\omega}{\rho_2 c_2}\right]^2 + \left[\dfrac{\omega_0 m\,\eta}{\rho_2 c_2} + n + 1\right]^2}$$
 
