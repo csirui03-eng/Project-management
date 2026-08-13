@@ -43,3 +43,8 @@ $$u^{(3)}(x,t) = \frac{\tilde p_t}{\rho_0 c}\, e^{j(\omega t - kx)}$$
 The leaves' own velocities, time derivative of the harmonic displacements:
 
 $$\dot\xi_1 = j\omega\tilde\xi_1\, e^{j\omega t}, \qquad \dot\xi_2 = j\omega\tilde\xi_2\, e^{j\omega t}$$
+**Formal rule:**
+
+$$u_{\text{fluid}}(x_{\text{face}}, t) = \dot\xi_{\text{leaf}}(t) \qquad \text{at every instant}$$
+
+The summed particle velocity of all waves in the medium on one side of a face, evaluated at the boundary's $x$, equals the leaf's harmonic motion velocity there. One condition per face, the same leaf velocity serving both its faces. Kinematic boundary condition: the fluid cannot pass through the leaf or pull away from it, so it rides with the face.
