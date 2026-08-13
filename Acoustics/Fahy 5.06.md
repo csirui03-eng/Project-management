@@ -1,4 +1,4 @@
-right # The idealized double leaf model
+# The idealized double leaf model
 ![[Pasted image 20260814010159.png]]
 ## Preamble
 **Spatial counterpart to omega:**
@@ -49,7 +49,7 @@ $$u_{\text{fluid}}(x_{\text{face}}, t) = \dot\xi_{\text{leaf}}(t) \qquad \text{a
 
 The summed particle velocity of all waves in the medium on one side of a face, evaluated at the boundary's $x$, equals the leaf's harmonic motion velocity there. One condition per face, the same leaf velocity serving both its faces. Kinematic boundary condition: the fluid cannot pass through the leaf or pull away from it, so it rides with the face.
 
-**The four matches.** The shared $e^{j\omega t}$ cancels at every face. The spatial exponentials evaluate instead of cancelling: $1$ at $x = 0$, the surviving constants $e^{\mp jkd}$ at $x = d$, which is where $kd$ enters the algebra.
+**The four matched equations.** Note that the spatial harmonic component on the latter leaf do not cancel out, obviously... this is the main difference.
 
 $$\tilde p_i - \tilde p_r = j\omega\rho_0 c\,\tilde\xi_1 \qquad \text{leaf 1 front, } x = 0$$
 
@@ -58,5 +58,4 @@ $$\tilde A - \tilde B = j\omega\rho_0 c\,\tilde\xi_1 \qquad \text{leaf 1 back, }
 $$\tilde A\, e^{-jkd} - \tilde B\, e^{jkd} = j\omega\rho_0 c\,\tilde\xi_2 \qquad \text{leaf 2 front, } x = d$$
 
 $$\tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2 \qquad \text{leaf 2 back, } x = d$$
-
-Four equations spent, the fluid fully enslaved to the leaves. $\tilde\xi_1$ and $\tilde\xi_2$ stand as the two remaining unknowns, closed by the two equations of motion.
+# Step 2: Panel EOMs
