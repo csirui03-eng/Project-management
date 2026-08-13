@@ -41,13 +41,6 @@ $$p^- = p_i + p_r = \tilde A_1 e^{j(\omega t - k_1 x)} + \tilde B_1 e^{j(\omega 
 
 Substitute the panel constraint from step 2, $\tilde B_1 = \tilde A_1 - j\omega\rho_1 c_1\tilde\xi$, and the realisation lands: a big component of $\tilde B_1$ is actually just $\tilde A_1$.
 
-A perfectly rigid structure reflects all incident sound, so $\tilde B_1$ is another $\tilde A_1$ plus a radiated component. The rigid wall is a reference fiction, not an assumption: the radiated component is the exact correction restoring the real moving wall, an identity, not an approximation.
-
-The radiated component is a left going wave, not the transmission. The wall radiates separately from both faces, same $\tilde\xi$, opposite signs.
-
-Left going wave model: the leaf shifting right still disturbs the left air, so a wave propagates from that disturbance, and it can only go left because that is where the fluid is. Direction of leaf motion sets the sign, not the destination. The receding face creates the wave by a pull rather than a push, a rarefaction, pressure momentarily below ambient, which is why the amplitude carries a negative sign. Negative amplitude is a half cycle phase flip, nothing deeper.
-
-The left radiated wave travels in the same direction as the rigid bounce and partially cancels it. Energy conservation routes the reflection deficit into transmission plus mount heat.
 
 Regrouping by job gives the named split:
 
