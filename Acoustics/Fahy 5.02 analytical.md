@@ -170,7 +170,13 @@ The definition is fully general, any medium either side: $\tau$ is defined for w
 What IS air specific are the regime limit formulas of step 8: they set $n = 1$, same fluid both sides, and their constants absorb air's $\rho_0 c$, the mass law's 42 dB buries $20\log_{10}(\rho_0 c/\pi)$. Different fluid, different constant, same definition.
 
 
-- Three regimes. Below resonance: stiffness controlled, TL falls 6 dB per octave as f rises, mass and damping irrelevant. At resonance: a dip, total transmission (0 dB) if radiation damping dominates, else a floor 20 log10(eta) dB below the mass law line. Above resonance: the normal incidence mass law, TL = 20 log10(mf) minus 42 dB, rising 6 dB per octave and 6 dB per doubling of mass.
-- Impedance mismatch limit: with strongly different fluids the wall's construction stops mattering, air to water gives about 29.5 dB whatever you build.
+
+
+
+
+
+
+
+
 - Reciprocity: tau is the same from either side.
 - LPM tie: this is the one-mass one-spring ancestor. The book's eta here is your eta_c, no cavity yet, so no k_a, no MSM, no LR. 5.06-07 adds the second mass and the air spring.
