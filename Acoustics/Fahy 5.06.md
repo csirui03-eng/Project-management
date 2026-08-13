@@ -24,4 +24,6 @@ $$p^{(2)}(x,t) = \tilde A\, e^{j(\omega t - kx)} + \tilde B\, e^{j(\omega t + kx
 
 $$p^{(3)}(x,t) = \tilde p_t\, e^{j(\omega t - kx)} \qquad x \ge d$$
 
-One field per region, the superscript naming the region, every wave sharing the drive's $\omega$ and the fluid's $k$. Five amplitudes, $\tilde p_i$ the known drive, the other four unknown. Every letter here is $p$, pressure: $\rho$ appears nowhere in these expressions, it enters later through the $\rho c$ velocity conversion.
+Five amplitudes, $\tilde p_i$ the known drive, the other four unknown. 
+
+# Step 1: Velocity matching
