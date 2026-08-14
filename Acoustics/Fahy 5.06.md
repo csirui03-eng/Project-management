@@ -69,7 +69,24 @@ $$\tilde P_t = \tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2$$
 
 For the cavity space the substitution is more complex: the resulting expression must meet the matching condition at both ends of the space, so the two cavity matches are used jointly, both amplitudes expressed through the motion of both leaves.
 
-**Stage 1.** Read the two cavity matches as simultaneous equations for $\tilde A$ and $\tilde B$, leaf motions as data. Here we want to make a smart substitution choice and raise the x = 0 data by e jkd so to follow the local convention of rewriting the reflected component in terms of the transmitting component. 
+**Stage 1.** Read the two cavity matches as simultaneous equations for $\tilde A$ and $\tilde B$, leaf motions as data. The smart substitution choice: raise the $x = 0$ match by $e^{jkd}$ so the $\tilde B$ terms twin and cancel, following the local convention of eliminating the reflected component first, the same choice that removed $\tilde p_r$ on the incident side.
+
+$$\begin{aligned}
+R_1 &= j\omega\rho_0 c\,\tilde\xi_1, \qquad R_2 = j\omega\rho_0 c\,\tilde\xi_2 \\[4pt]
+\tilde A - \tilde B &= R_1 \qquad \text{(i)} \\
+\tilde A\, e^{-jkd} - \tilde B\, e^{jkd} &= R_2 \qquad \text{(ii)} \\[4pt]
+\tilde A\, e^{jkd} - \tilde B\, e^{jkd} &= R_1\, e^{jkd} \qquad \text{(i')} \\
+\tilde A\left(e^{jkd} - e^{-jkd}\right) &= R_1\, e^{jkd} - R_2 \qquad \text{(i') minus (ii)} \\
+\tilde A\,\left(2j\sin kd\right) &= R_1\, e^{jkd} - R_2 \qquad \text{Euler} \\[4pt]
+\tilde A &= \frac{\omega\rho_0 c\left(\tilde\xi_1\, e^{jkd} - \tilde\xi_2\right)}{2\sin kd}
+\end{aligned}$$
+
+$$\begin{aligned}
+\tilde B &= \tilde A - R_1 \qquad \text{rearranged (i)} \\
+&= \frac{\omega\rho_0 c\left(\tilde\xi_1\, e^{jkd} - \tilde\xi_2\right)}{2\sin kd} - j\omega\rho_0 c\,\tilde\xi_1 \\
+&= \frac{\omega\rho_0 c\left(\tilde\xi_1\left(e^{jkd} - 2j\sin kd\right) - \tilde\xi_2\right)}{2\sin kd} \\[4pt]
+\tilde B &= \frac{\omega\rho_0 c\left(\tilde\xi_1\, e^{-jkd} - \tilde\xi_2\right)}{2\sin kd}
+\end{aligned}$$
 
 
 # Step 2: Panel EOMs
