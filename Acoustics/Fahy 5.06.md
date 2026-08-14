@@ -109,3 +109,19 @@ Forces in each leaf are the restoring and damping forces of its mount, modelled 
 $$m_1\ddot\xi_1 + r_1\dot\xi_1 + s_1\xi_1 = P_1 - P_2$$
 
 $$m_2\ddot\xi_2 + r_2\dot\xi_2 + s_2\xi_2 = P_3 - P_4$$
+
+**Bring EOMs to time harmonic form.** Every term carries the shared clock, so it divides out and amplitudes remain:
+
+$$\left(-\omega^2 m_1 + j\omega r_1 + s_1\right)\tilde\xi_1 = \tilde p_1 - \tilde p_2$$
+
+$$\left(-\omega^2 m_2 + j\omega r_2 + s_2\right)\tilde\xi_2 = \tilde p_3 - \tilde p_4$$
+
+**The four face amplitudes**, outer pair $d$ free, cavity pair carrying $d$ twice over:
+
+$$\tilde p_1 = 2\tilde p_i - j\omega\rho_0 c\,\tilde\xi_1$$
+
+$$\tilde p_2 = \tilde p^{(2)}(0) = \frac{\omega\rho_0 c}{\sin kd}\left(\tilde\xi_1\cos kd - \tilde\xi_2\right)$$
+
+$$\tilde p_3 = \tilde p^{(2)}(d) = \frac{\omega\rho_0 c}{\sin kd}\left(\tilde\xi_1 - \tilde\xi_2\cos kd\right)$$
+
+$$\tilde p_4 = j\omega\rho_0 c\,\tilde\xi_2$$
