@@ -65,7 +65,7 @@ For substitution into the incident side and transmitted side pressure equations 
 
 $$\tilde p_1 = \tilde p_i + \tilde p_r = 2\tilde p_i - j\omega\rho_0 c\,\tilde\xi_1$$
 
-$$\tilde p_3 = \tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2$$
+$$\tilde p_4 = \tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2$$
 
 For the cavity space the substitution is more complex: the resulting expression must meet the matching condition at both ends of the space, so the two cavity matches are used jointly, both amplitudes expressed through the motion of both leaves.
 
@@ -108,4 +108,4 @@ Forces in each leaf are the restoring and damping forces of its mount, modelled 
 
 $$m_1\ddot\xi_1 + r_1\dot\xi_1 + s_1\xi_1 = P_1 - P_2$$
 
-$$m_2\ddot\xi_2 + r_2\dot\xi_2 + s_2\xi_2 = P_3 - P_t$$
+$$m_2\ddot\xi_2 + r_2\dot\xi_2 + s_2\xi_2 = P_3 - P_4$$
