@@ -73,16 +73,16 @@ For the cavity space the substitution is more complex: the resulting expression 
 
 $$\begin{aligned}
 R_1 &= j\omega\rho_0 c\,\tilde\xi_1, \qquad R_2 = j\omega\rho_0 c\,\tilde\xi_2 \\[4pt]
-\tilde A - \tilde B &= R_1 \qquad \text{(i)} \\
-\tilde A\, e^{-jkd} - \tilde B\, e^{jkd} &= R_2 \qquad \text{(ii)} \\[4pt]
-\tilde A\, e^{jkd} - \tilde B\, e^{jkd} &= R_1\, e^{jkd} \qquad \text{(i')} \\
-\tilde A\left(e^{jkd} - e^{-jkd}\right) &= R_1\, e^{jkd} - R_2 \qquad \text{(i') minus (ii)} \\
-\tilde A\,\left(2j\sin kd\right) &= R_1\, e^{jkd} - R_2 \qquad \text{Euler} \\[4pt]
+\tilde A - \tilde B &= R_1 &&\text{(i)} \\
+\tilde A\, e^{-jkd} - \tilde B\, e^{jkd} &= R_2 &&\text{(ii)} \\[4pt]
+\tilde A\, e^{jkd} - \tilde B\, e^{jkd} &= R_1\, e^{jkd} &&\text{(i')} \\
+\tilde A\left(e^{jkd} - e^{-jkd}\right) &= R_1\, e^{jkd} - R_2 &&\text{(i') minus (ii)} \\
+\tilde A\,\left(2j\sin kd\right) &= R_1\, e^{jkd} - R_2 &&\text{Euler} \\[4pt]
 \tilde A &= \frac{\omega\rho_0 c\left(\tilde\xi_1\, e^{jkd} - \tilde\xi_2\right)}{2\sin kd}
 \end{aligned}$$
 
 $$\begin{aligned}
-\tilde B &= \tilde A - R_1 \qquad \text{rearranged (i)} \\
+\tilde B &= \tilde A - R_1 &&\text{rearranged (i)} \\
 &= \frac{\omega\rho_0 c\left(\tilde\xi_1\, e^{jkd} - \tilde\xi_2\right)}{2\sin kd} - j\omega\rho_0 c\,\tilde\xi_1 \\
 &= \frac{\omega\rho_0 c\left(\tilde\xi_1\left(e^{jkd} - 2j\sin kd\right) - \tilde\xi_2\right)}{2\sin kd} \\[4pt]
 \tilde B &= \frac{\omega\rho_0 c\left(\tilde\xi_1\, e^{-jkd} - \tilde\xi_2\right)}{2\sin kd}
