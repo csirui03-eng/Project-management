@@ -69,17 +69,7 @@ $$\tilde P_t = \tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2$$
 
 For the cavity space the substitution is more complex: the resulting expression must meet the matching condition at both ends of the space, so the two cavity matches are used jointly, both amplitudes expressed through the motion of both leaves.
 
-**Stage 1.** Read the two cavity matches as simultaneous equations for $\tilde A$ and $\tilde B$, leaf motions as data. Here we want to make a smart substitution choice and raise the x = 0 data by e jkd so to follow the local convention of rewriting the reflected component interms of the transmitting component. 
-
-$$\tilde A = \frac{\omega\rho_0 c\left(\tilde\xi_1 e^{jkd} - \tilde\xi_2\right)}{2\sin kd}, \qquad \tilde B = \frac{\omega\rho_0 c\left(\tilde\xi_1 e^{-jkd} - \tilde\xi_2\right)}{2\sin kd}$$
-
-One strength per wave for the whole cavity, the phase rotation across the span already known. Each amplitude is built from both leaf motions, leaf 1 adding and leaf 2 subtracting, so both faces are met exactly, no averaging in it.
-
-**Stage 2.** Substitute the pair into the cavity pressure equation, group by leaf, and Euler folds each opposite exponential pair into a cosine:
-
-$$p^{(2)}(x) = \frac{\omega\rho_0 c}{\sin kd}\left[\tilde\xi_1 \cos k(d - x) - \tilde\xi_2 \cos kx\right]$$
-
-The cavity stays a living function of $x$: it serves two faces at two positions, and the cosines are its standing shape between them.
+**Stage 1.** Read the two cavity matches as simultaneous equations for $\tilde A$ and $\tilde B$, leaf motions as data. Here we want to make a smart substitution choice and raise the x = 0 data by e jkd so to follow the local convention of rewriting the reflected component in terms of the transmitting component. 
 
 
 # Step 2: Panel EOMs
