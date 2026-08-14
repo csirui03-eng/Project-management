@@ -63,9 +63,9 @@ $$\tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2 \qquad \text{leaf 2 back,
 
 For substitution into the incident side and transmitted side pressure equations the process is straightforward. Make the smart substitution choice, and there is only one to make here: express $\tilde p_r$ through $\tilde p_i$ and the leaf motion the match ties them with, and substitute into the incident side equation. On the transmitted side the match already is the substitution.
 
-$$\tilde P_1 = \tilde p_i + \tilde p_r = 2\tilde p_i - j\omega\rho_0 c\,\tilde\xi_1$$
+$$\tilde p_1 = \tilde p_i + \tilde p_r = 2\tilde p_i - j\omega\rho_0 c\,\tilde\xi_1$$
 
-$$\tilde P_t = \tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2$$
+$$\tilde p_3 = \tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2$$
 
 For the cavity space the substitution is more complex: the resulting expression must meet the matching condition at both ends of the space, so the two cavity matches are used jointly, both amplitudes expressed through the motion of both leaves.
 
