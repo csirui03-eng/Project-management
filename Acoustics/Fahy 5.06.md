@@ -69,7 +69,7 @@ $$\tilde P_t = \tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2$$
 
 For the cavity space the substitution is more complex: the resulting expression must meet the matching condition at both ends of the space, so the two cavity matches are used jointly, both amplitudes expressed through the motion of both leaves.
 
-**Stage 1.** Read the two cavity matches as simultaneous equations for $\tilde A$ and $\tilde B$, leaf motions as data. Scale the $x = 0$ match by $e^{jkd}$, subtract the $x = d$ match, $\tilde B$ cancels, and $e^{jkd} - e^{-jkd} = 2j\sin kd$ opens the bracket. Rearranging the $x = 0$ match then hands over $\tilde B$:
+**Stage 1.** Read the two cavity matches as simultaneous equations for $\tilde A$ and $\tilde B$, leaf motions as data. Here we want to make a smart substitution choice and raise the x = 0 data by e jkd so to follow the local convention of rewriting the reflected component interms of the transmitting component. 
 
 $$\tilde A = \frac{\omega\rho_0 c\left(\tilde\xi_1 e^{jkd} - \tilde\xi_2\right)}{2\sin kd}, \qquad \tilde B = \frac{\omega\rho_0 c\left(\tilde\xi_1 e^{-jkd} - \tilde\xi_2\right)}{2\sin kd}$$
 
