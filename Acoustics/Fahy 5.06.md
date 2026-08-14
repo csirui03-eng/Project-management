@@ -59,11 +59,8 @@ $$\tilde A\, e^{-jkd} - \tilde B\, e^{jkd} = j\omega\rho_0 c\,\tilde\xi_2 \qquad
 
 $$\tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2 \qquad \text{leaf 2 back, } x = d$$
 
-**Doing some algebra:**
+## Step 1.5: substitute into collected pressure equations
 
-The two cavity matches read backwards are simultaneous equations for $\tilde A$ and $\tilde B$, leaf motions as data. Solve, substitute back, and the cavity field is pinned:
-
-$$p^{(2)}(x) = \frac{\omega\rho_0 c}{\sin kd}\left[\tilde\xi_1 \cos k(d - x) - \tilde\xi_2 \cos kx\right]$$
 
 # Step 2: Panel EOMs
 
