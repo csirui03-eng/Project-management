@@ -143,3 +143,7 @@ $$\frac{-\omega^2 m_i + j\omega r_i + s_i}{j\omega} = r_i + j\left(\omega m_i - 
 $$z_1\,\tilde v_1 + \rho_0 c\,\tilde v_1 - \frac{j\rho_0 c}{\sin kd}\left(\tilde v_1\cos kd - \tilde v_2\right) = 2\tilde p_i$$
 
 $$z_2\,\tilde v_2 + \rho_0 c\,\tilde v_2 + \frac{j\rho_0 c}{\sin kd}\left(\tilde v_1 - \tilde v_2\cos kd\right) = 0$$
+
+Now with our equations, some simplifications can be made, based on the fact that the cavity depth is relatively small: $kd$ is typically much less than one, so the small angle approximation applies:
+
+$$\sin kd \approx kd \qquad\qquad \cos kd \approx 1$$
