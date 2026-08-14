@@ -97,6 +97,8 @@ p^{(2)}(x) &= \tilde A\, e^{-jkx} + \tilde B\, e^{jkx} \\
 p^{(2)}(x) &= \frac{\omega\rho_0 c}{\sin kd}\left[\tilde\xi_1\, \cos k(d-x) - \tilde\xi_2\, \cos kx\right] &&\text{Euler, sum pair}
 \end{aligned}$$
 
+**Notice:** with substitution complete, due to the velocity matching the only dependency on pressure left is the incident amplitude $\tilde p_i$. The pressure in all other regions is described by leaf motion only.
+
 
 # Step 2: Panel EOMs
 
