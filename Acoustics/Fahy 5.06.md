@@ -147,3 +147,42 @@ $$z_2\,\tilde v_2 + \rho_0 c\,\tilde v_2 + \frac{j\rho_0 c}{\sin kd}\left(\tilde
 Now with our equations, some simplifications can be made, based on the fact that the cavity depth is relatively small: $kd$ is typically much less than one, so the small angle approximation applies:
 
 $$\sin kd \approx kd \qquad\qquad \cos kd \approx 1$$
+
+**Apply the small angle approximation to the EOMs:**
+
+$$z_1\,\tilde v_1 + \rho_0 c\,\tilde v_1 - \frac{j\rho_0 c}{kd}\left(\tilde v_1 - \tilde v_2\right) = 2\tilde p_i$$
+
+$$z_2\,\tilde v_2 + \rho_0 c\,\tilde v_2 + \frac{j\rho_0 c}{kd}\left(\tilde v_1 - \tilde v_2\right) = 0$$
+
+The two cavity terms are now the same force with opposite signs, driven by the difference between the leaf velocities. The air acts on both leaves as one spring.
+
+**Swap $k$ for $\omega$.** The system's behaviour reads against frequency, so spend the definition of $k$:
+
+$$k = \frac{\omega}{c} \qquad\Rightarrow\qquad \frac{\rho_0 c}{kd} = \frac{\rho_0 c^2}{\omega d} = \frac{s'}{\omega} \qquad\qquad s' = \frac{\rho_0 c^2}{d}$$
+
+The surviving constant is not a wave speed doing wave work: $\rho_0 c^2$ is the bulk modulus of air, its stiffness as a material. Depth survives too, but as column length: deeper cavity, softer spring. $s'$ is the air spring stiffness per unit area, the same spring as the LPM's $k_a/A$.
+
+$$z_1\,\tilde v_1 + \rho_0 c\,\tilde v_1 - \frac{j s'}{\omega}\left(\tilde v_1 - \tilde v_2\right) = 2\tilde p_i$$
+
+$$z_2\,\tilde v_2 + \rho_0 c\,\tilde v_2 + \frac{j s'}{\omega}\left(\tilde v_1 - \tilde v_2\right) = 0$$
+
+**Group into the impedance matrix.** Collect each equation by velocity and stack:
+
+$$\begin{bmatrix} z_1 + \rho_0 c - \dfrac{j s'}{\omega} & \dfrac{j s'}{\omega} \\[8pt] \dfrac{j s'}{\omega} & z_2 + \rho_0 c - \dfrac{j s'}{\omega} \end{bmatrix} \begin{bmatrix} \tilde v_1 \\[2pt] \tilde v_2 \end{bmatrix} = \begin{bmatrix} 2\tilde p_i \\[2pt] 0 \end{bmatrix}$$
+
+Every entry is an impedance: pressure out per velocity in. The diagonals are driving point impedances, what a leaf pushes against with the other leaf held still. Written out:
+
+$$z_i + \rho_0 c - \frac{js'}{\omega} = \underbrace{r_i + \rho_0 c}_{\text{resistance}} + j\left(\omega m_i - \frac{s_i + s'}{\omega}\right)$$
+
+- Resistance: the mount damper plus the radiation into the open air on that side.
+- Reactance: the mass arm against the two spring arms, the air spring adding straight onto the mount stiffness.
+- The off diagonals are transfer impedances, the pressure one leaf receives per unit velocity of the other.
+- Pure reactance there: the cavity stores energy and passes it across but cannot destroy it, every loss channel in the system belongs to one leaf alone.
+
+**Anchor to the book.** Fahy never draws this matrix. The book eliminates by hand and prints the solved result, Eq 5.73, whose denominator is exactly this determinant:
+
+$$\det = \left[\tilde z_1 + \rho_0 c - \frac{j\rho_0 c}{kd}\right]\left[\tilde z_2 + \rho_0 c - \frac{j\rho_0 c}{kd}\right] + \left(\frac{\rho_0 c}{kd}\right)^2$$
+
+The book keeps the air spring written through $kd$, and the plus on the squared tail is the $-j^2$ from the off diagonal product.
+
+**Notice:** the losses in this model are now all physical. Two radiation resistances the derivation produced on its own, plus the mount dampers. No loss factor was put in by hand anywhere.
