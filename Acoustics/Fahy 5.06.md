@@ -125,3 +125,21 @@ $$\tilde p_2 = \tilde p^{(2)}(0) = \frac{\omega\rho_0 c}{\sin kd}\left(\tilde\xi
 $$\tilde p_3 = \tilde p^{(2)}(d) = \frac{\omega\rho_0 c}{\sin kd}\left(\tilde\xi_1 - \tilde\xi_2\cos kd\right)$$
 
 $$\tilde p_4 = j\omega\rho_0 c\,\tilde\xi_2$$
+
+**Substitute the pressure amplitude at each face into the EOMs and isolate the driving pressure amplitude:**
+
+$$\left(-\omega^2 m_1 + j\omega r_1 + s_1\right)\tilde\xi_1 + j\omega\rho_0 c\,\tilde\xi_1 + \frac{\omega\rho_0 c}{\sin kd}\left(\tilde\xi_1\cos kd - \tilde\xi_2\right) = 2\tilde p_i$$
+
+$$\left(-\omega^2 m_2 + j\omega r_2 + s_2\right)\tilde\xi_2 + j\omega\rho_0 c\,\tilde\xi_2 - \frac{\omega\rho_0 c}{\sin kd}\left(\tilde\xi_1 - \tilde\xi_2\cos kd\right) = 0$$
+
+Now take the pair to reference panel velocity instead of panel displacement:
+
+$$\tilde\xi_i = \frac{\tilde v_i}{j\omega}$$
+
+Dividing each equation by $j\omega$, the mechanical bracket collapses to the textbook impedance:
+
+$$\frac{-\omega^2 m_i + j\omega r_i + s_i}{j\omega} = r_i + j\left(\omega m_i - \frac{s_i}{\omega}\right) = z_i$$
+
+$$z_1\,\tilde v_1 + \rho_0 c\,\tilde v_1 - \frac{j\rho_0 c}{\sin kd}\left(\tilde v_1\cos kd - \tilde v_2\right) = 2\tilde p_i$$
+
+$$z_2\,\tilde v_2 + \rho_0 c\,\tilde v_2 + \frac{j\rho_0 c}{\sin kd}\left(\tilde v_1 - \tilde v_2\cos kd\right) = 0$$
