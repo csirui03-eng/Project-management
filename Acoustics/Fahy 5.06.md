@@ -67,6 +67,20 @@ $$\tilde P_1 = \tilde p_i + \tilde p_r = 2\tilde p_i - j\omega\rho_0 c\,\tilde\x
 
 $$\tilde P_t = \tilde p_t\, e^{-jkd} = j\omega\rho_0 c\,\tilde\xi_2$$
 
+For the cavity space the substitution is more complex: the resulting expression must meet the matching condition at both ends of the space, so the two cavity matches are used jointly, both amplitudes expressed through the motion of both leaves.
+
+**Stage 1.** Read the two cavity matches as simultaneous equations for $\tilde A$ and $\tilde B$, leaf motions as data. Scale the $x = 0$ match by $e^{jkd}$, subtract the $x = d$ match, $\tilde B$ cancels, and $e^{jkd} - e^{-jkd} = 2j\sin kd$ opens the bracket. Rearranging the $x = 0$ match then hands over $\tilde B$:
+
+$$\tilde A = \frac{\omega\rho_0 c\left(\tilde\xi_1 e^{jkd} - \tilde\xi_2\right)}{2\sin kd}, \qquad \tilde B = \frac{\omega\rho_0 c\left(\tilde\xi_1 e^{-jkd} - \tilde\xi_2\right)}{2\sin kd}$$
+
+One strength per wave for the whole cavity, the phase rotation across the span already known. Each amplitude is built from both leaf motions, leaf 1 adding and leaf 2 subtracting, so both faces are met exactly, no averaging in it.
+
+**Stage 2.** Substitute the pair into the cavity pressure equation, group by leaf, and Euler folds each opposite exponential pair into a cosine:
+
+$$p^{(2)}(x) = \frac{\omega\rho_0 c}{\sin kd}\left[\tilde\xi_1 \cos k(d - x) - \tilde\xi_2 \cos kx\right]$$
+
+The cavity stays a living function of $x$: it serves two faces at two positions, and the cosines are its standing shape between them.
+
 
 # Step 2: Panel EOMs
 
