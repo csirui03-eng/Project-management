@@ -88,6 +88,15 @@ $$\begin{aligned}
 \tilde B &= \frac{\omega\rho_0 c\left(\tilde\xi_1\, e^{-jkd} - \tilde\xi_2\right)}{2\sin kd}
 \end{aligned}$$
 
+**Stage 2.** Now we can substitute both $\tilde A$ and $\tilde B$ directly into the pressure expression for the cavity:
+
+$$\begin{aligned}
+p^{(2)}(x) &= \tilde A\, e^{-jkx} + \tilde B\, e^{jkx} \\
+&= \frac{\omega\rho_0 c}{2\sin kd}\left[\left(\tilde\xi_1\, e^{jkd} - \tilde\xi_2\right) e^{-jkx} + \left(\tilde\xi_1\, e^{-jkd} - \tilde\xi_2\right) e^{jkx}\right] \\
+&= \frac{\omega\rho_0 c}{2\sin kd}\left[\tilde\xi_1\left(e^{jk(d-x)} + e^{-jk(d-x)}\right) - \tilde\xi_2\left(e^{-jkx} + e^{jkx}\right)\right] &&\text{group by leaf} \\[4pt]
+p^{(2)}(x) &= \frac{\omega\rho_0 c}{\sin kd}\left[\tilde\xi_1\, \cos k(d-x) - \tilde\xi_2\, \cos kx\right] &&\text{Euler, sum pair}
+\end{aligned}$$
+
 
 # Step 2: Panel EOMs
 
