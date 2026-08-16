@@ -154,6 +154,18 @@ $$\tau = \frac{4n}{\left[\dfrac{\omega m - s/\omega}{\rho_2 c_2}\right]^2 + \lef
 
 Every term is a dimensionless impedance measured against the receiving fluid's $\rho c$. The step 8 regimes are one term of this denominator dominating.
 
+### System losses breakdown
+
+$\eta$ was built from the mount damper alone, so it carries the structural loss only. The air's energy removal never entered it: it stands in the final $\tau$ as the radiation resistances, sitting beside the $\eta$ term in the resistance bracket:
+
+$$\left[\underbrace{\dfrac{\omega_0 m\,\eta}{\rho_2 c_2}}_{\text{mount heat}} + \underbrace{n}_{\text{re radiation, side 1}} + \underbrace{1}_{\text{transmission, side 2}}\right]^2$$
+
+Air both sides, $n = 1$:
+
+$$\left[\frac{\omega_0 m\,\eta}{\rho_0 c} + 2\right]^2$$
+
+$\eta$ carries the mount only. The 2 is the air loss, one per face, transmission itself reading as a resistance from the leaf's seat.
+
 ### Closing: TL, the log measure
 
 $$TL = 10\log_{10}(1/\tau)\ \text{dB}$$
