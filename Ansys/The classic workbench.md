@@ -1,3 +1,27 @@
+## The layer map
+
+- Project schematic: the repo. Organises systems, links, parameters; tracks state per cell.
+- System block: a subfolder in the repo. One analysis.
+- Engineering Data + Geometry: the generic, solver agnostic assets.
+- Model: Mechanical opens. Mesh, named selections, connections.
+- Setup: same Mechanical session. Physics, boundary conditions, excitations.
+- Solution: tree flattened to `ds.dat`, MAPDL batch solve, `.rst` back.
+- Results: post-processing on the `.rst`, rendered in the tree.
+
+## Side by side: beyond the Workbench
+
+| Workbench | Working beyond it |
+| --- | --- |
+| Project schematic + state ticks | A project folder, a Python script, git. You are the build system. |
+| Engineering Data | `MP`, `TB` commands, or a materials module you reuse |
+| Geometry cell | CAD file + external mesher, PyAnsys Geometry, or `/PREP7` primitives |
+| Model cell | `/PREP7`: mesh commands, or an imported `.cdb`; components (`CM`) for named selections |
+| Setup cell | `/SOLU`: `D`, `F`, `SF`, acoustic boundary commands |
+| Solution cell | `SOLVE`, or `mapdl.solve()` over gRPC |
+| Results cell | `/POST1`, `/POST26`, or PyDPF + PyVista arrays and plots |
+| Parameter Set, design points | A Python loop over parameters |
+| Cell to cell links | Variables and files your script passes along |
+
 ## The project schematic
 
 The Workbench project schematic is a GUI for organising. Almost like a folder, or suppose, a repo.
