@@ -18,6 +18,14 @@ FEM work runs as two clients of one live MAPDL gRPC server (127.0.0.1:50052):
 
 Geometry work follows the geometry-creation loop: plain words first (vault note), code, view, screenshot problem areas, iterate; when settled, prune the trail to pseudocode plus final component plots. Verify selections by counts as well as pictures.
 
+### Environment prerequisites (settled 2026-08-21, after debugging them one by one)
+
+- Env `pyansys` (kernel): ansys-mapdl-core[graphics] (plot calls hard-fail without the extra), ipywidgets, ipykernel < 7 (ipykernel 7 breaks trame's in-kernel server: "cannot enter context" asyncio errors).
+- Env `jupyter` (frontend): jupyterlab, ipywidgets. trame-jupyter-extension is installed but its comm bridge never connected; not relied on.
+- Interactive plots use pyvista's trame backend with NATIVE transport: set `os.environ["PYVISTA_TRAME_JUPYTER_MODE"] = "native"` BEFORE importing pyvista, then `pyvista.set_jupyter_backend("trame")`. The trame server is a per-kernel singleton: the first plot locks the transport mode until kernel restart, so the env var must run in the first cell.
+- A stray system Python 3.13 (AppData\Local\Programs) shadows some `jupyter` subcommands on PATH with a broken install; always target envs explicitly (`conda run -n ...` or full python.exe paths).
+- Before touching a new frontend feature (widgets, extensions), check dependencies on BOTH sides of the frontend/kernel env split first. This list exists because that check was skipped once.
+
 ## Hard rules (writing)
 
 - No AI lexicon: the furthermore/moreover/notwithstanding transitions, the delve/leverage/utilize/foster/underscore verbs, the robust/comprehensive/pivotal/seamless adjectives, and the significantly/extremely intensifiers are banned in all output, prose or note. Full lists in the no-ai-slop skill's `ai-writing-detection.md` (copied to `.claude/skills/no-ai-slop/`, source: AMM-management vault).
