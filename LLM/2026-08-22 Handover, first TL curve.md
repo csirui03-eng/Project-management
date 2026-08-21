@@ -64,3 +64,18 @@ John asked for a pre solve setup audit and had me run it live. Verdict: the setu
 ## Addendum 2: real time collaboration installed and verified
 
 `jupyter-collaboration` 5.0.0 installed in the frontend env (kernel env untouched), Lab server restarted, closure tested at 01:31: a disk side edit appeared live in John's open tab with no reload, and its deletion propagated the same way. The notebook document now lives in the Jupyter server: John's browser state is always persisted and readable, and Claude's file edits flow into open tabs. The save then reload protocol is retired for the notebook. Residual care: avoid editing the same cell at the same moment, and watch the young RTC plus trame widget combination for misbehavior (uninstall is one pip command). The stray AppData Python 3.13 shadowed `jupyter server` once more during setup; the env's own `python -m jupyter_server` is the reliable call.
+
+## State at close (final, 01:45)
+
+The notebook now reproduces the whole pipeline and John has run it end to end from his side: sweep cell reports 390 frequencies, TL 0 to 88.5 dB (matching the second client run), TL plot renders inline.
+
+Notebook layout at close, 7 cells: launch (attach or launch), build (`%run -i double_wall.py`, full model through mesh and flags), domain viewer, component check, setup audit (cleaned to the SFELIST version), TL sweep (`run(mapdl)`, or `solve=False` to reuse a solution), TL plot (FE vs classical limp).
+
+Working method for the next session: RTC is live and verified. Read the notebook file for John's current state at any time (always current, no save request needed). Direct edits to the notebook flow into his open tab live. Avoid same cell simultaneous edits. The solver lifecycle notes, environment prerequisites, and this working method are all in the project CLAUDE.md and the Ansys vault notes.
+
+Discussion agenda the new chat opens with:
+1. The TL curve: the spring edge low frequency divergence, the split dip pair (~280 and 350 Hz), mass law convergence above 900 Hz.
+2. The ~1610 Hz pole zero pair: run the modal analysis to identify it, or park it.
+3. Accuracy passes if wanted: PLANE182 conformity, r weighted FLOW, mesh convergence.
+4. Compare dips against the AMM vault piston on surround analytics.
+5. Housekeeping: notebook filename leading space, the [84, 89, 109] chatter, the pyansys env's redundant jupyterlab install.
