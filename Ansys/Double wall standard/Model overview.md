@@ -58,10 +58,10 @@ Element types: 1 = PLANE183 axisymmetric (structure), 2 = FLUID29 coupled
 
 ## Open items
 
-- [ ] Split upstream air rectangle at ys; name `SOURCE_L`
-- [ ] Verify FLUID29 flags against its element page before writing them:
-  keyopt numbering (axisym / structure-present), IMPD absorber recipe
-  (MU admittance), FLOW mass-source syntax
-- [ ] Attributes + mesh (per component), then line components + loads
-- [ ] Element size: fluid needs ≥ ~6 el./λ at 4 kHz → ≤ ~14 mm; silicone
-  edge needs 2–3 elements across its 5 mm — edge governs locally
+- [x] Split upstream air rectangle at ys; name `SOURCE_L` (done 2026-08-22, h_src = 30 mm)
+- [x] Verify FLUID29 flags against its element page (done 2026-08-22 against the v18.2 reference mirror: KEYOPT(2) coupling, KEYOPT(3)=1 axisym, IMPD flag + MU admittance, FLOW nodal on 360 deg basis, FSI face flag)
+- [x] Attributes + mesh + loads (done 2026-08-22: air 5 mm, MDF 2.5 mm, edge 1.7 mm; coupled layer by ESLN conversion; FSI, IMPD absorbers, rim clamps, FLOW source in tl_sweep.py)
+- [x] First TL sweep run (50 to 2000 Hz): curve in `D:\Pyansys projects\LLM\double_wall_tl.png`
+- [ ] Pole zero pair at ~1610 Hz unexplained: candidate MDF disc bending mode, modal check would settle it
+- [ ] Consider PLANE182 for the structure (conforming order with FLUID29) and r weighted FLOW for accuracy passes
+- [ ] Compare dip pair (~280 and ~350 Hz) against analytical piston on surround models from the AMM vault
