@@ -21,7 +21,7 @@ Geometry work follows the geometry-creation loop: plain words first (vault note)
 ### Environment prerequisites (settled 2026-08-21, after debugging them one by one)
 
 - Env `pyansys` (kernel): ansys-mapdl-core[graphics] (plot calls hard-fail without the extra), ipywidgets, ipykernel < 7 (ipykernel 7 breaks trame's in-kernel server: "cannot enter context" asyncio errors).
-- Env `jupyter` (frontend): jupyterlab, ipywidgets. trame-jupyter-extension is installed but its comm bridge never connected; not relied on.
+- Env `jupyter` (frontend): jupyterlab, ipywidgets. trame-jupyter-extension is installed but its comm bridge never connected; not relied on. jupyter-collaboration (RTC, added 2026-08-22): the notebook document lives in the Jupyter server, John's browser state is always persisted and readable from disk, and Claude's file edits flow live into open tabs (verified both directions). No save-then-reload dance for the notebook; avoid editing the same cell at the same moment.
 - Interactive plots use pyvista's trame backend with NATIVE transport: set `os.environ["PYVISTA_TRAME_JUPYTER_MODE"] = "native"` BEFORE importing pyvista, then `pyvista.set_jupyter_backend("trame")`. The trame server is a per-kernel singleton: the first plot locks the transport mode until kernel restart, so the env var must run in the first cell.
 - A stray system Python 3.13 (AppData\Local\Programs) shadows some `jupyter` subcommands on PATH with a broken install; always target envs explicitly (`conda run -n ...` or full python.exe paths).
 - Before touching a new frontend feature (widgets, extensions), check dependencies on BOTH sides of the frontend/kernel env split first. This list exists because that check was skipped once.
