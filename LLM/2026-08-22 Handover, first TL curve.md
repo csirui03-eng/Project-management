@@ -81,3 +81,15 @@ Discussion agenda the new chat opens with:
 3. Accuracy passes if wanted: PLANE182 conformity, r weighted FLOW, mesh convergence.
 4. Compare dips against the AMM vault piston on surround analytics.
 5. Housekeeping: notebook filename leading space, the [84, 89, 109] chatter, the pyansys env's redundant jupyterlab install.
+
+## Addendum 3: RTC first stumble and cure (01:35 to 01:50)
+
+Shortly after the viewer suite install, double_wall.py refused to open in the Lab: the RTC document layer hung on a "document is taking some time to load" dialog. The file itself was verified intact (parses clean, all sections present). Diagnosis: stale collaborative session in `.jupyter_ystore.db`, the known failure mode when a file is edited on disk out of band while a ydoc session exists. A line endings theory was checked and discarded (the file was uniformly CRLF; it is uniformly LF now after normalization, which is its current state and fine).
+
+Cure, now the standard recipe when any file hangs on load under RTC: stop the Lab server, delete `.jupyter_ystore.db` (pure session cache, regenerates, holds no content), relaunch. Practical notes from applying it: Ctrl+C often fails on Windows (wants y plus Enter within 5 s), `jupyter lab stop 8888` also failed here, and the reliable fallback is `taskkill /PID <pid> /F /T` after identifying the server PID by its port (8888) and path (the jupyter env's python.exe). Claude's permission layer blocks killing the server from its side; John runs the kill himself. The solver is never in the Lab's process tree and survives all of this.
+
+Verified after relaunch: fresh ystore regenerated (01:49), Lab on 8888 under a new PID, solver still holding 50052. Remaining watch item: whether Claude's disk side edits re-poison sessions for files John holds open in editor tabs. If it recurs, the candidate policies are closing editor tabs for files Claude edits, or retiring RTC for plain text files and keeping it for the notebook.
+
+## The next phase, in John's words
+
+The system is proven and works. What remains is understanding its setup and why it works: clerical book keeping, writing things into his own words, notes about the critical components. The components most worth own words treatment: the coupled layer and where UX,UY DOFs live, MU and IMPD division of labor, why FLOW amplitude drops out but its mesh line matters, the two mic decomposition and the wall's own reflection, do nothing equals rigid at the tube wall. The established pattern applies: John narrates, corrections fold in, notes keep his language.
