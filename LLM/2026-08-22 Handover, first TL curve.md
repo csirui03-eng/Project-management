@@ -69,7 +69,9 @@ John asked for a pre solve setup audit and had me run it live. Verdict: the setu
 
 The notebook now reproduces the whole pipeline and John has run it end to end from his side: sweep cell reports 390 frequencies, TL 0 to 88.5 dB (matching the second client run), TL plot renders inline.
 
-Notebook layout at close, 7 cells: launch (attach or launch), build (`%run -i double_wall.py`, full model through mesh and flags), domain viewer, component check, setup audit (cleaned to the SFELIST version), TL sweep (`run(mapdl)`, or `solve=False` to reuse a solution), TL plot (FE vs classical limp).
+Notebook layout at close, 10 cells: launch (attach or launch, HD viewer ratios), build (`%run -i double_wall.py`, full model through mesh and flags), domain viewer, component check, setup audit (SFELIST counts), material + mesh map (grid colored by `ansys_material_type`, edges on), element type map (`ansys_etype`, shows the coupled layer), BC map (clamp, source, absorber node sets marked with counts), TL sweep (`run(mapdl)`, or `solve=False` to reuse a solution), TL plot (FE vs classical limp).
+
+Viewer sharpness: trame renders at canvas size times a ratio, default 1. Cell 0 now sets `pyvista.global_theme.trame.interactive_ratio = 2` and `still_ratio = 2` before any plot. The grid carries `ansys_material_type`, `ansys_etype`, `ansys_elem_num` as cell data, which is what the attribute maps color by.
 
 Working method for the next session: RTC is live and verified. Read the notebook file for John's current state at any time (always current, no save request needed). Direct edits to the notebook flow into his open tab live. Avoid same cell simultaneous edits. The solver lifecycle notes, environment prerequisites, and this working method are all in the project CLAUDE.md and the Ansys vault notes.
 
