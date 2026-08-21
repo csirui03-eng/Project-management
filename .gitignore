@@ -2,3 +2,6 @@
 .obsidian/cache
 .trash/
 *.tmp-                                                                                                                                                                                                                                                                                                                                                               
+
+# PyMAPDL offline docs -- local reference, never sync (4968 files)
+Resources/pymapdl-0.74.1-docs/
