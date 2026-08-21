@@ -51,3 +51,12 @@ The night's other half. Key lesson: the solver is a separate OS process, kernel 
 ## Standing arrangements (unchanged)
 
 Two clients, one server on 50052, ALLSEL after every probe. Vault notes are the workshop copy, module docstring the condensed backup. Geometry loop: plain words, code, view, verify by counts.
+
+## Addendum: setup audit findings (post handover, same night)
+
+John asked for a pre solve setup audit and had me run it live. Verdict: the setup was correct, the audit's first tool was not.
+
+- Element census exact (94 / 84 / 530), rim clamps 28 D entries (7 nodes, midside included, times 2 DOFs times 2 rims), FLOW on 11 source nodes.
+- IMPD: 40 element face entries via SFELIST, both ends, value 1. Correct.
+- FSI: SFLIST shows nothing because FSI flags are stored as ELEMENT face flags. The correct listing is `SFELIST,ALL,FSI` (shows 84 entries). SF,ALL,FSI is valid on FLUID29 and reports "N FLAGS SET" when issued. Audit cells must use SFELIST for both flags, never SFLIST counting.
+- Solver warning census (file0.err): dominated by benign chatter (parameter redefinition from POST26 loops, empty selects from plot fetches). Launcher defaults noted: shape checking off, abort level altered (PyMAPDL standard). One watched item: "Both solid model and finite element model boundary conditions have been applied", 21 occurrences, source context unclear (likely plot/post machinery, not the solve). Check whether it recurs in a clean rebuild plus solve.
