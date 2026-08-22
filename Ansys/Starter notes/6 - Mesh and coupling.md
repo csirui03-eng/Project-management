@@ -10,4 +10,6 @@ Mesh type (shape and method, a mesher setting) is a different thing from element
 
 ## Coupled layer
 
+In plain words we are doing the coupling manually. All that means is identifying the edge where the two kinds of element touch and switching the fluid elements there to the coupled variant. The block does exactly those two things: four lines identify (the structure areas, their nodes, every element touching those nodes, the uncoupled air among them), one line switches (`EMODIF` to type 2). They stay FLUID29. Type 2 is the same element with KEYOPT(2)=0, carrying UX and UY as well as PRES, and that is the only place in the air those DOFs exist. The FSI flag block that follows is what makes the coupling act: the conversion gives the elements the DOFs, the flag on the wetted faces tells the solver to tie them to the structure.
+
 ## Table of methods
