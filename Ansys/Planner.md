@@ -10,17 +10,17 @@ Started 2026-08-22. The pipeline is built and proven (see `LLM/2026-08-22 Handov
 
 ## The nine steps
 
-| Step | Component | Status | Note |
-|---|---|---|---|
-| 1 | Two conda envs, kernel and frontend split by role | first pass | [[Environment set up]] |
-| 2 | Repo layout: code repo, vault, scratch as run_location | first pass | project CLAUDE.md, repo README |
-| 3 | Solver lifecycle: separate process, attach or launch, two clients on 50052 | first pass | [[Solver at start]] |
-| 4 | Viewer stack: trame native mode, ratios, cell data on the grid | not started | [[Interactive viewer]] |
-| 5 | Model definition: parameters, element types, materials, geometry, naming by component | not started | [[Model overview]], [[Geometry]], `double_wall.py` |
-| 6 | Mesh and coupling: attributes per component, mesh sizes, coupled layer by ESLN, where UX and UY live | not started | |
-| 7 | BCs and flags: FSI, IMPD with MU, rim clamps, do nothing equals rigid, FLOW source | not started | |
-| 8 | Solve and extract: HARMIC FULL sweep, POST26, section averages, two mic decomposition, the wall's own reflection | not started | `tl_sweep.py` |
-| 9 | Verification layers: counts, pictures, physics overlay | not started | |
+| Step | Component                                                                                                        | Status      | Note                                               |
+| ---- | ---------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------- |
+| 1    | Two conda envs, kernel and frontend split by role                                                                | first pass  | [[Environment set up]]                             |
+| 2    | Repo layout: code repo, vault, scratch as run_location                                                           | first pass  | project CLAUDE.md, repo README                     |
+| 3    | Solver lifecycle: separate process, attach or launch, two clients on 50052                                       | first pass  | [[Solver at start]]                                |
+| 4    | Viewer stack: trame native mode, ratios, cell data on the grid                                                   | not started | [[Interactive viewer]]                             |
+| 5    | Model definition: parameters, element types, materials, geometry, naming by component                            | not started | [[Model overview]], [[Geometry]], `double_wall.py` |
+| 6    | Mesh and coupling: attributes per component, mesh sizes, coupled layer by ESLN, where UX and UY live             | not started |                                                    |
+| 7    | BCs and flags: FSI, IMPD with MU, rim clamps, do nothing equals rigid, FLOW source                               | not started |                                                    |
+| 8    | Solve and extract: HARMIC FULL sweep, POST26, section averages, two mic decomposition, the wall's own reflection | not started | `tl_sweep.py`                                      |
+| 9    | Verification layers: counts, pictures, physics overlay                                                           | not started |                                                    |
 
 ## Order of attack
 
