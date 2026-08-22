@@ -27,14 +27,6 @@ Forms an array parameter by interpolation of a table.
 
 ## Notes
 
-### Argument descriptions
-
-- `parr : str` - The name of the resulting array parameter. See [[starset|*SET]] for name restrictions.
-- `part : str` - The name of the TABLE array parameter. The parameter must exist as a dimensioned array of type TABLE ( [[dim|*DIM]] ).
-- `pari : str` - Array parameter vector of I (row) index values for interpolation in `ParT`.
-- `parj : str` - Array parameter vector of J (column) index values for interpolation in `ParT` (which must be at least 2D).
-- `park : str` - Array parameter vector of K (depth) index values for interpolation in `ParT` (which must be 3D).
-
 Forms an array parameter (of type ARRAY) by interpolating values of an array parameter (of type TABLE) at specified table index locations according to: `ParR` = f( `ParT`, `Parl`, `ParJ`, `ParK` )
 
 where `ParT` is the type TABLE array parameter, and `ParI`, `ParJ`, `ParK` are the type ARRAY array parameter vectors of index values for interpolation in `ParT`. See the [[dim|*DIM]] command for TABLE and ARRAY declaration types. Linear interpolation is used. The starting array element number for the TABLE array ( `ParT` ) is not used (but a value must be input). Starting array element numbers must be defined for each array parameter vector if it does not start at the first location. For example, **\*VITRP**,R(5),TAB(1,1),X(2),Y(4) uses the second element of X and the fourth element of Y as index values (row and column) for a 2D interpolation in TAB and stores the result in the fifth element of R. Operations continue on successive array elements ( [[vlen|*VLEN]], [[vmask|*VMASK]] ) with the default being all successive elements. Absolute values and scale factors may be applied to the result parameter ( [[vabs|*VABS]], [[vfact|*VFACT]] ). Results may be cumulative ( [[vcum|*VCUM]] ). See the [[voper|*VOPER]] command for details.

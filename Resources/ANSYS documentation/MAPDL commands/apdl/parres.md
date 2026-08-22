@@ -28,16 +28,6 @@ Read operation:
 
 ## Notes
 
-### Argument descriptions
-
-- `lab : str` - Read operation:
-  - `NEW` - Replace current parameter set with these parameters (default).
-  - `CHANGE` - Extend current parameter set with these parameters, replacing any that already exist.
-
-\* `fname : str` - File name and directory path (248 characters maximum, including the characters needed for the directory path). An unspecified directory path defaults to the working directory; in this case, you can use all 248 characters for the file name. The file name defaults to `Jobname`.
-
-\* `ext : str` - Filename extension (eight-character maximum). The extension defaults to PARM if `Fname` is blank.
-
 Reads parameters from a coded file. The parameter file may have been written with the [[parsav|PARSAV]] command. The parameters read may replace or change the current parameter set.
 
 This command is valid in any processor.

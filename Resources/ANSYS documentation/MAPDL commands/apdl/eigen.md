@@ -27,14 +27,6 @@ Performs a modal solution with unsymmetric or damping matrices.
 
 ## Notes
 
-### Argument descriptions
-
-- `kmatrix : str` - Name of the stiffness matrix. May be a real or complex-valued matrix.
-- `mmatrix : str` - Name of the mass matrix.
-- `cmatrix : str` - Name of the damping matrix (used only for [[modopt|MODOPT]],DAMP).
-- `evals : str` - Name of the output eigenvalues vector. It will be an `m` -long [[vec|*VEC]] vector of complex values, where `m` is the number of eigenvalues requested ( [[modopt|MODOPT]] ).
-- `evects : str` - Name of the output eigenvector matrix. It will be a `n` x `m` [[dmat|*DMAT]] (dense) matrix of complex values, where `n` is the size of the matrix and `m` is the number of eigenvalues requested ( [[modopt|MODOPT]] ).
-
 Use the command [[antype|ANTYPE]],MODAL and the [[modopt|MODOPT]] command to specify the modal solution options. Only [[modopt|MODOPT]] ,DAMP, [[modopt|MODOPT]],UNSYM, [[modopt|MODOPT]],LANB, and [[modopt|MODOPT]],SUBSP are supported.
 
 **\*EIGEN** with Block Lanczos (LANB) only supports sparse matrices. Distributed-Memory Parallel (DMP) Restriction This command is not supported in a DMP solution.

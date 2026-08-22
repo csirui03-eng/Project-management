@@ -30,16 +30,6 @@ Writes a matrix to a file in a formatted sequence.
 
 ## Notes
 
-### Argument descriptions
-
-- `parr : str` - The name of the array parameter. See [[starset|*SET]] for name restrictions.
-
-\* `fname : str` - File name and directory path (248 characters maximum, including the characters needed for the directory path). An unspecified directory path defaults to the working directory; in this case, you can use all 248 characters for the file name. If the file name fields are left blank, the default file is the current output file.
-
-- `ext : str` - Filename extension (eight-character maximum).
-- `label : str` - Can use a value of IJK, IKJ, JIK, JKI, KIJ, KJI, or blank (JIK).
-- `n1, n2, n3 : str` - Write as ((( `ParR` (i,j,k), k = 1,n1), i = 1, n2), j = 1, n3) for `Label` = KIJ. `n1,` `n2,` and `n3` default to the corresponding dimensions of the array parameter ParR.
-
 Writes a matrix or vector to a specified file in a formatted sequence. You can also use the [[vwrite|*VWRITE]] command to write data to a specified file. Both commands contain format descriptors on the line immediately following the command. The format descriptors can be in either FORTRAN or C format.
 
 FORTRAN format descriptors are enclosed in parentheses. They must immediately follow the **\*MWRITE** command on a separate line of the same input file. The word FORMAT should not be included. The format must specify the number of fields to be written per line, the field width, the placement of the decimal point, etc. There should be one field descriptor for each data item written. The write operation uses the available system FORTRAN FORMAT conventions (see your system FORTRAN manual). Any standard FORTRAN real format (such as (4F6.0), (E10.3,2X,D8.2), etc.) and character format (A) may be used. Integer (I) and list-directed (2) descriptors may not be used. Text may be included in the format as a quoted string. The FORTRAN descriptor must be enclosed in parentheses and the format must not exceed 80 characters (including parentheses).

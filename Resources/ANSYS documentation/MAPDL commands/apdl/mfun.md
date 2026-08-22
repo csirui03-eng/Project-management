@@ -28,14 +28,6 @@ Copy or transpose function:
 
 ## Notes
 
-### Argument descriptions
-
-- `parr : str` - The name of the resulting array parameter matrix. See [[starset|*SET]] for name restrictions.
-- `func : str` - Copy or transpose function:
-  - `COPY` - `Par1` is copied to `ParR`
-  - `TRAN` - `Par1` is transposed to `ParR`. Rows (m) and columns (n) of `Par1` matrix are transposed to resulting `ParR` matrix of shape (n,m).
-- `par1 : str` - Array parameter matrix input to the operation.
-
 Operates on one input array parameter matrix and produces one output array parameter matrix according to: `ParR` = f( `Par1` )
 
 where the function (f) is either a copy or transpose, as described above.

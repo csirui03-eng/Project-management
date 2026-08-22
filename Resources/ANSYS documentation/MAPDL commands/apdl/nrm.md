@@ -36,18 +36,6 @@ Normalization key; to be used only for vectors created by [[vec|*VEC]] :
 
 ## Notes
 
-### Argument descriptions
-
-- `name : str` - Matrix or vector for which the norm will be computed. This can be a dense matrix (created by the [[dmat|*DMAT]] command), a sparse matrix (created by the [[smat|*SMAT]] command) or a vector (created by the [[vec|*VEC]] command)
-- `normtype : str` - Mathematical norm to use:
-  - `NRM2` - L2 (Euclidian or SRSS) norm (default).
-  - `NRM1` - L1 (absolute sum) norm (vectors and dense matrices only).
-  - `NRMINF` - Maximum norm.
-- `parr : str` - Parameter name that contains the result.
-- `normalize : str` - Normalization key; to be used only for vectors created by [[vec|*VEC]] :
-  - `YES` - Normalize the vector such that the norm is 1.0.
-  - `NO` - Do not normalize the vector (default).
-
 The NRM2 option corresponds to the Euclidian or L2 norm and is applicable to either vectors or matrices:
 
 (equation omitted), (equation omitted)

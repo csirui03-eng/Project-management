@@ -25,15 +25,6 @@ Specifies the units to be used:
 
 ## Notes
 
-### Argument descriptions
-
-- `lab : str` - Specifies the units to be used:
-  - `RAD` - Use radians for input and output of parameter angular functions (default).
-  - `DEG` - Use degrees for input and output of parameter angular functions.
-  - `STAT` - Show current setting (DEG or RAD) for this command.
-
-Use radians for input or output of parameter angular functions.
-
 Only the SIN, COS, TAN, ASIN, ACOS, ATAN, ATAN2, ANGLEK, and ANGLEN functions ( [[starset|*SET]], [[vfun|*VFUN]] ) are affected by this command.
 
 Ansys help: https://ansyshelp.ansys.com/Views/Secured/corp/v232/en//ans_cmd/Hlp_C_AFUN.html

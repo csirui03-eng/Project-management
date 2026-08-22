@@ -23,11 +23,6 @@ Executes a macro file.
 
 ## Notes
 
-### Argument descriptions
-
-- `name : str` - Name (32 characters maximum, beginning with a letter) identifying the macro file or a macro block on a macro library file.
-- `arg1, arg2, arg3,..., ar18 : str` - Values passed into the file or block where the parameters ARG1 through ARG9 and AR10 through AR18 are referenced. Values may be numbers, alphanumeric character strings (up to 32 characters enclosed in single quotes), parameters (numeric or character) or parametric expressions. See below for additional details.
-
 Causes execution of a macro file called `Name`, or, if not found, a macro block " `Name` " on the macro library file ( [[ulib|*ULIB]] ). Argument values (numeric or character) are passed into the file or block and substituted for local parameters ARG1, ARG2,..., AR18. The file `Name` may also be executed as an "unknown command" (that is, without the **\*USE** command name) as described below.
 
 A macro is a sequence of Mechanical APDL commands (as many as needed) recorded in a file or in a macro block in a library file (specified with the [[ulib|*ULIB]] command). The file or block is typically executed via **\*USE**. In addition to command, numerical and alphanumeric data, the macro can include parameters which will be assigned numerical or alphanumerical character values when the macro is used. Use of the macro can be repeated (within a do-loop, for example) with the parameters incremented.

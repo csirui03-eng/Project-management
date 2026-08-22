@@ -25,13 +25,6 @@ Performs the solve (forward/backward substitution) of a factorized linear system
 
 ## Notes
 
-### Argument descriptions
-
-- `enginename : str` - Name used to identify this engine. Must have been previously created using [[lsengine|*LSENGINE]] and factorized using [[lsfactor|*LSFACTOR]].
-- `rhsvector : str` - Name of vector containing the right-hand side (load) vectors as input. Must have been previously defined as a [[vec|*VEC]] vector or a [[dmat|*DMAT]] matrix.
-- `solvector : str` - Name of vector that will contain the solution vectors upon completion. Must be predefined as a [[vec|*VEC]] vector or [[dmat|*DMAT]] matrix.
-- `transkey : str` - Transpose key. Set `TransKey` = TRANS to solve the transposed linear system. If blank, transpose will not be used.
-
 This command performs forward and back substitution to obtain the solution to the linear matrix equation Ax = b (or A <sup>T</sup> x = b if `TransKey` = TRANS). The matrix engine must have been previously defined using [[lsengine|*LSENGINE]], and the matrix factored using [[lsfactor|*LSFACTOR]].
 
 You can use the [[dmat|*DMAT]],,,COPY (or [[vec|*VEC]],,,COPY) command to copy the load vector to the solution vector in order to predefine it with the appropriate size.

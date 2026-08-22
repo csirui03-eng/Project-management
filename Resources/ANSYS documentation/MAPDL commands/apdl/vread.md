@@ -29,17 +29,6 @@ Reads data and produces an array parameter vector or matrix.
 
 ## Notes
 
-### Argument descriptions
-
-- `parr : str` - The name of the resulting array parameter vector. See [[starset|*SET]] for name restrictions. The parameter must exist as a dimensioned array ( [[dim|*DIM]] ). String arrays are limited to a maximum of 8 characters.
-
-\* `fname : str` - File name and directory path (248 characters maximum, including the characters needed for the directory path). An unspecified directory path defaults to the working directory; in this case, you can use all 248 characters for the file name. If the `Fname` field is left blank, reading continues from the current input device, such as the terminal.
-
-- `ext : str` - Filename extension (eight-character maximum).
-- `label : str` - Can take a value of IJK, IKJ, JIK, JKI, KIJ, KJI, or blank (IJK).
-- `n1, n2, n3 : str` - Read as ((( `ParR` (i,j,k), k = 1,n1), i = 1, n2), j = 1, n3) for `Label` = KIJ. `n2` and `n3` default to 1.
-- `nskip : str` - Number of lines at the beginning of the file being read that will be skipped during the reading. Default = 0.
-
 Reads data from a file and fills in an array parameter vector or matrix. Data are read from a formatted file or, if the menu is off ( [[menu|/MENU]],OFF) and `Fname` is blank, from the next input lines. The format of the data to be read must be input immediately following the **\*VREAD** command. The format specifies the number of fields to be read per record, the field width, and the placement of the decimal point (if none specified in the value). The read operation follows the available FORTRAN FORMAT conventions of the system (see your system FORTRAN manual). Any standard FORTRAN real format (such as (4F6.0), (E10.3,2X,D8.2), etc.) or alphanumeric format (A) may be used. Alphanumeric strings are limited to a maximum of 8 characters for any field (A8). For storage of string arrays greater than 8 characters, the \*SREAD command can be used. Integer (I) and list- directed (2) descriptors may not be used. The parentheses must be included in the format and the format must not exceed 80 characters (including parentheses). The input line length is limited to 128 characters.
 
 A starting array element number must be defined for the result array parameter vector (numeric or character). For example, entering these two lines:

@@ -21,12 +21,6 @@ Assigns a user-defined command name.
 
 ## Notes
 
-### Argument descriptions
-
-- `cmd : str` - User-defined command name. Only the first four characters are significant. Must not conflict with any Mechanical APDL command name or any user unknown-command macro name.
-
-\* `srnum : str` - User subroutine number (1 to 10) programmed for this command. For example, the command **/UCMD**,MYCMD,3 will execute subroutine USER03 whenever the command **MYCMD** is entered. Use a blank command name to disassociate `SRNUM` from its command. For example, **/UCMD**,,3 removes **MYCMD** as a command.
-
 Assigns a user-defined command name to a user-programmable (system-dependent) subroutine. This feature allows user-defined commands to be programmed into Mechanical APDL. Once programmed, this command can be input to the program like other commands, and can also be included in the Mechanical APDL start-up file.
 
 Up to 10 subroutines are available for user-defined commands (USER01 to USER10). You must have system permission, system access, and knowledge to write, compile, and link the appropriate subprocessors into Mechanical APDL at your site.

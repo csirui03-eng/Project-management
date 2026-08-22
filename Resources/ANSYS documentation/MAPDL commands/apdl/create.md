@@ -24,12 +24,6 @@ Opens (creates) a macro file.
 
 ## Notes
 
-### Argument descriptions
-
-\* `fname : str` - File name and directory path (248 characters maximum, including the characters needed for the directory path). An unspecified directory path defaults to the working directory; in this case, you can use all 248 characters for the file name. Do not use a directory path if file is to be read with the macro `Name` option of the [[use|*USE]] command.
-
-\* `ext : str` - Filename extension (eight-character maximum). `Ext` should not be used if file is to be read with the macro `Name` option of the [[use|*USE]] command.
-
 See the [[use|*USE]] command for a discussion of macros. All commands following the **\*CREATE** command, up to the [[end|*END]] command, are written to the specified file without being executed. An existing file of the same name, if any, will be overwritten. Parameter values are not substituted for parameter names in the commands when the commands are written to the file. Use [[cfwrite|*CFWRITE]] to create a file if this is desired. The resulting macro may be executed with a [[use|*USE]] command (which also allows parameters to be passed into the macro) or a [[input|/INPUT]] command (which does not allow parameters to be passed in). Several macros may be stacked into a library file ( [[ulib|*ULIB]] ). You cannot use **\*CREATE** within a DO loop.
 
 This command is valid in any processor.

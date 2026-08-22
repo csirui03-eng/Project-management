@@ -21,11 +21,6 @@ Dumps a linear solver engine to a binary File.
 
 ## Notes
 
-### Argument descriptions
-
-- `enginename : str` - Name used to identify this engine. Must have been previously created using [[lsengine|*LSENGINE]] and factorized using [[lsfactor|*LSFACTOR]].
-- `filename : str` - Name of the file to create.
-
 Dumps a previously factorized linear solver system to a binary file. Only LAPACK and BCS linear solvers can be used with this feature. The Linear Solver can later be restored with the [[lsrestore|*LSRESTORE]] command.
 
 A BCS Sparse Solver can be dumped only if uses the `INCORE` memory option (see [[bcsoption|BCSOPTION]] ).

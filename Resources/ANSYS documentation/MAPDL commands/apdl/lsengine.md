@@ -36,20 +36,6 @@ Option to control the memory mode of the DSS solver (used only if `Type` = DSS):
 
 ## Notes
 
-### Argument descriptions
-
-- `type_ : str` - Specifies the algorithm to be used:
-  - `DSS` - MKL sparse linear solver.
-  - `LAPACK` - LAPACK dense matrix linear solver (default if applied to dense matrices).
-  - `DSP` - Distributed sparse solver (default for sparse matrices).
-- `enginename : str` - Name used to identify this engine. Must be specified.
-- `matrix : str` - Name of the matrix to solve.
-
-\* `option : str` - Option to control the memory mode of the DSS solver (used only if `Type` = DSS):
-
-> - `INCORE` - In-core memory mode.
-> - `OUTOFCORE` - Out-of-core memory mode.
-
 This command creates a linear solver engine.
 
 The DSS and DSP solvers can only be used with sparse matrices. For dense matrices, use the LAPACK solver.

@@ -30,17 +30,6 @@ Label for output and termination control:
 
 ## Notes
 
-### Argument descriptions
-
-- `lab : str` - Label for output and termination control:
-  - `INFO` - Writes the message with no heading (default).
-  - `NOTE` - Writes the message with a "NOTE" heading.
-  - `WARN` - Writes the message with a "WARNING" heading. Also writes the message to the errors file, `JobnameERR`.
-  - `ERROR` - Writes the message with a "ERROR" heading and causes run termination (if batch) at earliest "clean exit" point. Also writes the message to the errors file, `JobnameERR`.
-  - `FATAL` - Writes the message with a "FATAL ERROR" heading and causes run termination immediately. Also writes the message to the errors file, `JobnameERR`.
-  - `UI` - Writes the message with a "NOTE" heading and displays it in the message dialog box. This option is most useful in GUI mode.
-- `val1, val2, val3,..., val8 : str` - Numeric or alphanumeric character values to be included in message. Values may be the results of parameter evaluations. All numeric values are assumed to be double precision. The FORTRAN nearest integer (NINT) function is used to form integers for the %I specifier.
-
 Allows writing an output message via the Mechanical APDL message subroutine. Also allows run termination control. This command is used only when contained in a prepared file read into the Mechanical APDL program (that is, [[use|*USE]], [[input|/INPUT]], etc.). A message format must immediately follow the **\*MSG** command (on a separate line, without parentheses, as described below).
 
 The message format may be up to 80 characters long, consisting of text strings and predefined "data descriptors" between the strings where numeric or alphanumeric character data are to be inserted. The normal descriptors are %I for integer data, %G for double precision data, %C for alphanumeric character data, and %/ for a line break. The corresponding FORTRAN data descriptors are I9, 1PG16.9 and A8, respectively. Each descriptor must be preceded by a blank. There must be one data descriptor for each specified value (8 maximum) in the order of the specified values.
