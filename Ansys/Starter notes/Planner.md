@@ -15,7 +15,7 @@ Started 2026-08-22. The pipeline is built and proven (see `LLM/2026-08-22 Handov
 | 1    | Two conda envs, kernel and frontend split by role                                                                | first pass  | [[Environment set up]]                             |
 | 2    | Repo layout: code repo, vault, scratch as run_location                                                           | first pass  | project CLAUDE.md, repo README                     |
 | 3    | Solver lifecycle: separate process, attach or launch, two clients on 50052                                       | first pass  | [[Solver at start]]                                |
-| 4    | Viewer stack: trame native mode, ratios, cell data on the grid                                                   | not started | [[Interactive viewer]]                             |
+| 4    | Viewer stack: trame native mode, ratios, cell data on the grid                                                   | own words   | [[Interactive viewer]]                             |
 | 5    | Model definition: parameters, element types, materials, geometry, naming by component                            | not started | [[Model overview]], [[Geometry]], `double_wall.py` |
 | 6    | Mesh and coupling: attributes per component, mesh sizes, coupled layer by ESLN, where UX and UY live             | not started |                                                    |
 | 7    | BCs and flags: FSI, IMPD with MU, rim clamps, do nothing equals rigid, FLOW source                               | not started |                                                    |
@@ -36,3 +36,4 @@ Steps 5 to 8 first, one note each, John narrating before anything is written. St
 ## Log
 
 - 2026-08-22: planner created, nine steps listed, 1 to 3 marked first pass.
+- 2026-08-22: step 4 narrated by John, Interactive viewer note rewritten in his words. Distribution question checked against package metadata and PyPI, answer folded into the note. Graphics extra contents verified from installed metadata.
