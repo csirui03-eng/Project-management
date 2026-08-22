@@ -17,8 +17,8 @@ Started 2026-08-22. The pipeline is built and proven (see `LLM/2026-08-22 Handov
 | 3    | Solver lifecycle: separate process, attach or launch, two clients on 50052                                       | first pass  | [[3 - Solver at start|Solver at start]]                                |
 | 4    | Viewer stack: trame native mode, ratios, cell data on the grid                                                   | own words   | [[4 - Interactive viewer|Interactive viewer]]                             |
 | 5    | Model definition: parameters, element types, materials, geometry, naming by component, attributes                            | own words   | [[5 - Model definition|Model definition]], [[Model overview]], [[Geometry]], `double_wall.py` |
-| 6    | Mesh and coupling: mesh sizes, meshing, coupled layer by ESLN, where UX and UY live             | in progress | [[6 - Mesh and coupling|Mesh and coupling]] |
-| 7    | BCs and flags: FSI, IMPD with MU, rim clamps, do nothing equals rigid, FLOW source                               | not started |                                                    |
+| 6    | Mesh and coupling: mesh sizes, meshing, coupled layer by ESLN, where UX and UY live             | own words   | [[6 - Mesh and coupling|Mesh and coupling]] |
+| 7    | BCs and flags: FSI, IMPD with MU, rim clamps, do nothing equals rigid, FLOW source                               | first pass, approved in chat | [[7 - Boundary conditions and flags|Boundary conditions and flags]] |
 | 8    | Solve and extract: HARMIC FULL sweep, POST26, section averages, two mic decomposition, the wall's own reflection | not started | `tl_sweep.py`                                      |
 | 9    | Verification layers: counts, pictures, physics overlay                                                           | not started |                                                    |
 
@@ -55,3 +55,4 @@ Steps 5 to 8 first, one note each, John narrating before anything is written. St
 - 2026-08-22: step 3 discussion ballooned into the lifecycle cell design. Cells in the notebook, record in LLM, revisit parked until the easy steps are done. Step 5 next.
 - 2026-08-22: note 5 has headline, set up, geometry, and a Table of methods section at the end. Documentation conversion handed over to a dedicated chat.
 - 2026-08-22: step 5 narrated end to end, note 5 own words. Script refactored to one domain table (DW_DOMAINS) feeding the naming, attribute and mesh size loops.
+- 2026-08-23: note 6 narrated (coupled layer, FSI flag merged into the conversion block in the script), own words. Note 7 written from the chat explanation John approved, table linked to the converted docs.
