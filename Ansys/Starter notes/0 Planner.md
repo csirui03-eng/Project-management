@@ -12,10 +12,10 @@ Started 2026-08-22. The pipeline is built and proven (see `LLM/2026-08-22 Handov
 
 | Step | Component                                                                                                        | Status      | Note                                               |
 | ---- | ---------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------- |
-| 1    | Two conda envs, kernel and frontend split by role                                                                | first pass  | [[Environment set up]]                             |
+| 1    | Two conda envs, kernel and frontend split by role                                                                | first pass  | [[1 Environment set up|Environment set up]]                             |
 | 2    | Repo layout: code repo, vault, scratch as run_location                                                           | first pass  | project CLAUDE.md, repo README                     |
-| 3    | Solver lifecycle: separate process, attach or launch, two clients on 50052                                       | first pass  | [[Solver at start]]                                |
-| 4    | Viewer stack: trame native mode, ratios, cell data on the grid                                                   | own words   | [[Interactive viewer]]                             |
+| 3    | Solver lifecycle: separate process, attach or launch, two clients on 50052                                       | first pass  | [[3 Solver at start|Solver at start]]                                |
+| 4    | Viewer stack: trame native mode, ratios, cell data on the grid                                                   | own words   | [[4 Interactive viewer|Interactive viewer]]                             |
 | 5    | Model definition: parameters, element types, materials, geometry, naming by component                            | not started | [[Model overview]], [[Geometry]], `double_wall.py` |
 | 6    | Mesh and coupling: attributes per component, mesh sizes, coupled layer by ESLN, where UX and UY live             | not started |                                                    |
 | 7    | BCs and flags: FSI, IMPD with MU, rim clamps, do nothing equals rigid, FLOW source                               | not started |                                                    |

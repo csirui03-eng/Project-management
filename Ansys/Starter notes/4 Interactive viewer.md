@@ -45,4 +45,4 @@ What no list covers for our split: the ipykernel < 7 pin (ipykernel is not a dec
 
 ## Related
 
-The env and kernel model behind the two sided install: [[Environment set up]]. The full failure chain that produced this list: [[2026-08-21 Handover, interactive viewer post-mortem]]. trame-jupyter-extension is installed in the frontend env but its comm bridge never connected, so nothing relies on it.
+The env and kernel model behind the two sided install: [[1 Environment set up|Environment set up]]. The full failure chain that produced this list: [[2026-08-21 Handover, interactive viewer post-mortem]]. trame-jupyter-extension is installed in the frontend env but its comm bridge never connected, so nothing relies on it.
