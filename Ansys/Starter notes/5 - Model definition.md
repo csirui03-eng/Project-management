@@ -15,7 +15,11 @@ We start by setting up the parametric values, as we would in a normal solver cre
 
 The area numbers in the domain viewer are natural numbering that does not mean much. They only serve to indicate that one particular section is in fact a distinct domain from another. They also change under you: gluing retired areas 2 to 8 and issued 9 to 15 for the glued versions, which is why naming happens only after `aglue`.
 
-Functions used so far, in the order the script calls them. Each PyMAPDL method is the APDL command in lower case, which is the key into the MAPDL command reference.
+## Naming by component
+
+## Table of methods
+
+Methods used in the script, in call order. Each PyMAPDL method is the APDL command in lower case, which is the key into the MAPDL command reference.
 
 | Method | APDL | Does |
 |---|---|---|
@@ -28,5 +32,3 @@ Functions used so far, in the order the script calls them. Each PyMAPDL method i
 | `mapdl.aglue("ALL")` | `AGLUE` | glue coincident area boundaries so neighbours share lines, renumbers areas |
 
 For naming, coming next: `asel` (`ASEL`, select areas by location), `lsel` (`LSEL`, select lines), `cm` (`CM`, name the current selection as a component), `allsel` (`ALLSEL`, select everything again).
-
-## Naming by component

@@ -42,6 +42,7 @@ Steps 5 to 8 first, one note each, John narrating before anything is written. St
 - Modal analysis of the wet structure to identify the 1610 Hz pole zero pair, or park it.
 - Accuracy passes: PLANE182 to conform with FLUID29, r weighted FLOW, mesh convergence.
 - Compare the split dip pair (about 280 and 350 Hz) against the AMM vault piston on surround analytics.
+- ANSYS documentation conversion, its own chat: the 1566 PyMAPDL command reference pages from HTML to markdown under `Resources\ANSYS documentation\`, so the Table of methods in note 5 (and later 6 to 8) can link each APDL name to a local page. Handover: [[2026-08-22 Handover, ANSYS documentation conversion]].
 - Housekeeping: notebook filename leading space, the `[84, 89, 109]` aplot chatter, redundant jupyterlab in the pyansys env.
 
 ## Log
@@ -50,3 +51,4 @@ Steps 5 to 8 first, one note each, John narrating before anything is written. St
 - 2026-08-22: step 4 narrated by John, Interactive viewer note rewritten in his words. Distribution question checked against package metadata and PyPI, answer folded into the note. Graphics extra contents verified from installed metadata.
 - 2026-08-22: notes moved into Starter notes and numbered by step. Servers note stubbed with headings for John to narrate into. The LLM draft sits in LLM as 2026-08-22 Servers, LLM draft.
 - 2026-08-22: step 3 discussion ballooned into the lifecycle cell design. Cells in the notebook, record in LLM, revisit parked until the easy steps are done. Step 5 next.
+- 2026-08-22: note 5 has headline, set up, geometry, and a Table of methods section at the end. Documentation conversion handed over to a dedicated chat.
