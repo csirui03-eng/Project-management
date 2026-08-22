@@ -17,6 +17,8 @@ The area numbers in the domain viewer are natural numbering that does not mean m
 
 ## Naming by component
 
+This section is important because we want names assigned to the key domains, as a way for us to assign key information to those domains: material and element type, mesh size, the coupling layer and the flags, and the counts in the audit cells. Coordinates appear here for the last time. Downstream stages speak names. Names survive renumbering, which area numbers do not, and they read as the model (`W1_EDGE_A`) rather than as a coordinate band.
+
 ## Table of methods
 
 Methods used in the script, in call order. Each PyMAPDL method is the APDL command in lower case, which is the key into the MAPDL command reference.
