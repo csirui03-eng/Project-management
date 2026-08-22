@@ -26,6 +26,12 @@ Geometry work follows the geometry-creation loop: plain words first (vault note)
 - A stray system Python 3.13 (AppData\Local\Programs) shadows some `jupyter` subcommands on PATH with a broken install; always target envs explicitly (`conda run -n ...` or full python.exe paths).
 - Before touching a new frontend feature (widgets, extensions), check dependencies on BOTH sides of the frontend/kernel env split first. This list exists because that check was skipped once.
 
+## Hard rules (whose notes are whose)
+
+- Notes under `Ansys\` (Starter notes, Double wall standard, concept notes) are John's own words notes. Claude never fills them with drafted prose. "Start a note" means create the title and section headings and stop. After John narrates, corrections fold into his sentences with minimal edits, and a rewrite keeps his phrasing in the lead.
+- Anything Claude drafts in full (explanations from a chat, comparison tables, summaries, handovers) goes in `LLM\` as a dated file, linked from John's note if useful. Never into his note.
+- Planner for the understanding phase: `Ansys\Starter notes\0 Planner.md`. Status moves from not started to first pass to own words to solid only on John's narration, not on Claude's writing.
+
 ## Hard rules (writing)
 
 - No AI lexicon: the furthermore/moreover/notwithstanding transitions, the delve/leverage/utilize/foster/underscore verbs, the robust/comprehensive/pivotal/seamless adjectives, and the significantly/extremely intensifiers are banned in all output, prose or note. Full lists in the no-ai-slop skill's `ai-writing-detection.md` (copied to `.claude/skills/no-ai-slop/`, source: AMM-management vault).

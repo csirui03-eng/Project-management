@@ -22,6 +22,12 @@ Started 2026-08-22. The pipeline is built and proven (see `LLM/2026-08-22 Handov
 | 8    | Solve and extract: HARMIC FULL sweep, POST26, section averages, two mic decomposition, the wall's own reflection | not started | `tl_sweep.py`                                      |
 | 9    | Verification layers: counts, pictures, physics overlay                                                           | not started |                                                    |
 
+## Concept notes beside the steps
+
+| Note | Status | Feeds |
+|---|---|---|
+| [[X Servers|Servers]] | not started, headings only | step 3 |
+
 ## Order of attack
 
 Steps 5 to 8 first, one note each, John narrating before anything is written. Steps 1 to 3 get a read through and an own words pass after, since the notes exist and the facts are settled. Step 4 and 9 last.
@@ -37,3 +43,4 @@ Steps 5 to 8 first, one note each, John narrating before anything is written. St
 
 - 2026-08-22: planner created, nine steps listed, 1 to 3 marked first pass.
 - 2026-08-22: step 4 narrated by John, Interactive viewer note rewritten in his words. Distribution question checked against package metadata and PyPI, answer folded into the note. Graphics extra contents verified from installed metadata.
+- 2026-08-22: notes moved into Starter notes and numbered by step. Servers note stubbed with headings for John to narrate into. The LLM draft sits in LLM as 2026-08-22 Servers, LLM draft.
