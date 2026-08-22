@@ -15,9 +15,15 @@ We start by setting up the parametric values, as we would in a normal solver cre
 
 The area numbers in the domain viewer are natural numbering that does not mean much. They only serve to indicate that one particular section is in fact a distinct domain from another. They also change under you: gluing retired areas 2 to 8 and issued 9 to 15 for the glued versions, which is why naming happens only after `aglue`.
 
+![[domain viewer 2026-08-22.png]]
+The domain viewer, cell 7: `aplot` with areas coloured and numbered after the rebuild.
+
 ## Naming by component
 
 This section is important because we want names assigned to the key domains, as a way for us to assign key information to those domains: material and element type, mesh size, the coupling layer and the flags, and the counts in the audit cells. Coordinates appear here for the last time. Downstream stages speak names. Names survive renumbering, which area numbers do not, and they read as the model (`W1_EDGE_A`) rather than as a coordinate band.
+
+![[component check 2026-08-22.png]]
+The component check, cell 8: every component with its entity numbers, read against the numbered plot. `SOURCE_L` holds line 3, `AIR_UP_A` holds the two areas either side of the source line.
 
 ## Table of methods
 
