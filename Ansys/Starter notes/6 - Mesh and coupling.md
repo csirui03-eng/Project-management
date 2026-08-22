@@ -17,3 +17,17 @@ What we are doing, on the server: selecting every node on the structure areas (`
 The four structure areas are gathered with `cmsel("S", ...)` then `cmsel("A", ...)` three times, select and add, so the conversion runs once over both walls. This is the pattern the element reference asks for (coupled variant at the interface only, pressure only elsewhere). Mechanical does it behind a checkbox. We do it by hand in eight lines. I like our way, it seems more flexible: the layer is defined by adjacency, not by geometry, so moving a wall or changing the gap finds the new layer with the same lines, and the count of 84 converted elements is the proof.
 
 ## Table of methods
+
+Methods used in the mesh and coupling blocks, in call order. The APDL column links to the converted command page in `Resources\ANSYS documentation`.
+
+| Method | APDL | Does |
+|---|---|---|
+| `mapdl.mshape(0, "2D")` | [[mshape\|MSHAPE]] | cell shape for area meshing, 0 quadrilateral, 1 triangle |
+| `mapdl.mshkey(0)` | [[mshkey\|MSHKEY]] | meshing method, 0 free, 1 mapped |
+| `mapdl.aesize("ALL", size)` | [[aesize\|AESIZE]] | element edge size on the selected areas |
+| `mapdl.amesh("ALL")` | [[amesh\|AMESH]] | mesh the selected areas with their stamped attributes |
+| `mapdl.nsla("S", 1)` | [[nsla\|NSLA]] | select nodes belonging to the selected areas, 1 includes boundary nodes |
+| `mapdl.esln("S", 0)` | [[esln\|ESLN]] | select elements attached to the selected nodes, 0 any node, 1 all nodes |
+| `mapdl.esel("R", "TYPE", "", n)` | [[esel\|ESEL]] | select elements by attribute, here element type, R narrows |
+| `mapdl.emodif("ALL", "TYPE", n)` | [[emodif\|EMODIF]] | change an attribute of the selected elements in place |
+| `mapdl.sf("ALL", "FSI")` | [[sf\|SF]] | surface flag or load on faces of the selected elements whose nodes are all selected |
