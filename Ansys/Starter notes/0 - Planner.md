@@ -61,3 +61,4 @@ Supervisor presentation: a breakdown of the system as set up, the nine steps as 
 - 2026-08-22: step 5 narrated end to end, note 5 own words. Script refactored to one domain table (DW_DOMAINS) feeding the naming, attribute and mesh size loops.
 - 2026-08-23: note 6 narrated (coupled layer, FSI flag merged into the conversion block in the script), own words. Note 7 written from the chat explanation John approved, table linked to the converted docs.
 - 2026-08-23: mesh convergence study run, converged defaults into the script (wall and edge 0.83 mm), result in note 6. Geometry sweep built on the shared runner, not yet run. Supervisor presentation this week noted.
+- 2026-08-23, 02:30: session closed with handover [[2026-08-23 Handover, understanding phase and studies]]. Geometry sweep rerun in progress after the mic row fix. Next: read the sweep, note 8, then the write up for the supervisor.
