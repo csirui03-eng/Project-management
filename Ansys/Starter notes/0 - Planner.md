@@ -16,7 +16,7 @@ Started 2026-08-22. The pipeline is built and proven (see `LLM/2026-08-22 Handov
 | 2    | Repo layout: code repo, vault, scratch as run_location                                                           | first pass  | project CLAUDE.md, repo README                     |
 | 3    | Solver lifecycle: separate process, attach or launch, two clients on 50052                                       | first pass  | [[3 - Solver at start|Solver at start]]                                |
 | 4    | Viewer stack: trame native mode, ratios, cell data on the grid                                                   | own words   | [[4 - Interactive viewer|Interactive viewer]]                             |
-| 5    | Model definition: parameters, element types, materials, geometry, naming by component, attributes                            | not started | [[5 - Model definition|Model definition]], [[Model overview]], [[Geometry]], `double_wall.py` |
+| 5    | Model definition: parameters, element types, materials, geometry, naming by component, attributes                            | own words   | [[5 - Model definition|Model definition]], [[Model overview]], [[Geometry]], `double_wall.py` |
 | 6    | Mesh and coupling: mesh sizes, meshing, coupled layer by ESLN, where UX and UY live             | not started |                                                    |
 | 7    | BCs and flags: FSI, IMPD with MU, rim clamps, do nothing equals rigid, FLOW source                               | not started |                                                    |
 | 8    | Solve and extract: HARMIC FULL sweep, POST26, section averages, two mic decomposition, the wall's own reflection | not started | `tl_sweep.py`                                      |
@@ -53,3 +53,4 @@ Steps 5 to 8 first, one note each, John narrating before anything is written. St
 - 2026-08-22: notes moved into Starter notes and numbered by step. Servers note stubbed with headings for John to narrate into. The LLM draft sits in LLM as 2026-08-22 Servers, LLM draft.
 - 2026-08-22: step 3 discussion ballooned into the lifecycle cell design. Cells in the notebook, record in LLM, revisit parked until the easy steps are done. Step 5 next.
 - 2026-08-22: note 5 has headline, set up, geometry, and a Table of methods section at the end. Documentation conversion handed over to a dedicated chat.
+- 2026-08-22: step 5 narrated end to end, note 5 own words. Script refactored to one domain table (DW_DOMAINS) feeding the naming, attribute and mesh size loops.
