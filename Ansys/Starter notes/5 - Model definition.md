@@ -1,7 +1,8 @@
 # Model definition
 
-Started 2026-08-22. Step 5 of the pipeline, `double_wall.py` up to the geometry. Bookkeeping heavy, conceptually simple.
+Started 2026-08-22. Step 5 of the pipeline. Bookkeeping heavy, conceptually simple.
 
+Usually it is preferable to contain everything model set up related in its own script. Here that is `double_wall.py`, and it runs from the parameters, through geometry creation, naming, attributes, meshing and the flags, up to the boundary conditions. Everything that is the model lives there. 
 ## Set up
 
 It is straightforward. We have geometry parameters, element type assignment to numbers, and material assignment to numbers. That is our set up.
