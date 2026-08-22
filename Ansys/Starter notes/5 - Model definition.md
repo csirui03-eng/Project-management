@@ -42,5 +42,9 @@ Methods used in the script, in call order. Each PyMAPDL method is the APDL comma
 | `mapdl.mp(label, n, value)` | `MP` | set material property label on material number n |
 | `mapdl.rectng(x1, x2, y1, y2)` | `RECTNG` | create a rectangular area by its corner coordinates |
 | `mapdl.aglue("ALL")` | `AGLUE` | glue coincident area boundaries so neighbours share lines, renumbers areas |
-
-For naming, coming next: `asel` (`ASEL`, select areas by location), `lsel` (`LSEL`, select lines), `cm` (`CM`, name the current selection as a component), `allsel` (`ALLSEL`, select everything again).
+| `mapdl.asel("S", "LOC", "Y", a, b)` | `ASEL` | select areas by location, S new set, R narrow the current set |
+| `mapdl.lsel("S", "LOC", "Y", y)` | `LSEL` | select lines by location, same modes |
+| `mapdl.cm(name, "AREA")` | `CM` | name the current selection as a component of that entity type |
+| `mapdl.allsel()` | `ALLSEL` | select every entity again (components themselves need `CMSEL,ALL`) |
+| `mapdl.cmsel("S", name)` | `CMSEL` | select a component by name, same modes as ASEL |
+| `mapdl.aatt(mat, "", type)` | `AATT` | stamp material and element type on the selected areas, read by the mesher |
