@@ -14,4 +14,18 @@ We start by setting up the parametric values, as we would in a normal solver cre
 
 The area numbers in the domain viewer are natural numbering that does not mean much. They only serve to indicate that one particular section is in fact a distinct domain from another. They also change under you: gluing retired areas 2 to 8 and issued 9 to 15 for the glued versions, which is why naming happens only after `aglue`.
 
+Functions used so far, in the order the script calls them. Each PyMAPDL method is the APDL command in lower case, which is the key into the MAPDL command reference.
+
+| Method | APDL | Does |
+|---|---|---|
+| `mapdl.clear()` | `/CLEAR` | wipe the database, keep the jobname and working directory |
+| `mapdl.prep7()` | `/PREP7` | enter the preprocessor, where model building commands are accepted |
+| `mapdl.et(n, name)` | `ET` | define element type number n |
+| `mapdl.keyopt(n, k, v)` | `KEYOPT` | set option k of element type n (axisymmetric, coupled or not) |
+| `mapdl.mp(label, n, value)` | `MP` | set material property label on material number n |
+| `mapdl.rectng(x1, x2, y1, y2)` | `RECTNG` | create a rectangular area by its corner coordinates |
+| `mapdl.aglue("ALL")` | `AGLUE` | glue coincident area boundaries so neighbours share lines, renumbers areas |
+
+For naming, coming next: `asel` (`ASEL`, select areas by location), `lsel` (`LSEL`, select lines), `cm` (`CM`, name the current selection as a component), `allsel` (`ALLSEL`, select everything again).
+
 ## Naming by component
