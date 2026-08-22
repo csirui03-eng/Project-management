@@ -27,6 +27,8 @@ The component check, cell 8: every component with its entity numbers, read again
 
 ## Attributes
 
+The basic version: with a name assigned to the critical domains and edges, we now start assigning properties to them. There are many ways to do this, but the best way is three execution loops (naming, attributes, mesh sizes) that carry out an assignment already written down, in rather plain words, in the parameter set up section as a simple dictionary, `DW_DOMAINS`. This section is the second of the three loops: select the name, stamp its material and element type on the areas with `AATT`, select everything again. The mesher reads the stamps when it gets there.
+
 ## Table of methods
 
 Methods used in the script, in call order. Each PyMAPDL method is the APDL command in lower case, which is the key into the MAPDL command reference.
