@@ -28,6 +28,7 @@ Started 2026-08-22. The pipeline is built and proven (see `LLM/2026-08-22 Handov
 |---|---|---|
 | [[X - Servers|Servers]] | not started, headings only | step 3 |
 | [[X - Visualization tools|Visualization tools]] | reference, written on request | step 4 |
+| [[X - Dictionary|Dictionary]] | not started, headings only | step 5 |
 
 ## Order of attack
 
