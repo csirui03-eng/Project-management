@@ -1,0 +1,33 @@
+---
+apdl: "PTEMP"
+method: ptemp
+group: prep7
+source: PyMAPDL 0.74.1 docstrings, pandoc 3.9.0.2, ansys.mapdl.core._commands.prep7.piping.Piping.ptemp
+generated: 2026-08-22
+tags: [mapdl-command]
+---
+
+# PTEMP
+
+PyMAPDL: `mapdl.ptemp(tout='', tin='', **kwargs)`
+
+Defines the pipe wall temperatures in a piping run.
+
+**Command default:**
+
+Assign uniform temperature [[bfunif|BFUNIF]] to elements.
+
+## Parameters
+
+**tout**: Outer pipe wall temperature. If NONE, reset temperature specification to none ( [[bfunif|BFUNIF]] will be assigned).
+
+**tin**: Inner pipe wall temperature (defaults to `TOUT` ).
+
+## Notes
+
+Defines the pipe wall temperatures in a piping run. These temperatures are assigned to the elements as they are generated. (See the RUN command description in [Archived Commands](https://ansyshelp.ansys.com/Views/Secured/corp/v232/en/ans_arch/Hlp_C_VALVE.html).)
+
+> [!WARNING]
+> This command is archived in the latest version of the software.
+
+Ansys help: https://ansyshelp.ansys.com/Views/Secured/corp/v232/en//ans_cmd/Hlp_C_PTEMP.html
