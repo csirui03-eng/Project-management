@@ -4,9 +4,13 @@ Started 2026-08-22. Step 6 of the pipeline, the mesh block of `double_wall.py` a
 
 ## Meshing
 
-Meshing is simple. It is literally assign mesh size, then mesh all, and Bob's your uncle. Two settings go before it: `mshape(0, "2D")` for quadrilaterals and `mshkey(0)` for free meshing, which lets the mesher handle the size change at the edge ring instead of forcing a mapped grid. The size loop is the third loop over `DW_DOMAINS`, `AESIZE` per name, and `amesh("ALL")` meshes every area with the attributes stamped on it. Census last time: 708 elements, 94 structure, 84 coupled fluid, 530 uncoupled.
+Meshing is simple. It is literally assign mesh size, then mesh all, and Bob's your uncle. Two settings go before it: `mshape(0, "2D")` for quadrilaterals and `mshkey(0)` for free meshing, which lets the mesher handle the size change at the edge ring instead of forcing a mapped grid. The size loop is the third loop over `DW_DOMAINS`, `AESIZE` per name, and `amesh("ALL")` meshes every area with the attributes stamped on it. Census at the first mesh: 708 elements, 94 structure, 84 coupled fluid, 530 uncoupled. At the converged mesh: 1858, 868 structure, 248 coupled, 742 uncoupled.
 
 Mesh type (shape and method, a mesher setting) is a different thing from element type (physics and nodes, carried by the areas), and the two have to agree: [[X - Mesh type|Mesh type]].
+
+Langfeldt's thesis states the element size rule as min(λ_min, L_x, L_y)/6: six per shortest wavelength and six across the thinnest dimension of every region. The air at 5 mm passes both (34 per wavelength at 2 kHz, 8 across the gap). The first mesh did not on the structure: 2 through the wall, 3 across the edge ring. The convergence study (`LLM\mesh_convergence.py`, 2026-08-23, four levels in under three minutes) moved the lower dip 10 Hz and the 1600 Hz feature 25 Hz between that mesh and 6 across, then nothing further when the air was halved too. Wall and edge at 0.83 mm is the converged default, 1858 elements, 47 s per sweep.
+
+![[mesh convergence 2026-08-23.png]]
 
 ## Coupled layer
 

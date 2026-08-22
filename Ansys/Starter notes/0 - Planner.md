@@ -20,7 +20,7 @@ Started 2026-08-22. The pipeline is built and proven (see `LLM/2026-08-22 Handov
 | 6    | Mesh and coupling: mesh sizes, meshing, coupled layer by ESLN, where UX and UY live             | own words   | [[6 - Mesh and coupling|Mesh and coupling]] |
 | 7    | BCs and flags: FSI, IMPD with MU, rim clamps, do nothing equals rigid, FLOW source                               | first pass, approved in chat | [[7 - Boundary conditions and flags|Boundary conditions and flags]] |
 | 8    | Solve and extract: HARMIC FULL sweep, POST26, section averages, two mic decomposition, the wall's own reflection | not started | `tl_sweep.py`                                      |
-| 9    | Verification layers: counts, pictures, physics overlay                                                           | not started |                                                    |
+| 9    | Verification layers: counts, pictures, physics overlay, mesh convergence, geometry sweep                                                           | not started |                                                    |
 
 ## Concept notes beside the steps
 
@@ -34,6 +34,10 @@ Started 2026-08-22. The pipeline is built and proven (see `LLM/2026-08-22 Handov
 ## Order of attack
 
 Steps 5 to 8 first, one note each, John narrating before anything is written. Steps 1 to 3 get a read through and an own words pass after, since the notes exist and the facts are settled. Step 4 and 9 last.
+
+## This week
+
+Supervisor presentation: a breakdown of the system as set up, the nine steps as the walk through, ending on the two study plots as the proof. Mesh convergence (done 2026-08-23, `LLM\mesh_convergence.py`) and the geometry sweep (`LLM\geometry_sweep.py`, edge width 2.5 and 10 mm, wall thickness 3 and 8 mm, ready to run) are part of the study, not side jobs.
 
 ## Parked for later, after the easy steps
 
@@ -56,3 +60,4 @@ Steps 5 to 8 first, one note each, John narrating before anything is written. St
 - 2026-08-22: note 5 has headline, set up, geometry, and a Table of methods section at the end. Documentation conversion handed over to a dedicated chat.
 - 2026-08-22: step 5 narrated end to end, note 5 own words. Script refactored to one domain table (DW_DOMAINS) feeding the naming, attribute and mesh size loops.
 - 2026-08-23: note 6 narrated (coupled layer, FSI flag merged into the conversion block in the script), own words. Note 7 written from the chat explanation John approved, table linked to the converted docs.
+- 2026-08-23: mesh convergence study run, converged defaults into the script (wall and edge 0.83 mm), result in note 6. Geometry sweep built on the shared runner, not yet run. Supervisor presentation this week noted.
