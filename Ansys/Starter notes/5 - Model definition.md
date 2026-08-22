@@ -10,4 +10,6 @@ The material numbers take their values from a parameter dict too (`DW_MAT`), the
 
 ## Geometry
 
+We start by setting up the parametric values, as we would in a normal solver creating a normal model. We then move to geometry creation. Geometry creation is usually the iterative step: `double_wall.py` is a live document, the notebook is started and running, the server is started and the client is attached to it.
+
 ## Naming by component
