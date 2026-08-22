@@ -37,16 +37,16 @@ Methods used in the script, in call order. Each PyMAPDL method is the APDL comma
 
 | Method | APDL | Does |
 |---|---|---|
-| `mapdl.clear()` | `/CLEAR` | wipe the database, keep the jobname and working directory |
-| `mapdl.prep7()` | `/PREP7` | enter the preprocessor, where model building commands are accepted |
-| `mapdl.et(n, name)` | `ET` | define element type number n |
-| `mapdl.keyopt(n, k, v)` | `KEYOPT` | set option k of element type n (axisymmetric, coupled or not) |
-| `mapdl.mp(label, n, value)` | `MP` | set material property label on material number n |
-| `mapdl.rectng(x1, x2, y1, y2)` | `RECTNG` | create a rectangular area by its corner coordinates |
-| `mapdl.aglue("ALL")` | `AGLUE` | glue coincident area boundaries so neighbours share lines, renumbers areas |
-| `mapdl.asel("S", "LOC", "Y", a, b)` | `ASEL` | select areas by location, S new set, R narrow the current set |
-| `mapdl.lsel("S", "LOC", "Y", y)` | `LSEL` | select lines by location, same modes |
-| `mapdl.cm(name, "AREA")` | `CM` | name the current selection as a component of that entity type |
-| `mapdl.allsel()` | `ALLSEL` | select every entity again (components themselves need `CMSEL,ALL`) |
-| `mapdl.cmsel("S", name)` | `CMSEL` | select a component by name, same modes as ASEL |
-| `mapdl.aatt(mat, "", type)` | `AATT` | stamp material and element type on the selected areas, read by the mesher |
+| `mapdl.clear()` | [[clear\|/CLEAR]] | wipe the database, keep the jobname and working directory |
+| `mapdl.prep7()` | [[prep7\|/PREP7]] | enter the preprocessor, where model building commands are accepted |
+| `mapdl.et(n, name)` | [[et\|ET]] | define element type number n |
+| `mapdl.keyopt(n, k, v)` | [[keyopt\|KEYOPT]] | set option k of element type n (axisymmetric, coupled or not) |
+| `mapdl.mp(label, n, value)` | [[mp\|MP]] | set material property label on material number n |
+| `mapdl.rectng(x1, x2, y1, y2)` | [[rectng\|RECTNG]] | create a rectangular area by its corner coordinates |
+| `mapdl.aglue("ALL")` | [[aglue\|AGLUE]] | glue coincident area boundaries so neighbours share lines, renumbers areas |
+| `mapdl.asel("S", "LOC", "Y", a, b)` | [[asel\|ASEL]] | select areas by location, S new set, R narrow the current set |
+| `mapdl.lsel("S", "LOC", "Y", y)` | [[lsel\|LSEL]] | select lines by location, same modes |
+| `mapdl.cm(name, "AREA")` | [[cm\|CM]] | name the current selection as a component of that entity type |
+| `mapdl.allsel()` | [[allsel\|ALLSEL]] | select every entity again (components themselves need `CMSEL,ALL`) |
+| `mapdl.cmsel("S", name)` | [[cmsel\|CMSEL]] | select a component by name, same modes as ASEL |
+| `mapdl.aatt(mat, "", type)` | [[aatt\|AATT]] | stamp material and element type on the selected areas, read by the mesher |
