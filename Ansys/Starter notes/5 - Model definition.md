@@ -29,7 +29,7 @@ The component check, cell 8: every component with its entity numbers, read again
 
 The basic version: with a name assigned to the critical domains and edges, we now start assigning properties to them. There are many ways to do this, but the best way is three execution loops (naming, attributes, mesh sizes) that carry out an assignment already written down, in rather plain words, in the parameter set up section as a simple dictionary, `DW_DOMAINS`. This section is the second of the three loops: select the name, stamp its material and element type on the areas with `AATT`, select everything again. The mesher reads the stamps when it gets there.
 
-The loop shape, every time: narrow the selection with `S` (a new set, so the state before does not matter), do the work, then go back to `allsel()`. The trailing `allsel()` is the one that counts: the next cell, the next loop, and the other client on the same server all inherit whatever selection is current. `ALLSEL` restores entities, not components, so a loop that went in through `CMSEL,S` is restored with `CMSEL,ALL`.
+For people who know coding this is the usual rule: the last line in a loop resets the state to the default state. Here the loop shape is narrow the selection with `S` (a new set, so the state before does not matter), do the work, then go back to `allsel()`. The trailing `allsel()` is the one that counts: the next cell, the next loop, and the other client on the same server all inherit whatever selection is current. `ALLSEL` restores entities, not components, so a loop that went in through `CMSEL,S` is restored with `CMSEL,ALL`.
 
 ## Table of methods
 
