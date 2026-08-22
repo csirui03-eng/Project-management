@@ -23,6 +23,12 @@ Scales a vector or matrix by a constant.
 
 ## Notes
 
+### Argument descriptions
+
+- `name : str` - Name used to identify the vector or matrix to be scaled. Must be specified.
+- `val1 : str` - The real part of the constant to use (default = 1).
+- `val2 : str` - The imaginary part of the constant to use (default = 0). This value is used only if the vector or matrix specified by `Name` is complex.
+
 This command can be applied to vectors and matrices created by the [[vec|*VEC]], [[dmat|*DMAT]] and [[smat|*SMAT]] commands.
 
 Ansys help: https://ansyshelp.ansys.com/Views/Secured/corp/v232/en//ans_cmd/Hlp_C_SCAL.html

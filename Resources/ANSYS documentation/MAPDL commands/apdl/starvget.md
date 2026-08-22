@@ -39,6 +39,21 @@ Field to be looped on:
 
 ## Notes
 
+### Argument descriptions
+
+- `parr : str` - The name of the resulting vector array parameter. See [[starset|*SET]] for name restrictions. The program creates the array parameter if it does not exist.
+- `entity : str` - Entity keyword. Valid keywords are NODE, ELEM, KP, LINE, AREA, VOLU, etc. as shown for `Entity` = in the tables below.
+- `entnum : str` - The number of the entity (as shown for `ENTNUM` = in the tables below).
+- `item1 : str` - The name of a particular item for the given entity. Valid items are as shown in the `Item1` columns of the tables below.
+- `it1num : str` - The number (or label) for the specified `Item1` (if any). Valid `IT1NUM` values are as shown in the `IT1NUM` columns of the tables below. Some `Item1` labels do not require an `IT1NUM` value.
+- `item2, it2num : str` - A second set of item labels and numbers to further qualify the item for which data is to be retrieved. Most items do not require this level of information.
+- `kloop : str` - Field to be looped on:
+  - `0 or 2` - Loop on the `ENTNUM` field (default).
+  - `3` - Loop on the `Item1` field.
+  - `4` - Loop on the `IT1NUM` field. Successive items are as shown with `IT1NUM`.
+  - `5` - Loop on the `Item2` field.
+  - `6` - Loop on the `IT2NUM` field. Successive items are as shown with `IT2NUM`.
+
 Retrieves values for specified items and stores the values in an output vector of a user-named array parameter according to: `ParR` = f( `Entity`, `ENTNUM`, `Item1`, `IT1NUM`, `Item2`, `IT2NUM` )
 
 where (f) is the [[get|*GET]] function; `Entity`, `Item1`, and `Item2` are keywords; and `ENTNUM`, `IT1NUM`, and `IT2NUM` are numbers or labels corresponding to the keywords. Looping continues over successive entity numbers ( `ENTNUM` ) for the `KLOOP` default. For example, **\*VGET**,A(1),ELEM,5,CENT,X returns the centroid x-location of element 5 and stores the result in the first location of A. Retrieving continues with element 6, 7, 8, etc., regardless of whether the element exists or is selected, until successive array locations are filled. Use [[vlen|*VLEN]] or [[vmask|*VMASK]] to skip locations. Absolute values and scale factors may be applied to the result parameter ( [[vabs|*VABS]], [[vfact|*VFACT]] ). Results may be cumulative ( [[vcum|*VCUM]] ). See the [[voper|*VOPER]] command for general details. Results can be put back into an analysis by writing a file of the desired input commands with the [[vwrite|*VWRITE]] command. See also the [[starvput|*VPUT]] command.
@@ -66,7 +81,7 @@ This command is valid in any processor.
 - *\*VGET PREP7 Items, Entity = RCON*
 - *\*VGET PREP7 Items, Entity = TLAB*
 
-### \*VGET PREP7 Items, Entity = NODE
+#### \*VGET PREP7 Items, Entity = NODE
 
 `Entity` = NODE, `ENTNUM` = `n` (node number)
 
@@ -79,7 +94,7 @@ This command is valid in any processor.
 | NSEL |  | Select status of node `n` : -1 = unselected, 0 = undefined, 1 = selected |
 | NLIST |  | Returns the list of selected nodes ( `ENTNUM` is ignored) |
 
-### \*VGET PREP7 Items, Entity = ELEM
+#### \*VGET PREP7 Items, Entity = ELEM
 
 `Entity` = ELEM, `ENTNUM` = `n` (element number)
 
@@ -96,7 +111,7 @@ This command is valid in any processor.
 | SHPAR | `Test` | Element shape test result for selected element `n`, where `Test` = ASPE (aspect ratio), JACR (Jacobian ratio), MAXA (maximum corner angle), PARA (deviation from parallelism of opposite edges), or WARP (warping factor) |
 | ELIST |  | Returns the list of selected elements ( `ENTNUM` is ignored) |
 
-### \*VGET PREP7 Items, Entity = KP
+#### \*VGET PREP7 Items, Entity = KP
 
 `Entity` = KP, `ENTNUM` = `n` (keypoint number)
 
@@ -110,7 +125,7 @@ This command is valid in any processor.
 | KSEL |  | Select status of keypoint `n` : -1 = unselected, 0 = undefined, 1 = selected |
 | KLIST |  | Returns the list of selected keypoints ( `ENTNUM` is ignored) |
 
-### \*VGET PREP7 Items, Entity = LINE
+#### \*VGET PREP7 Items, Entity = LINE
 
 `Entity` = LINE, `ENTNUM` = `n` (line number)
 
@@ -124,7 +139,7 @@ This command is valid in any processor.
 | LSEL |  | Select status of line `n` : -1 = unselected, 0 = undefined, 1 = selected |
 | LLIST |  | Returns the list of selected lines ( `ENTNUM` is ignored) |
 
-### \*VGET PREP7 Items, Entity = AREA
+#### \*VGET PREP7 Items, Entity = AREA
 
 `Entity` = AREA, `ENTNUM` = `n` (area number)
 
@@ -138,7 +153,7 @@ This command is valid in any processor.
 | ASEL | -  |  |  | Select status of area `n` : -1 = unselected, 0 = undefined, 1 = selected |
 | ALIST | -  |  |  | Returns the list of selected areas ( `ENTNUM` is ignored) |
 
-### \*VGET PREP7 Items, Entity = VOLU
+#### \*VGET PREP7 Items, Entity = VOLU
 
 `Entity` = VOLU, `ENTNUM` = `n` (volume number)
 
@@ -152,7 +167,7 @@ This command is valid in any processor.
 | VSEL | -  |  |  | Select status of volume `n` : -1 = unselected, 0 = undefined, 1 = selected |
 | VLIST | -  |  |  | Returns the list of selected volumes ( `ENTNUM` is ignored) |
 
-### \*VGET PREP7 Items, Entity = CDSY
+#### \*VGET PREP7 Items, Entity = CDSY
 
 `Entity` = CDSY, `ENTNUM` = `n` (coordinate system number)
 
@@ -164,7 +179,7 @@ This command is valid in any processor.
 | ANG | XY, YZ, ZX | THXY, THYZ, or THZX rotation angle (°) relative to the global Cartesian coordinate system |
 | ATTR | `name` | Number assigned to specified attribute; `name` = KCS, KTHET, KPHI, PAR1, or PAR2. If the coordinate system is undefined, KCS returns as -1.0 |
 
-### \*VGET PREP7 Items, Entity = RCON
+#### \*VGET PREP7 Items, Entity = RCON
 
 `Entity` = RCON, `ENTNUM` = `n` (real constant set number)
 
@@ -174,7 +189,7 @@ This command is valid in any processor.
 |-------|--------------|-----------------------------------------------|
 | CONST | 1, 2,... `m` | Real constant value for constant 1, 2,... `m` |
 
-### \*VGET PREP7 Items, Entity = TLAB
+#### \*VGET PREP7 Items, Entity = TLAB
 
 `Entity` = `TLAB`, `ENTNUM` = `n` ( `TLAB` is the `Lab` data table label on the [[tb|TB]] command. `n` is the material number.)
 
@@ -194,7 +209,7 @@ This command is valid in any processor.
 
 Vector items are in the active results coordinate system unless otherwise specified.
 
-### \*VGET POST1 Items, Entity = CYCCALC
+#### \*VGET POST1 Items, Entity = CYCCALC
 
 `Entity` = CYCCALC, `ENTNUM` = `n` ( [[cycspec|CYCSPEC]] specification number)
 
@@ -206,7 +221,7 @@ Vector items are in the active results coordinate system unless otherwise specif
 |  |  | SECMAX |  | [[cycspec\|CYCSPEC]] maximum results |
 | The frequency point refers to the harmonic solution data set number ( `NSET` on the [[set\|SET]] command). For `KLOOP` = 4 or SECMAX, returns the requested sector results for all frequencies and `IT1NUM` is ignored. For `KLOOP` = 6, returns the requested frequency results for all sectors and `IT2NUM` is ignored. All other `KLOOP` options are invalid. |  |  |  |  |
 
-### \*VGET POST1 Items, Entity = ELEM
+#### \*VGET POST1 Items, Entity = ELEM
 
 `Entity` = ELEM, `ENTNUM` = `n` (element number)
 
@@ -216,7 +231,7 @@ Vector items are in the active results coordinate system unless otherwise specif
 |----|----|----|
 | ETAB | `Label` | Any user-defined element table label (see [[etable\|ETABLE]] command) |
 
-### \*VGET POST1 Items, Entity = MEMBER
+#### \*VGET POST1 Items, Entity = MEMBER
 
 `Entity` = MEMBER, `ENTNUM` = `N` (GroupID)
 
@@ -226,7 +241,7 @@ Vector items are in the active results coordinate system unless otherwise specif
 |----|----|----|
 | TEMP | MIN, MAX | Minimum or maximum temperature of members (individual reinforcings) with GroupID = `N` in the selected set of reinforcing elements |
 
-### \*VGET POST1 Items, Entity = NODE, Element Nodal Results
+#### \*VGET POST1 Items, Entity = NODE, Element Nodal Results
 
 `Entity` = NODE, `ENTNUM` = `n` (node number)
 
@@ -284,7 +299,7 @@ Vector items are in the active results coordinate system unless otherwise specif
 |  | FPRS | Actual applied fluid penetration pressure |  |
 | Element nodal results are the average nodal value of the selected elements |  |  |  |
 
-### \*VGET POST1 Items, Entity = NODE, Nodal Degree of Freedom Results
+#### \*VGET POST1 Items, Entity = NODE, Nodal Degree of Freedom Results
 
 `Entity` = NODE, `ENTNUM` = `n` (node number)
 

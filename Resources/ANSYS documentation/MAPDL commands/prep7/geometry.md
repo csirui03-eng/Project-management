@@ -11,6 +11,8 @@ tags: [mapdl-command]
 
 PyMAPDL: `mapdl.geometry(**kwargs)`
 
+PyMAPDL overrides `mapdl.geometry` with its own wrapper, so the signature above is not what `mapdl.geometry` runs. Reach the APDL command as text: `mapdl.run("GEOMETRY,...")`.
+
 Specifies "Geometry" as the subsequent status topic.
 
 ## Notes

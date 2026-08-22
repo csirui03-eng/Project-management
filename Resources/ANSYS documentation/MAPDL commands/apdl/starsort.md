@@ -40,6 +40,28 @@ Order of the sort operation:
 
 ## Notes
 
+### Argument descriptions
+
+- `name : str` - Name of the vector to be sorted. This vector can contain real or complex values.
+- `sorttype : str` - Criteria used to sort the values:
+  - `VALUE` - Values are sorted based on their real value (default).
+  - `ABS` - Values are sorted based on their absolute value.
+  - `PERM` - Values are sorted based on the input permutation vector ( `Val1` ).
+- `val1, val2 : str` - Additional input. The meaning of `Val1`, `Val2` varies depending on the specified `SortType`. See below for details.
+
+**The following** `Valx` fields are used with `SortType` = VALUE or ABS:
+
+- `val1 : str` - Name of the vector in which permutation values will be saved (optional). This should be an empty vector of type integer that was created with the [[vec|*VEC]] command. The size of this permutation vector must be identical to the size of the vector to be sorted. After the sort, this vector contains the permutation used to sort the values.
+- `val2 : str` - Order of the sort operation:
+  - `0` - Increasing order (default).
+  - `1` - Decreasing order.
+
+**The following** `Valx` fields are used with `Method` = PERM:
+
+- `val1 : str` - Name of the permutation vector used to sort the values. This must be a vector of integer values that was created with the [[vec|*VEC]] command. The size of this permutation vector must be identical to the size of the vector to be sorted.
+
+  This permutation vector is required when using `Method` = PERM.
+
 The examples below demonstrate using **\*SORT** to sort the values of an input vector.
 
 The following input:

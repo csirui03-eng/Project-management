@@ -45,6 +45,21 @@ Absolute value of third parameter:
 
 ## Notes
 
+### Argument descriptions
+
+- `kabsr : str` - Absolute value of results parameter:
+  - `0` - Do not take absolute value of results parameter (ParR).
+  - `1` - Take absolute value.
+- `kabs1 : str` - Absolute value of first parameter:
+  - `0` - Do not take absolute value of first parameter (Par1 or ParI).
+  - `1` - Take absolute value.
+- `kabs2 : str` - Absolute value of second parameter:
+  - `0` - Do not take absolute value of second parameter (Par2 or ParJ).
+  - `1` - Take absolute value.
+- `kabs3 : str` - Absolute value of third parameter:
+  - `0` - Do not take absolute value of third parameter (Par3 or ParK).
+  - `1` - Take absolute value.
+
 Applies an absolute value to parameters used in certain **\*V** `XX` and **\*M** `XX` operations. Typical absolute value applications are of the form: ParR = \|f(\|Par1\|)\|
 
 > or

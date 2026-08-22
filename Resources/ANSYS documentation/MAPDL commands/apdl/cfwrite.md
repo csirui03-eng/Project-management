@@ -19,6 +19,10 @@ Writes a Mechanical APDL command (or similar string) to a "command" file.
 
 ## Notes
 
+### Argument descriptions
+
+- `command : str` - Command or string to be written. The standard command form of a label followed by arguments separated by commas is assumed. `Command` may be a parameter assignment (for example, **\*CFWRITE**, A = 5).
+
 Writes a Mechanical APDL command (or similar string) to the file opened via [[cfopen|*CFOPEN]]. The `Command` string is not executed (except that numeric and character parameter substitution and operations (with imbedded \*, /, \>, etc. characters) are performed before writing).
 
 When used with [[get|*GET]] results and parameter substitution, a command can be created from results and then read back into the Mechanical APDL program (or used elsewhere). For example, if the command **\*CFWRITE**,BF,NNUM,TEMP,TVAL is used in a do-loop, where TVAL is a parameter value returned from the [[get|*GET]] operation and NNUM is a specified or returned parameter value, a series of [[bf|BF]] commands, with numerical values substituted for the two parameters, will be written.

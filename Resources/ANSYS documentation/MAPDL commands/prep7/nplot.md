@@ -11,6 +11,8 @@ tags: [mapdl-command]
 
 PyMAPDL: `mapdl.nplot(knum='', **kwargs)`
 
+PyMAPDL overrides `mapdl.nplot` with its own wrapper, so the signature above is not what `mapdl.nplot` runs. Reach the APDL command as text: `mapdl.run("NPLOT,...")`.
+
 Displays nodes.
 
 ## Parameters

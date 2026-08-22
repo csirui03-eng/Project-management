@@ -25,6 +25,13 @@ Applies a scale factor to array parameters.
 
 ## Notes
 
+### Argument descriptions
+
+- `factr : str` - Scale factor applied to results (ParR) parameter. Defaults to 1.0.
+- `fact1 : str` - Scale factor applied to first parameter (Par1 or ParI). Defaults to 1.0.
+- `fact2 : str` - Scale factor applied to second parameter (Par2 or ParJ). Defaults to 1.0.
+- `fact3 : str` - Scale factor applied to third parameter (Par3 or ParK). Defaults to 1.0.
+
 Applies a scale factor to parameters used in certain **\*V** `XX` and **\*M** `XX` operations. Typical scale factor applications are of the form: ParR = `FACTR` \*f( `FACT1` \*Par1)
 
 > or

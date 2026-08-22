@@ -11,6 +11,8 @@ tags: [mapdl-command]
 
 PyMAPDL: `mapdl.eplot(**kwargs)`
 
+PyMAPDL overrides `mapdl.eplot` with its own wrapper, so the signature above is not what `mapdl.eplot` runs. Reach the APDL command as text: `mapdl.run("EPLOT,...")`.
+
 Produces an element display.
 
 ## Notes

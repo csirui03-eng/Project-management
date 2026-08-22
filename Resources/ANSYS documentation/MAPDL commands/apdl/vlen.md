@@ -21,6 +21,12 @@ Specifies the number of rows to be used in array parameter operations.
 
 ## Notes
 
+### Argument descriptions
+
+\* `nrow : str` - Number of rows to be used with the **\*V** `XX` or **\*M** `XX` operations. Defaults to the number of rows needed to fill the result array.
+
+- `ninc : str` - Perform the operation on every `NINC` row (defaults to 1).
+
 Specifies the number of rows to be used in array parameter operations. The size of the submatrix used is determined from the upper left starting array element (defined on the operation command) to the lower right array element (defined by the number of rows on this command and the number of columns on the [[vcol|*VCOL]] command). `NINC` allows skipping row operations for some operation commands. Skipped rows are included in the row count. The starting row number must be defined on the operation command for each parameter read and for the result written.
 
 The default `NROW` is calculated from the maximum number of rows of the result array (the [[dim|*DIM]] row dimension) minus the starting location + 1. For example, [[dim|*DIM]],R,,10 and a starting location of R(7) gives a default of 4 loops (filling R(7), R(8), R(9), and R(10)). Repeat operations automatically terminate at the last row of the result array. Existing values in the rows and columns of the results matrix remain unchanged where not overwritten by the requested input or operation values.

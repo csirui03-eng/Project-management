@@ -29,6 +29,15 @@ Reads a file into a string array parameter.
 
 ## Notes
 
+### Argument descriptions
+
+- `strarray : str` - Name of the string array parameter which will hold the read file. String array parameters are similar to character arrays, but each array element can be as long as 248 characters. If the string parameter does not exist, it will be created. The array will be created as: \*DIM,StrArray,STRING,nChar,nRead
+
+\* `fname : str` - File name and directory path (248 characters maximum, including the characters needed for the directory path). An unspecified directory path defaults to the working directory; in this case, you can use all 248 characters for the file name. \* `ext : str` - Filename extension (eight-character maximum). \* `nchar : str` - Number of characters per line to read (default is length of the longest line in the file).
+
+- `nskip : str` - Number of lines to skip at the start of the file (default is 0).
+- `nread : str` - Number of lines to read from the file (default is the entire file).
+
 The **\*SREAD** command reads from a file into a string array parameter. The file must be an ASCII text file.
 
 Ansys help: https://ansyshelp.ansys.com/Views/Secured/corp/v232/en//ans_cmd/Hlp_C_SREAD_st.html

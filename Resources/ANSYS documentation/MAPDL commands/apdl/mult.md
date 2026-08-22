@@ -27,6 +27,14 @@ Performs the matrix multiplication M3 = M1 <sup>(T1)</sup> \*M2 <sup>(T2)</sup>.
 
 ## Notes
 
+### Argument descriptions
+
+- `m1 : str` - Name of matrix `M1`. Must have been previously specified by a [[dmat|*DMAT]] or [[smat|*SMAT]] command.
+- `t1 : str` - Transpose key. Set `T1` = TRANS to use the non-conjugate transpose of `M1`. Set `T1` = CTRANS to use the conjugate transpose of `M1`. CTRANS is only applicable when the `M1` matrix is complex. If blank, transpose will not be used.
+- `m2 : str` - Name of matrix `M2`. Must have been previously specified by a [[dmat|*DMAT]] command.
+- `t2 : str` - Transpose key. Set `T2` = TRANS to use the non-conjugate transpose of `M2`. Set `T2` = CTRANS to use the conjugate transpose of `M2`. CTRANS is only applicable when the `M2` matrix is complex. If blank, transpose will not be used.
+- `m3 : str` - Name of resulting matrix, `M3`. Must be specified.
+
 The matrices must be dimensionally consistent such that the number of columns of `M1` (or the transposed matrix, if requested) is equal to the number of rows of `M2` (or the transposed matrix, if requested).
 
 You cannot multiply two sparse matrices with this command (that is, `M1` and `M2` cannot both be sparse). The resulting matrix, `M3`, will always be a dense matrix, no matter what combination of input matrices is used (dense\*sparse, sparse\*dense, or dense\*dense).

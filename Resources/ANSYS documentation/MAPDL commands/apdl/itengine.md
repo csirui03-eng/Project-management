@@ -37,6 +37,18 @@ Specifies the algorithm to be used:
 
 ## Notes
 
+### Argument descriptions
+
+- `type_ : str` - Specifies the algorithm to be used:
+  - `PCG` - Preconditioned conjugate gradient (default).
+- `enginename : str` - Name used to identify this iterative solver engine. Must be specified.
+- `precondname : str` - Linear solver engine name ( [[lsengine|*LSENGINE]] ) identifying the factored matrix to be used as the preconditioner.
+- `matrix : str` - Name of the matrix to solve.
+- `rhsvector : str` - Matrix (load vector) name.
+- `solvector : str` - Solution vector name. If non-zero, it will be taken as the initial vector for the iterative process.
+- `maxiter : str` - Maximum number of iterations allowed. Default is 2 times the number of rows in the matrix.
+- `toler : str` - Convergence tolerance. Default is 1.0E-8.
+
 This command solves Ax = b using a preconditioned conjugate gradient algorithm. It uses an existing factored system as the preconditioner. This solution method is useful if an existing matrix has been solved and minor changes have been made to the matrix.
 
 Ansys help: https://ansyshelp.ansys.com/Views/Secured/corp/v232/en//ans_cmd/Hlp_C_ITENGINE.html

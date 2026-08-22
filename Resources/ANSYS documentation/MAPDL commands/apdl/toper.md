@@ -31,6 +31,16 @@ Operates on table parameters.
 
 ## Notes
 
+### Argument descriptions
+
+- `parr : str` - Name of the resulting table parameter. The command will create a table array parameter with this name. Any existing parameter with this name will be overwritten.
+- `par1 : str` - Name of the first table parameter.
+- `oper : str` - The operation to be performed: ADD. The operation is: ParR(i,j,k) = FACT12Par1(i,j,k) + FACT2 \*Par2(i,j,k) +CON1
+- `par2 : str` - Name of the second table parameter.
+- `fact1 : str` - The first table parameter multiplying constant. Defaults to 1.
+- `fact2 : str` - The second table parameter multiplying constant. Defaults to 1.
+- `con1 : str` - The constant increment for offset. Defaults to 0.
+
 **\*TOPER** operates on table parameters according to: ParR(i,j,k) = FACT12Par1(i,j,k) + FACT2 \*Par2(i,j,k) +CON1
 
 Par1 and Par2 must have the same dimensions and the same variable names corresponding to those dimensions. Par1 and Par2 must also have identical index values for rows, columns, etc.

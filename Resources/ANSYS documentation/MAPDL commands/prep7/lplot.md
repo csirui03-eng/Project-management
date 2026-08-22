@@ -11,6 +11,8 @@ tags: [mapdl-command]
 
 PyMAPDL: `mapdl.lplot(nl1='', nl2='', ninc='', **kwargs)`
 
+PyMAPDL overrides `mapdl.lplot` with its own wrapper, so the signature above is not what `mapdl.lplot` runs. Reach the APDL command as text: `mapdl.run("LPLOT,...")`.
+
 Displays the selected lines.
 
 ## Parameters

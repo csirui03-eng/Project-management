@@ -37,6 +37,24 @@ Format of the output file:
 
 ## Notes
 
+### Argument descriptions
+
+- `matrix : str` - Name of the matrix to export (must be a matrix previously created with [[dmat|*DMAT]] or [[smat|*SMAT]], or a vector previously created with [[vec|*VEC]] ).
+- `format : str` - Format of the output file:
+  - `MMF` - Export the matrix in the Matrix Market Format.
+  - `SUB` - Export the matrix in the `SUB` file format.
+  - `HBMAT` - Export the matrix in the Harwell-Boeing file format.
+  - `MAT` - Export the matrix in a native format, to be re-imported using the [[dmat|*DMAT]] or [[smat|*SMAT]] command.
+  - `EMAT` - Export the matrix to an existing `EMAT` file.
+  - `APDL` - Export the matrix to an APDL array parameter.
+  - `PS` - Export the matrix profile to a Postscript file.
+  - `DMIG` - Export the matrix in the `DMIG` file format.
+  - `CSV` - Export the matrix to an ASCII CSV (comma-separated values) file.
+- `fname : str` - Name of the file (case-sensitive, 32-character maximum), or name of the array parameter if `Format` = APDL (no default).
+- `val1, val2, val3 : str` - Additional input. The meaning of `Val1` through `Val3` will vary depending on the specified `Format`. See table below for details.
+
+(table not available in the PyMAPDL source, see the Ansys help page)
+
 Only sparse matrices can be exported to Postscript files. This option plots the matrix profile as a series of dots.
 
 If you want to create a `.SUB` file from several matrices, you need to set `Val3` = WAIT for all matrices but the last, and `Val3` = DONE for the last one. The export will be effective at the last **\*EXPORT** command.

@@ -43,6 +43,22 @@ Specifies the result format:
 
 ## Notes
 
+### Argument descriptions
+
+- `type_ : str` - Type of FFT transformation:
+  - `FORW` - Forward FFT computation (default).
+  - `BACK` - Backward FFT computation.
+- `inputdata : str` - Name of matrix or vector for which the FFT will be computed. This can be a dense matrix (created by the [[dmat|*DMAT]] command) or a vector (created by the [[vec|*VEC]] command). Data can be real or complex values. There is no default value for this argument.
+- `outputdata : str` - Name of matrix or vector where the FFT results will be stored. The type of this argument must be consistent with `InputData` (see table below). There is no default value for this argument.
+
+(table not available in the PyMAPDL source, see the Ansys help page)
+
+- `dim1 : str` - The number of terms to consider for a vector, or the number of rows for a matrix. Defaults to the whole input vector or all the rows of the matrix.
+- `dim2 : str` - The number of columns to consider for a matrix. Defaults to all the columns of the matrix. (Valid only for matrices.)
+- `resultformat : str` - Specifies the result format:
+  - `FULL` - Returns the full result. That is, the result matches the dimension specified on this command ( `DIM1`, `DIM2` ).
+  - `PART` - Returns partial results. For real input data, there is a symmetry in the results of the Fourier transform as some coefficients are conjugated. The partial format uses this symmetry to optimize the storage of the results. (Valid only for real data.)
+
 In the example that follows, the fast Fourier transformation is used to filter frequencies from a noisy input signal.
 
 **Example Usage**

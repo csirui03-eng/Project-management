@@ -21,6 +21,12 @@ Specifies the number of columns in matrix operations.
 
 ## Notes
 
+### Argument descriptions
+
+\* `ncol1 : str` - Number of columns to be used for Par1 with **\*M** `XX` operations. Defaults to whatever is needed to fill the result array.
+
+\* `ncol2 : str` - Number of columns to be used for Par2 with **\*M** `XX` operations. Defaults to whatever is needed to fill the result array.
+
 Specifies the number of columns to be used in array parameter matrix operations. The size of the submatrix used is determined from the upper left starting array element (defined on the operation command) to the lower right array element (defined by the number of columns on this command and the number of rows on the [[vlen|*VLEN]] command).
 
 The default `NCOL` is calculated from the maximum number of columns of the result array (the [[dim|*DIM]] column dimension) minus the starting location + 1. For example, [[dim|*DIM]],R,,1,10 and a starting location of R(1,7) gives a default of 4 columns ( starting with R(1,7), R(1,8), R(1,9), and R(1,10)). Repeat operations automatically terminate at the last column of the result array. Existing values in the rows and columns of the results matrix remain unchanged where not overwritten by the requested input or operation values.

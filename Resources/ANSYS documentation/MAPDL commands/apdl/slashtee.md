@@ -29,6 +29,15 @@ Specifies how Mechanical APDL is to interpret this **/TEE** command:
 
 ## Notes
 
+### Argument descriptions
+
+- `label : str` - Specifies how Mechanical APDL is to interpret this **/TEE** command:
+  - `NEW` - Signals the beginning of the command text that is to be written to `Fname`. If `Fname` already exists, specifying NEW causes the contents of `Fname` to be overwritten.
+  - `APPEND` - Indicates that you want to append to `Fname` the command text that follows.
+  - `END` - Signals the end of the command text that is to be written to or appended to `Fname`.
+
+\* `fname : str` - File name and directory path (248 characters maximum, including the characters needed for the directory path). An unspecified directory path defaults to the working directory; in this case, you can use all 248 characters for the file name. \* `ext : str` - Filename extension (eight-character maximum). If you plan to execute the file as if it were a Mechanical APDL command, use the extension `.mac`.
+
 You can use the **/TEE** command to record a macro to a specified file at the same time that the macro is being executed. It is similar to the Linux **tee** command.
 
 For more information about the **/TEE** command, see the of the [Ansys Parametric Design Language Guide](https://ansyshelp.ansys.com/Views/Secured/corp/v232/en/ans_apdl/apdlxpl.html).

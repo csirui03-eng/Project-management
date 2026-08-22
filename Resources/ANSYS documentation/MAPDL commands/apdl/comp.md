@@ -33,6 +33,20 @@ Algorithm or method to use:
 
 ## Notes
 
+### Argument descriptions
+
+- `matrix : str` - Name of the matrix to compress.
+- `algorithm : str` - Algorithm or method to use:
+  - `SVD` - Singular value decomposition algorithm (default).
+  - `MGS` - Modified Gram-Schmidt algorithm.
+  - `SPARSE` - Compress a sparse matrix based on the threshold value.
+- `threshold : str` - Numerical threshold value used to manage the compression. The default value depends on the method of compression: 1E-7 for SVD; 1E-14 for MGS; 1E-16 for SPARSE.
+
+`Val1` and `Val2` are additional input used only for the SVD algorithm:
+
+- `val1 : str` - Name of the vector used to store the (equation omitted) values (see [Notes](https://ansyshelp.ansys.com/Views/Secured/corp/v232/en/ans_cmd/Hlp_C_COMP.html#eq11850956-35ca-43ce-a803-b83b50b4d2af) below). This argument is optional.
+- `val2 : str` - Name of the dense matrix used to store the (equation omitted) output matrix (see [Notes](https://ansyshelp.ansys.com/Views/Secured/corp/v232/en/ans_cmd/Hlp_C_COMP.html#eq11850956-35ca-43ce-a803-b83b50b4d2af) below). This argument is optional.
+
 The SVD and MGS algorithms are only applicable to dense matrices that were created using the [[dmat|*DMAT]] command. Columns that are linearly dependent on others are removed, leaving the independent or basis vectors. The matrix is resized according to the new size determined by the algorithm.
 
 For the SVD algorithm, the singular value decomposition of an input matrix (equation omitted) is a factorization of the form:

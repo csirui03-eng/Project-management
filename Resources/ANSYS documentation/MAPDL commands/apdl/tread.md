@@ -25,6 +25,15 @@ Reads data from an external file into a table array parameter.
 
 ## Notes
 
+### Argument descriptions
+
+- `par : str` - Table array parameter name as defined by the [[dim|*DIM]] command.
+
+\* `fname : str` - File name and directory path (248 characters maximum, including the characters needed for the directory path). An unspecified directory path defaults to the working directory; in this case, you can use all 248 characters for the file name. File name has no default.
+
+- `ext : str` - Filename extension (eight-character maximum). Extension has no default.
+- `nskip : str` - Number of comment lines at the beginning of the file being read that will be skipped during the reading. Default = 0.
+
 Use this command to read in a table of data from an external file into a table array parameter. The external file may be created using a text editor or by an external application or program. To be used by **\*TREAD**, the external file's encoding format must be UTF-8, and the file must be in tab-delimited, blank-delimited, or comma-delimited format. The TABLE type array parameter must be defined before you can read in an external file. See [[dim|*DIM]] for more information.
 
 This command is not applicable to 4- or 5-D tables.

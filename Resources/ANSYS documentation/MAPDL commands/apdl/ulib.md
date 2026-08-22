@@ -21,6 +21,11 @@ Identifies a macro library file.
 
 ## Notes
 
+### Argument descriptions
+
+- `fname : str` - File name and directory path (248 characters maximum, including the characters needed for the directory path). An unspecified directory path defaults to the working directory; in this case, you can use all 248 characters for the file name.
+- `ext : str` - Filename extension (eight-character maximum).
+
 Identifies a macro library file for the [[use|*USE]] command.
 
 A library of macros allows blocks of often-used commands to be stacked and executed from a single file. The macro blocks must be enclosed within block identifier and terminator lines as shown in this example: **Example: Macro Blocks**

@@ -30,6 +30,23 @@ Specifies how the `Name2` matrix or vector is copied into the `Name1` matrix.
 
 ## Notes
 
+### Argument descriptions
+
+- `name1 : str` - Name of the matrix or vector to extend.
+- `name2 : str` - Name of the matrix or vector to be merged into `Name1`.
+- `val1, val2 : str` - Additional input. The meaning of `Val1` and `Val2` varies depending on the entity type (matrix or vector). See details below.
+
+**The following** `Val1` and `Val2` fields are used if `Name1` refers to a dense matrix created by the [[dmat|*DMAT]] command:
+
+- `val1 : str` - Column or row number indicating where the new values are to be inserted into the `Name1` matrix.
+- `val2 : str` - Specifies how the `Name2` matrix or vector is copied into the `Name1` matrix.
+  - `COL` - Insert the new values at the column location specified by `Val1` (default).
+  - `ROW` - Insert the new values at the row location specified by `Val1`.
+
+**The following** `Val1` field is used if `Name1` refers to a vector created by the [[vec|*VEC]] command:
+
+- `val1 : str` - Row number indicating where the new values are to be inserted into the `Name1` vector.
+
 **\*MERGE** can be used to add new columns or rows to a dense matrix that was created by the [[dmat|*DMAT]] command. In this case, `Name1` must be the name of the dense matrix and `Name2` must refer to a vector or another dense matrix.
 
 The following two examples demonstrate merging columns into a dense matrix.

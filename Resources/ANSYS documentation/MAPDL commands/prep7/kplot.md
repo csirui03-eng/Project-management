@@ -11,6 +11,8 @@ tags: [mapdl-command]
 
 PyMAPDL: `mapdl.kplot(np1='', np2='', ninc='', lab='', **kwargs)`
 
+PyMAPDL overrides `mapdl.kplot` with its own wrapper, so the signature above is not what `mapdl.kplot` runs. Reach the APDL command as text: `mapdl.run("KPLOT,...")`.
+
 Displays the selected keypoints.
 
 ## Parameters

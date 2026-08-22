@@ -19,6 +19,10 @@ Causes a delay before the reading of the next command.
 
 ## Notes
 
+### Argument descriptions
+
+- `dtime : str` - Time delay (in seconds). Maximum time delay is 59 seconds.
+
 The command following the **/WAIT** will not be processed until the specified wait time increment has elapsed. Useful when reading from a prepared input file to cause a pause, for example, after a display command so that the display can be reviewed for a period of time. Another "wait" feature is available via the `*ASK` command.
 
 This command is valid in any processor.

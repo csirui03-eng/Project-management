@@ -25,6 +25,13 @@ Performs the matrix operation M2= v2M1 + w2M2.
 
 ## Notes
 
+### Argument descriptions
+
+- `vr, vi : str` - The real and imaginary parts of the scalar `v`. Default value is 0.
+- `m1 : str` - Name of matrix `M1`. If not specified, the operation M2 = w\*M2 will be performed.
+- `wr, wi : str` - The real and imaginary parts of the scalar `w`. Default value is 0.
+- `m2 : str` - Name of matrix `M2`. Must be specified.
+
 The matrices `M1` and `M2` must have the same dimensions and same type (dense or sparse). If `M2` is real, `vi` and `wi` are ignored.
 
 Ansys help: https://ansyshelp.ansys.com/Views/Secured/corp/v232/en//ans_cmd/Hlp_C_AXPY.html

@@ -11,6 +11,8 @@ tags: [mapdl-command]
 
 PyMAPDL: `mapdl.mpread(fname='', ext='', lib='', **kwargs)`
 
+PyMAPDL overrides `mapdl.mpread` with its own wrapper, so the signature above is not what `mapdl.mpread` runs. Reach the APDL command as text: `mapdl.run("MPREAD,...")`.
+
 Reads a file containing material properties.
 
 ## Parameters

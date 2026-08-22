@@ -47,6 +47,52 @@ Method used to create the matrix:
 
 ## Notes
 
+### Argument descriptions
+
+- `matrix : str` - Name used to identify the matrix. Must be specified.
+- `type_ : str` - Matrix type:
+  - `D` - Double precision real values (default).
+  - `Z` - Complex double precision values.
+  - `I` - Integer values.
+- `method : str` - Method used to create the matrix:
+  - `ALLOC` - Allocate space for a matrix (default).
+  - `RESIZE` - Resize an existing matrix to new row and column dimensions. Values are kept from the original matrix. If the dimensions specified by `Val1` (rows) and `Val2` (columns) are greater than the original matrix size, the additional entries are assigned a value of zero.
+  - `COPY` - Copy an existing matrix.
+  - `LINK` - Link to an existing matrix. The memory will be shared between the original matrix and the new matrix. This is useful for manipulating a submatrix of a larger matrix. The `Val1` through `Val5` arguments will be used to specify the lower and upper bounds of row and column numbers from the original matrix.
+  - `IMPORT` - Import the matrix from a file.
+- `val1, val2, val3, val4, val5 : str` - Additional input. The meaning of `Val1` through `Val5` will vary depending on the specified `Method`. See details below.
+
+**The following** `Valx` fields are used with `Method` = ALLOC or `Method` = RESIZE:
+
+- `val1 : str` - Number of rows in the matrix.
+- `val2 : str` - Number of columns in the matrix.
+- `val3 : str` - Memory allocation type (used only with `Method` = ALLOC):
+  - `INCORE` - In-core memory allocation (default).
+  - `OUTOFCORE` - Out-of-core memory allocation.
+
+**The following** `Valx` fields are used with `Method` = COPY:
+
+- `val1 : str` - Name of the matrix to copy.
+- `val2 : str` - Method used for copying the matrix:
+  - `TRANS` - Transpose the original matrix. `Val3` and `Val4` are ignored.
+  - `REAL` - Copy the real part to the output matrix. This option only applies when copying a complex value matrix to a real value matrix. `Val3` and `Val4` are ignored.
+  - `IMAG` - Copy the imaginary part to the output matrix. This option only applies when copying a complex value matrix to a real value matrix. `Val3` and `Val4` are ignored.
+  - `EXTRACT` - Extract a submatrix based on row and column numbers specified by `Val3` and `Val4`.
+- `val3 : str` - Name of integer vector ( [[vec|*VEC]] ) containing row numbers. If no vector is specified, defaults to all rows.
+- `val4 : str` - Name of integer vector ( [[vec|*VEC]] ) containing column numbers. If no vector is specified, defaults to all columns.
+
+**The following** `Valx` fields are used with `Method` = LINK:
+
+- `val1 : str` - Name of the original matrix.
+- `val2 : str` - First column number (defaults to 1).
+- `val3 : str` - Last column number (defaults to the maximum column number of the original matrix).
+- `val4 : str` - First row number (defaults to 1).
+- `val5 : str` - Last row number (defaults to the maximum row number of the original matrix).
+
+**The following table describes the** `Valx` fields used with `Method` = IMPORT:
+
+(table not available in the PyMAPDL source, see the Ansys help page)
+
 This command allows you to create a dense matrix. To create a sparse matrix, use the [[smat|*SMAT]] command. [[smat|*SMAT]] is recommended for large matrices obtained from the `.FULL` or `.HBMAT` file. Refer to the [[hbmat|HBMAT]] command documentation for more information about `.FULL` file contents.
 
 Use the [[vec|*VEC]] command to create a vector.

@@ -11,6 +11,8 @@ tags: [mapdl-command]
 
 PyMAPDL: `mapdl.vplot(nv1='', nv2='', ninc='', degen='', scale='', **kwargs)`
 
+PyMAPDL overrides `mapdl.vplot` with its own wrapper, so the signature above is not what `mapdl.vplot` runs. Reach the APDL command as text: `mapdl.run("VPLOT,...")`.
+
 Displays the selected volumes.
 
 ## Parameters

@@ -39,6 +39,21 @@ Field to be looped on:
 
 ## Notes
 
+### Argument descriptions
+
+- `parr : str` - The name of the input vector array parameter. See [[starset|*SET]] for name restrictions. The parameter must exist as a dimensioned array ( [[dim|*DIM]] ) with data input.
+- `entity : str` - Entity keyword. Valid keywords are shown for `Entity` = in the table below.
+- `entnum : str` - The number of the entity (as shown for `ENTNUM` = in the table below).
+- `item1 : str` - The name of a particular item for the given entity. Valid items are as shown in the `Item1` columns of the table below.
+- `it1num : str` - The number (or label) for the specified `Item1` (if any). Valid `IT1NUM` values are as shown in the `IT1NUM` columns of the table below. Some `Item1` labels do not require an `IT1NUM` value.
+- `item2, it2num : str` - A second set of item labels and numbers to further qualify the item for which data is to be stored. Most items do not require this level of information.
+- `kloop : str` - Field to be looped on:
+  - `0 or 2` - Loop on the `ENTNUM` field (default).
+  - `3` - Loop on the `Item1` field.
+  - `4` - Loop on the `IT1NUM` field. Successive items are as shown with `IT1NUM`.
+  - `5` - Loop on the `Item2` field.
+  - `6` - Loop on the `IT2NUM` field. Successive items are as shown with `IT2NUM`.
+
 The **\*VPUT** command is not supported for PowerGraphics displays. Inconsistent results may be obtained if this command is not used in [[graphics|/GRAPHICS]], FULL.
 
 Plot and print operations entered via the GUI ( Utility Menu\> Pltcrtls, Utility Menu\> Plot ) incorporate the [[avprin|AVPRIN]] command. This means that the principal and equivalent values are recalculated. If you use **\*VPUT** to put data back into the database, issue the plot commands from the command line to preserve your data.
@@ -47,7 +62,7 @@ This operation is basically the inverse of the [[starvget|*VGET]] operation. Vec
 
 This command is valid in any processor.
 
-### \*VPUT - POST1 Items
+#### \*VPUT - POST1 Items
 
 `Entity` = NODE, `ENTNUM` = `n` (node number)
 

@@ -11,6 +11,8 @@ tags: [mapdl-command]
 
 PyMAPDL: `mapdl.run(dx='', dy='', dz='', ndiv='', nend='', estrt='', einc='', **kwargs)`
 
+PyMAPDL overrides `mapdl.run` with its own wrapper, so the signature above is not what `mapdl.run` runs. Reach the APDL command as text: `mapdl.run("RUN,...")`.
+
 Defines a pipe run.
 
 ## Parameters

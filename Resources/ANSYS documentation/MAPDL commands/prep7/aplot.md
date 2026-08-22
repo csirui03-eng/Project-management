@@ -11,6 +11,8 @@ tags: [mapdl-command]
 
 PyMAPDL: `mapdl.aplot(na1='', na2='', ninc='', degen='', scale='', **kwargs)`
 
+PyMAPDL overrides `mapdl.aplot` with its own wrapper, so the signature above is not what `mapdl.aplot` runs. Reach the APDL command as text: `mapdl.run("APLOT,...")`.
+
 Displays the selected areas.
 
 ## Parameters

@@ -19,6 +19,10 @@ Creates a directory.
 
 ## Notes
 
+### Argument descriptions
+
+- `Dir` - The directory to create (248 characters maximum on Linux; 233 on Windows). If no path is provided, it will be created in the current working directory. Must be a valid name (and path) for the system you are working on.
+
 Creates a directory on the computer Mechanical APDL is currently running on.
 
 Ansys help: https://ansyshelp.ansys.com/Views/Secured/corp/v232/en//ans_cmd/Hlp_C_MKDIR.html

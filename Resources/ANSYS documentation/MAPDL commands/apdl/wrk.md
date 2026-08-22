@@ -19,6 +19,10 @@ Sets the active workspace number.
 
 ## Notes
 
+### Argument descriptions
+
+- `num : str` - Number of the active memory workspace for APDLMath vector and matrices. All the following APDLMath vectors and matrices will belong to this memory workspace, until the next call to the **\*WRK** command. By default, all the APDLMath objects belong to workspace number 1.
+
 This feature enables you to associate a set of vector and matrices in a given memory workspace, so that you can easily manage the free step:
 
 ``` apdl

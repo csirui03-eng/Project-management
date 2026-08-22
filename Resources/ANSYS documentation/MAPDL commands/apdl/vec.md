@@ -43,6 +43,43 @@ Method used to create the vector:
 
 ## Notes
 
+### Argument descriptions
+
+- `vector : str` - Name used to identify the vector. Must be specified.
+- `type_ : str` - Vector type:
+  - `D` - Double precision real values (default).
+  - `Z` - Complex double precision values.
+  - `I` - Integer values.
+- `method : str` - Method used to create the vector:
+  - `ALLOC` - Allocate space for a vector (default).
+  - `RESIZE` - Resize an existing vector to a new length. Values are kept from the original vector. If the length specified by `Val1` is greater than the original vector length, the additional rows are assigned a value of zero.
+  - `COPY` - Copy an existing vector.
+  - `IMPORT` - Import the vector from a file.
+  - `LINK` - Link to a column of an existing dense [[dmat|*DMAT]] matrix and use it in subsequent vector calculations. Any changes to the vector are also made to the corresponding matrix column (memory is shared).
+- `val1, val2, val3, val4, val5 : str` - Additional input. The meaning of `Val1` through `Val5` will vary depending on the specified `Method`. See details below.
+
+**The following** `Valx` field is used with `Method` = ALLOC or `Method` = RESIZE:
+
+- `val1 : str` - Number of rows in the vector.
+
+**The following** `Valx` field is used with `Method` = COPY:
+
+- `val1 : str` - Name of the vector to copy.
+
+\* `val2 : str` - Optional argument to specify either the real or the imaginary part of the values to be copied. This option only applies when copying a complex value vector to a real value vector.
+
+> - `REAL` - Copy the real part of the vector to the output vector.
+> - `IMAG` - Copy the imaginary part of the vector to the output vector.
+
+**The following table describes the** `Valx` fields used with `Method` = IMPORT.
+
+(table not available in the PyMAPDL source, see the Ansys help page)
+
+**The following** `Valx` fields are used with `Method` = LINK:
+
+- `val1 : str` - Name of the [[dmat|*DMAT]] matrix.
+- `val2 : str` - Column number of the matrix to link to.
+
 Use the [[dmat|*DMAT]] command to create a matrix.
 
 For more information on the BACK and FORWARD nodal mapping vectors, see in the [Ansys Parametric Design Language Guide](https://ansyshelp.ansys.com/Views/Secured/corp/v232/en/ans_apdl/apdlxpl.html).

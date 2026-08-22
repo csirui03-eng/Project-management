@@ -46,6 +46,26 @@ Array type:
 
 ## Notes
 
+### Argument descriptions
+
+- `par : str` - Name of parameter to be dimensioned. See [[starset|*SET]] for name restrictions.
+- `type_ : str` - Array type:
+  - `ARRAY` - Arrays are similar to standard FORTRAN arrays (indices are integers) (default). Index numbers for the rows, columns, and planes are sequential values beginning with one. Used for 1-, 2-, or 3D arrays.
+  - `ARR4` - Same as ARRAY, but used to specify 4-D arrays.
+  - `ARR5` - Same as ARRAY, but used to specify 5-D arrays.
+  - `CHAR` - Array entries are character strings (up to 8 characters each). Index numbers for rows, columns, and planes are sequential values beginning with one.
+  - `TABLE` - Array indices are real (non-integer) numbers which must be defined when filling the table. Index numbers for the rows and columns are stored in the zero column and row "array elements" and are initially assigned a near-zero value. Index numbers must be in ascending order and are used only for retrieving an array element. When retrieving an array element with a real index that does not match a specified index, linear interpolation is done among the nearest indices and the corresponding array element values ( [[starset|*SET]] ). Used for 1-, 2-, or 3D tables.
+  - `TAB4` - Same as TABLE, but used to specify 4-D tables.
+  - `TAB5` - Same as TABLE, but used to specify 5-D tables.
+  - `STRING` - Array entries are character strings (up to IMAX each). Index numbers for columns and planes are sequential values beginning with 1. Row index is character position in string.
+- `imax : str` - Extent of first dimension (row). (For `Type` = STRING, `IMAX` is rounded up to the next multiple of eight and has a limit of 248). Default = 1.
+- `jmax : str` - Extent of second dimension (column). Default = 1.
+- `kmax : str` - Extent of third dimension (plane). Default = 1.
+- `var1 : str` - Variable name corresponding to the first dimension (row) for `Type` = TABLE, TAB4, or TAB5. Default = Row.
+- `var2 : str` - Variable name corresponding to the second dimension (column) for `Type` = TABLE, TAB4, or TAB5. Default = Column.
+- `var3 : str` - Variable name corresponding to the third dimension (plane) for `Type` = TABLE, TAB4, TAB5. Default = Plane.
+- `csysid : str` - An integer corresponding to the coordinate system ID number. Default = 0 (global Cartesian).
+
 Up to three dimensions (row, column, and plane) may be defined using ARRAY and TABLE. Use ARR4, ARR5, TAB4, and TAB5 to define up to five dimensions (row, column, plane, book, and shelf). An index number is associated with each row, column, and plane. For array and table type parameters, element values are initialized to zero. For character and string parameters, element values are initialized to (blank). A defined parameter must be deleted ( [[starset|*SET]] ) before its dimensions can be changed. Scalar (single valued) parameters should not be dimensioned. **\*DIM**,A,,3 defines a vector array with elements A(1), A(2), and A(3). **\*DIM**,B,,2,3 defines a 2x3 array with elements B(1,1), B(2,1), B(1,2), B(2,2), B(1,3), and B(2,3). Use [[starstatus|*STATUS]], `Par` to display elements of array `Par`. You can write formatted data files (tabular formatting) from data held in arrays through the [[vwrite|*VWRITE]] command.
 
 If you use table parameters to define boundary conditions, then `Var1`, `Var2`, and/or `Var3` can either specify a primary variable (listed in *\*DIM - Primary Variables* ) or can be an independent parameter. If specifying an independent parameter, then you must define an additional table for the independent parameter. The additional table must have the same name as the independent parameter and may be a function of one or more primary variables or another independent parameter. All independent parameters must relate to a primary variable.
@@ -74,7 +94,7 @@ You cannot create or edit 4- or 5-D arrays or tables via the GUI.
 
 For more information, see [Array Parameters](https://ansyshelp.ansys.com/Views/Secured/corp/v232/en/ans_apdl/Hlp_P_APDL3_11.html#ansys.guide.apdl.ch3.s11.9)
 
-### \*DIM - Primary Variables
+#### \*DIM - Primary Variables
 
 | Primary Variable | Label for `Var1, Var2, Var3, Var4, Var5` |
 |----|----|

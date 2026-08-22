@@ -25,6 +25,14 @@ Option to invert the matrix, used only with an LAPACK engine ( [[lsengine|*LSENG
 
 ## Notes
 
+### Argument descriptions
+
+- `enginename : str` - Name used to identify this engine. Must have been previously created using [[lsengine|*LSENGINE]].
+
+\* `option : str` - Option to invert the matrix, used only with an LAPACK engine ( [[lsengine|*LSENGINE]],LAPACK):
+
+> - `INVERT` - Invert the matrix.
+
 Performs the computationally intensive, memory intensive factorization of a matrix specified by [[lsengine|*LSENGINE]], using the solver engine also specified by [[lsengine|*LSENGINE]].
 
 Ansys help: https://ansyshelp.ansys.com/Views/Secured/corp/v232/en//ans_cmd/Hlp_C_LSFACTOR.html
