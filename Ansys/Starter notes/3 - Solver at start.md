@@ -72,4 +72,4 @@ mapdl = launch_mapdl(run_location=str(SCRATCH), nproc=2, override=True, cleanup_
 - Lock error or confusion about what is running: D, then A.
 - Never: killing ANSYS.exe from Task Manager while a session might be live. One of those processes is the worker rank of the session you are using.
 
-Related: [[1 Environment set up|Environment set up]] for the env and kernel model, [[4 Interactive viewer|Interactive viewer]] for the plotting stack.
+Related: [[1 - Environment set up|Environment set up]] for the env and kernel model, [[4 - Interactive viewer|Interactive viewer]] for the plotting stack.

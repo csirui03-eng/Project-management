@@ -1,6 +1,6 @@
 # Servers
 
-LLM draft from the 2026-08-22 solver discussion, parked here as reference material. John's own note is [[X Servers]] in Starter notes.
+LLM draft from the 2026-08-22 solver discussion, parked here as reference material. John's own note is [[X - Servers]] in Starter notes.
 
 ## What a server is
 

@@ -1,6 +1,6 @@
 # Servers
 
-Started 2026-08-22. Concept note beside the numbered steps, feeds [[3 Solver at start|Solver at start]].
+Started 2026-08-22. Concept note beside the numbered steps, feeds [[3 - Solver at start|Solver at start]].
 
 ## What a server is
 

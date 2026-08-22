@@ -30,7 +30,7 @@ Geometry work follows the geometry-creation loop: plain words first (vault note)
 
 - Notes under `Ansys\` (Starter notes, Double wall standard, concept notes) are John's own words notes. Claude never fills them with drafted prose. "Start a note" means create the title and section headings and stop. After John narrates, corrections fold into his sentences with minimal edits, and a rewrite keeps his phrasing in the lead.
 - Anything Claude drafts in full (explanations from a chat, comparison tables, summaries, handovers) goes in `LLM\` as a dated file, linked from John's note if useful. Never into his note.
-- Planner for the understanding phase: `Ansys\Starter notes\0 Planner.md`. Status moves from not started to first pass to own words to solid only on John's narration, not on Claude's writing.
+- Planner for the understanding phase: `Ansys\Starter notes\0 - Planner.md`. Status moves from not started to first pass to own words to solid only on John's narration, not on Claude's writing.
 
 ## Hard rules (writing)
 

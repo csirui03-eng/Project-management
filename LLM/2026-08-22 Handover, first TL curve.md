@@ -34,7 +34,7 @@ Next chat opens by discussing the first transmission loss result and where to ta
 
 ## Solver lifecycle: settled, recorded in vault notes
 
-The night's other half. Key lesson: the solver is a separate OS process, kernel restarts do not touch it, and while alive it holds file.lock open (Windows then blocks a second launch in the same run_location). Full story and the four start routes in `Ansys\Starter notes\3 Solver at start.md`. Related: `Ansys\Starter notes\1 Environment set up.md` (env and kernel model), `Ansys\Starter notes\4 Interactive viewer.md` (plotting stack requirements). (Paths updated 2026-08-22 when the notes moved into Starter notes and took step numbers.) Notebook cell 0 is now attach or launch and worked first try. A status first cell exists in the Solver at start note if John wants it pasted in.
+The night's other half. Key lesson: the solver is a separate OS process, kernel restarts do not touch it, and while alive it holds file.lock open (Windows then blocks a second launch in the same run_location). Full story and the four start routes in `Ansys\Starter notes\3 - Solver at start.md`. Related: `Ansys\Starter notes\1 - Environment set up.md` (env and kernel model), `Ansys\Starter notes\4 - Interactive viewer.md` (plotting stack requirements). (Paths updated 2026-08-22 when the notes moved into Starter notes and took step numbers.) Notebook cell 0 is now attach or launch and worked first try. A status first cell exists in the Solver at start note if John wants it pasted in.
 
 ## Working agreements made tonight
 
