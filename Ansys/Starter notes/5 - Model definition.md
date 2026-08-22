@@ -25,6 +25,8 @@ This section is important because we want names assigned to the key domains, as 
 ![[component check 2026-08-22.png]]
 The component check, cell 8: every component with its entity numbers, read against the numbered plot. `SOURCE_L` holds line 3, `AIR_UP_A` holds the two areas either side of the source line.
 
+## Attributes
+
 ## Table of methods
 
 Methods used in the script, in call order. Each PyMAPDL method is the APDL command in lower case, which is the key into the MAPDL command reference.
